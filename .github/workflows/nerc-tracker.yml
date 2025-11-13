@@ -1,0 +1,42 @@
+name: NERC One Stop Shop Daily Tracker
+
+on:
+  schedule:
+    # Runs every day at 14:00 UTC (~8:00 AM Central Standard Time, 9:00 AM during CDT)
+    - cron: "0 14 * * *"
+  workflow_dispatch: {}  # allow manual runs from the Actions tab
+
+jobs:
+  run-tracker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run NERC tracker
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
+          RECIPIENTS: ${{ secrets.RECIPIENTS }}
+        run: python nerc_tracker.py
+
+      - name: Commit updated snapshot (if changed)
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add last_snapshot.xlsx
+            git commit -m "Update NERC snapshot"
+            git push
+          else
+            echo "No changes to snapshot file; nothing to commit."
+          fi
