@@ -1,148 +1,178 @@
+import json
 import os
-import io
-from datetime import datetime
-import requests
-import pandas as pd
 import smtplib
+from datetime import datetime, timezone
 from email.message import EmailMessage
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
-# Direct NERC Excel URL (decoded from the Office viewer link)
+import requests
+from openpyxl import load_workbook
+
 EXCEL_URL = "https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx"
-
-# Snapshot file stored inside the repo
 SNAPSHOT_PATH = Path("last_snapshot.xlsx")
+DATA_PATH = Path("docs/data/nerc.json")
+HISTORY_PATH = Path("docs/data/nerc-history.json")
+MAX_WEB_CHANGES = 500
+MAX_EMAIL_CHANGES = 40
 
-# Environment variables (values will come from GitHub Secrets)
 GMAIL_USER = os.environ.get("GMAIL_USER")
 GMAIL_PASS = os.environ.get("GMAIL_PASS")
-RECIPIENTS = os.environ.get(
-    "RECIPIENTS",
-    "mikep@mcphersonpower.com,tommys@mcphersonpower.com",
-).split(",")
+RECIPIENTS = [x.strip() for x in os.environ.get(
+    "RECIPIENTS", "mikep@mcphersonpower.com,tommys@mcphersonpower.com"
+).split(",") if x.strip()]
 
 
 def download_excel():
-    """Download the current NERC One Stop Shop Excel file as bytes."""
-    resp = requests.get(EXCEL_URL, timeout=60)
-    resp.raise_for_status()
-    return resp.content
+    response = requests.get(EXCEL_URL, timeout=90, headers={"User-Agent": "BPU-NERC-Tracker/1.0"})
+    response.raise_for_status()
+    return response.content
 
 
-def bytes_to_dataframe(file_bytes):
-    """Convert Excel bytes to a pandas DataFrame (first sheet)."""
-    buffer = io.BytesIO(file_bytes)
-    df = pd.read_excel(buffer, sheet_name=0)
-    return df
+def value_text(value):
+    if value is None:
+        return ""
+    if isinstance(value, datetime):
+        return value.isoformat()
+    return str(value).strip()
 
 
-def compute_row_set(df):
-    """
-    Represent each row as a tuple of strings so we can compare
-    entire rows between days. NaNs become empty strings.
-    """
-    df_filled = df.fillna("")
-    rows = []
-    for _, row in df_filled.iterrows():
-        rows.append(tuple(str(v).strip() for v in row.tolist()))
-    return set(rows)
+def read_workbook(path):
+    workbook = load_workbook(path, read_only=True, data_only=False)
+    sheets = {}
+    metadata = []
+    total_cells = 0
+    for sheet in workbook.worksheets:
+        values = {}
+        populated = 0
+        for row in sheet.iter_rows():
+            for cell in row:
+                text = value_text(cell.value)
+                if text != "":
+                    values[cell.coordinate] = text
+                    populated += 1
+        sheets[sheet.title] = values
+        total_cells += populated
+        metadata.append({
+            "name": sheet.title,
+            "rows": sheet.max_row,
+            "columns": sheet.max_column,
+            "cells": populated,
+            "changes": 0,
+        })
+    workbook.close()
+    return sheets, metadata, total_cells
 
 
-def build_diff_report(old_bytes, new_bytes, max_sample=20):
-    """
-    Compare yesterday vs today at the row level.
-    We treat any row that disappeared as 'removed' and any new row as 'added'.
-    """
-    old_df = bytes_to_dataframe(old_bytes)
-    new_df = bytes_to_dataframe(new_bytes)
+def compare_workbooks(old_path, new_path):
+    old_sheets, _, _ = read_workbook(old_path)
+    new_sheets, sheet_meta, total_cells = read_workbook(new_path)
+    changes = []
+    counts = {"added": 0, "removed": 0, "modified": 0}
+    per_sheet = {item["name"]: 0 for item in sheet_meta}
 
-    old_set = compute_row_set(old_df)
-    new_set = compute_row_set(new_df)
+    for sheet_name in sorted(set(old_sheets) | set(new_sheets)):
+        old_cells = old_sheets.get(sheet_name, {})
+        new_cells = new_sheets.get(sheet_name, {})
+        for coordinate in sorted(set(old_cells) | set(new_cells)):
+            old = old_cells.get(coordinate, "")
+            new = new_cells.get(coordinate, "")
+            if old == new:
+                continue
+            if not old and new:
+                change_type = "added"
+            elif old and not new:
+                change_type = "removed"
+            else:
+                change_type = "modified"
+            counts[change_type] += 1
+            per_sheet[sheet_name] = per_sheet.get(sheet_name, 0) + 1
+            if len(changes) < MAX_WEB_CHANGES:
+                changes.append({"sheet": sheet_name, "cell": coordinate, "old": old, "new": new, "type": change_type})
 
-    added = new_set - old_set
-    removed = old_set - new_set
+    for item in sheet_meta:
+        item["changes"] = per_sheet.get(item["name"], 0)
+    total_changes = sum(counts.values())
+    return changes, counts, sheet_meta, total_cells, total_changes
 
-    lines = []
-    lines.append(f"Total rows yesterday: {len(old_set)}")
-    lines.append(f"Total rows today    : {len(new_set)}")
-    lines.append(f"Rows added          : {len(added)}")
-    lines.append(f"Rows removed        : {len(removed)}")
-    lines.append("")
 
-    if added:
-        lines.append("=== Added rows (sample) ===")
-        for i, row in enumerate(sorted(added)):
-            if i >= max_sample:
-                lines.append(f"... ({len(added) - max_sample} more added rows)")
-                break
-            lines.append(" | ".join(row))
-        lines.append("")
+def load_history():
+    try:
+        return json.loads(HISTORY_PATH.read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return []
 
-    if removed:
-        lines.append("=== Removed rows (sample) ===")
-        for i, row in enumerate(sorted(removed)):
-            if i >= max_sample:
-                lines.append(f"... ({len(removed) - max_sample} more removed rows)")
-                break
-            lines.append(" | ".join(row))
 
-    if not added and not removed:
-        lines.append("No row-level changes detected (files are identical at row level).")
-
-    return "\n".join(lines)
+def write_dashboard(payload, history):
+    DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
+    DATA_PATH.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+    HISTORY_PATH.write_text(json.dumps(history[:90], indent=2, ensure_ascii=False), encoding="utf-8")
 
 
 def send_email(subject, body):
     if not GMAIL_USER or not GMAIL_PASS:
-        raise RuntimeError("GMAIL_USER or GMAIL_PASS environment variables are not set.")
-
-    msg = EmailMessage()
-    msg["Subject"] = subject
-    msg["From"] = GMAIL_USER
-    msg["To"] = ", ".join(RECIPIENTS)
-    msg.set_content(body)
-
+        raise RuntimeError("GMAIL_USER or GMAIL_PASS is not set.")
+    message = EmailMessage()
+    message["Subject"] = subject
+    message["From"] = GMAIL_USER
+    message["To"] = ", ".join(RECIPIENTS)
+    message.set_content(body)
     with smtplib.SMTP("smtp.gmail.com", 587, timeout=60) as server:
         server.starttls()
         server.login(GMAIL_USER, GMAIL_PASS)
-        server.send_message(msg)
+        server.send_message(message)
 
 
 def main():
-    today_str = datetime.utcnow().strftime("%Y-%m-%d")
+    now_utc = datetime.now(timezone.utc)
+    now_ct = now_utc.astimezone(ZoneInfo("America/Chicago"))
+    today = now_ct.strftime("%Y-%m-%d")
+    new_bytes = download_excel()
+    temp_path = Path("current_snapshot.xlsx")
+    temp_path.write_bytes(new_bytes)
 
-    # Download today's file
-    excel_bytes = download_excel()
-
+    history = load_history()
     if SNAPSHOT_PATH.exists():
-        # Compare with yesterday's snapshot
-        old_bytes = SNAPSHOT_PATH.read_bytes()
-        report = build_diff_report(old_bytes, excel_bytes)
-        changed = "No row-level changes detected" not in report
-
-        if changed:
-            subject = f"[NERC One Stop Shop] Changes detected for {today_str}"
-        else:
-            subject = f"[NERC One Stop Shop] No changes detected for {today_str}"
-
-        body = (
-            f"NERC One Stop Shop daily check for {today_str}.\n\n"
-            f"{report}\n"
-            "\n--\n"
-            "This email was generated automatically by your NERC tracking bot."
+        changes, counts, sheets, cells, total = compare_workbooks(SNAPSHOT_PATH, temp_path)
+        status_text = "Changes detected" if total else "No changes detected"
+        summary_text = (
+            f"The daily check reviewed {len(sheets)} worksheets and {cells:,} populated cells. "
+            f"{total:,} cell-level changes were detected: {counts['added']:,} added, "
+            f"{counts['removed']:,} removed and {counts['modified']:,} modified."
         )
     else:
-        # First run: just store baseline
-        subject = f"[NERC One Stop Shop] Initial snapshot stored ({today_str})"
-        body = (
-            "This is the first run of the NERC One Stop Shop tracker.\n"
-            "Today's file has been stored as the baseline. No diff to report yet.\n"
-        )
+        _, sheets, cells = read_workbook(temp_path)
+        changes, counts, total = [], {"added": 0, "removed": 0, "modified": 0}, 0
+        status_text = "Initial baseline stored"
+        summary_text = f"The initial baseline reviewed {len(sheets)} worksheets and {cells:,} populated cells."
 
-    # Save today's snapshot so tomorrow has something to compare to
-    SNAPSHOT_PATH.write_bytes(excel_bytes)
+    history_entry = {"date": now_ct.strftime("%b %d, %Y %I:%M %p CT"), "total_changes": total, "status_text": status_text}
+    history = [history_entry] + history
+    payload = {
+        "status": "ok",
+        "message": status_text,
+        "checked_at": now_utc.isoformat(),
+        "checked_at_display": now_ct.strftime("%b %d, %Y %I:%M %p"),
+        "source_url": EXCEL_URL,
+        "summary": {"sheets_checked": len(sheets), "cells_reviewed": cells, "total_changes": total, **counts},
+        "summary_text": summary_text,
+        "changes": changes,
+        "changes_truncated": total > MAX_WEB_CHANGES,
+        "sheets": sheets,
+        "history": history[:30],
+    }
+    write_dashboard(payload, history)
+    SNAPSHOT_PATH.write_bytes(new_bytes)
+    temp_path.unlink(missing_ok=True)
 
-    # Email report
+    details = []
+    for item in changes[:MAX_EMAIL_CHANGES]:
+        details.append(f"{item['sheet']}!{item['cell']} [{item['type']}]\n  Previous: {item['old'] or '(blank)'}\n  Current:  {item['new'] or '(blank)'}")
+    if total > MAX_EMAIL_CHANGES:
+        details.append(f"...and {total - MAX_EMAIL_CHANGES} additional changes. See the dashboard for more detail.")
+    subject = f"[NERC Tracking] {status_text} - {today}"
+    body = summary_text + ("\n\n" + "\n\n".join(details) if details else "")
+    body += "\n\nDashboard: https://mcpbpunerc.github.io/nerc-one-stop-shop-tracker/"
     send_email(subject, body)
 
 
