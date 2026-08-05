@@ -1,0 +1,19 @@
+{
+  "status": "waiting",
+  "message": "Waiting for the first tracker run",
+  "checked_at": "Not yet checked",
+  "checked_at_display": "Not yet checked",
+  "summary": {
+    "sheets_checked": 0,
+    "cells_reviewed": 0,
+    "total_changes": 0,
+    "added": 0,
+    "removed": 0,
+    "modified": 0
+  },
+  "summary_text": "The dashboard is installed. Run the GitHub Action after merging to populate live NERC workbook results.",
+  "changes": [],
+  "changes_truncated": false,
+  "sheets": [],
+  "history": []
+}
