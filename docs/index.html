@@ -8,18 +8,13 @@
 </head>
 <body>
   <header class="topbar">
-    <div>
-      <div class="eyebrow">MCPHERSON BOARD OF PUBLIC UTILITIES</div>
-      <h1>Regulatory Tracking Station</h1>
-    </div>
+    <div><div class="eyebrow">MCPHERSON BOARD OF PUBLIC UTILITIES</div><h1>Regulatory Tracking Station</h1></div>
     <div class="clock" id="clock">--:--:--</div>
   </header>
-
   <nav class="mode-switch" aria-label="Tracking mode">
     <button class="mode active" data-mode="nerc">NERC TRACKING</button>
     <button class="mode" data-mode="ferc">FERC TRACKING</button>
   </nav>
-
   <main>
     <section id="nerc-view" class="view active">
       <div class="status-grid">
@@ -28,39 +23,24 @@
         <article class="card"><span>WORKBOOK COVERAGE</span><strong id="nerc-coverage">--</strong><small id="nerc-cells">-- cells reviewed</small></article>
         <article class="card"><span>LATEST CHANGES</span><strong id="nerc-total">--</strong><small id="nerc-counts">--</small></article>
       </div>
-
-      <section class="panel">
-        <div class="panel-head"><h2>Latest NERC Activity</h2><a href="https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx">Open source workbook</a></div>
-        <div id="nerc-summary" class="summary-box">Waiting for the first dashboard update.</div>
-      </section>
-
-      <section class="panel">
-        <div class="panel-head"><h2>Detailed Changes</h2><span id="change-limit"></span></div>
-        <div class="table-wrap"><table><thead><tr><th>Worksheet</th><th>Cell</th><th>Previous</th><th>Current</th><th>Type</th></tr></thead><tbody id="change-table"></tbody></table></div>
-      </section>
-
-      <section class="panel">
-        <div class="panel-head"><h2>Worksheet Status</h2></div>
-        <div id="sheet-grid" class="sheet-grid"></div>
-      </section>
-
-      <section class="panel">
-        <div class="panel-head"><h2>Recent Check History</h2></div>
-        <div id="history" class="history"></div>
-      </section>
+      <section class="panel"><div class="panel-head"><h2>Latest NERC Activity</h2><a href="https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx">Open source workbook</a></div><div id="nerc-summary" class="summary-box">Waiting for the latest dashboard update.</div></section>
+      <section class="panel"><div class="panel-head"><h2>Detailed Changes</h2><span id="change-limit"></span></div><div class="table-wrap"><table><thead><tr><th>Worksheet</th><th>Cell</th><th>Previous</th><th>Current</th><th>Type</th></tr></thead><tbody id="change-table"></tbody></table></div></section>
+      <section class="panel"><div class="panel-head"><h2>Worksheet Status</h2></div><div id="sheet-grid" class="sheet-grid"></div></section>
+      <section class="panel"><div class="panel-head"><h2>Recent Check History</h2></div><div id="history" class="history"></div></section>
     </section>
 
     <section id="ferc-view" class="view">
       <div class="status-grid">
-        <article class="card hero amber"><span>FERC TRACKING</span><strong>PHASE 2</strong><small>Separate feed is being prepared.</small></article>
-        <article class="card"><span>DESIGN</span><strong>READY</strong><small>NERC and FERC remain separate</small></article>
-        <article class="card"><span>PLANNED SOURCES</span><strong>OFFICIAL</strong><small>FERC news, orders and notices</small></article>
-        <article class="card"><span>PRIORITY</span><strong>RELIABILITY</strong><small>NERC, CIP, generation and transmission</small></article>
+        <article class="card hero"><span>TRACKING STATUS</span><strong id="ferc-status">LOADING</strong><small id="ferc-message">Checking official FERC sources…</small></article>
+        <article class="card"><span>LAST CHECK</span><strong id="ferc-last-check">--</strong><small>America/Chicago</small></article>
+        <article class="card"><span>NEW ITEMS</span><strong id="ferc-new">--</strong><small id="ferc-priority">-- priority items</small></article>
+        <article class="card"><span>SOURCES CHECKED</span><strong id="ferc-sources">--</strong><small id="ferc-total">-- total items reviewed</small></article>
       </div>
-      <section class="panel"><div class="panel-head"><h2>FERC Tracking</h2></div><div class="summary-box">This view is intentionally separate from NERC tracking. The next build will add official FERC feeds, relevance filtering, docket information and daily history.</div></section>
+      <section class="panel"><div class="panel-head"><h2>Priority FERC Updates</h2><a href="https://www.ferc.gov/electric-reliability">Open FERC Reliability</a></div><div id="ferc-featured" class="update-grid"></div></section>
+      <section class="panel"><div class="panel-head"><h2>All Tracked FERC Activity</h2><div id="ferc-filters" class="filters"></div></div><div id="ferc-items" class="update-list"></div></section>
+      <section class="panel"><div class="panel-head"><h2>Recent Check History</h2></div><div id="ferc-history" class="history"></div></section>
     </section>
   </main>
-
   <footer>Public-source regulatory monitoring • No confidential operational information</footer>
   <script src="app.js"></script>
 </body>
