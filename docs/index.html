@@ -3,45 +3,114 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>BPU Regulatory Tracking Station</title>
+  <meta name="theme-color" content="#07111d">
+  <title>BPU NERC Regulatory Control Room</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="topbar">
-    <div><div class="eyebrow">MCPHERSON BOARD OF PUBLIC UTILITIES</div><h1>Regulatory Tracking Station</h1></div>
-    <div class="clock" id="clock">--:--:--</div>
+    <div>
+      <div class="eyebrow">MCPHERSON BOARD OF PUBLIC UTILITIES</div>
+      <h1>BPU NERC Regulatory Control Room</h1>
+      <p>Regulatory Intelligence Dashboard</p>
+    </div>
+    <div class="header-right">
+      <div class="live-pill"><span class="pulse"></span>LIVE</div>
+      <div class="clock" id="clock">--:--:--</div>
+    </div>
   </header>
+
   <nav class="mode-switch" aria-label="Tracking mode">
-    <button class="mode active" data-mode="nerc">NERC TRACKING</button>
-    <button class="mode" data-mode="ferc">FERC TRACKING</button>
+    <button class="mode active" data-mode="nerc">NERC CONTROL</button>
+    <button class="mode" data-mode="ferc">FERC WATCH</button>
   </nav>
+
   <main>
     <section id="nerc-view" class="view active">
-      <div class="status-grid">
-        <article class="card hero"><span>TRACKING STATUS</span><strong id="nerc-status">LOADING</strong><small id="nerc-message">Reading latest report…</small></article>
-        <article class="card"><span>LAST CHECK</span><strong id="nerc-last-check">--</strong><small>America/Chicago</small></article>
-        <article class="card"><span>WORKBOOK COVERAGE</span><strong id="nerc-coverage">--</strong><small id="nerc-cells">-- cells reviewed</small></article>
-        <article class="card"><span>LATEST CHANGES</span><strong id="nerc-total">--</strong><small id="nerc-counts">--</small></article>
-      </div>
-      <section class="panel"><div class="panel-head"><h2>Latest NERC Activity</h2><a href="https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx">Open source workbook</a></div><div id="nerc-summary" class="summary-box">Waiting for the latest dashboard update.</div></section>
-      <section class="panel"><div class="panel-head"><h2>Detailed Changes</h2><span id="change-limit"></span></div><div class="table-wrap"><table><thead><tr><th>Worksheet</th><th>Cell</th><th>Previous</th><th>Current</th><th>Type</th></tr></thead><tbody id="change-table"></tbody></table></div></section>
-      <section class="panel"><div class="panel-head"><h2>Worksheet Status</h2></div><div id="sheet-grid" class="sheet-grid"></div></section>
-      <section class="panel"><div class="panel-head"><h2>Recent Check History</h2></div><div id="history" class="history"></div></section>
+      <section class="status-grid">
+        <article class="instrument status-instrument">
+          <span class="instrument-label">SYSTEM STATUS</span>
+          <strong id="nerc-status">LOADING</strong>
+          <small id="nerc-message">Reading latest regulatory scan…</small>
+        </article>
+        <article class="instrument"><span class="instrument-label">LAST SCAN</span><strong id="nerc-last-check">--</strong><small>Central Time</small></article>
+        <article class="instrument"><span class="instrument-label">TRACKED STANDARDS</span><strong id="tracked-count">--</strong><small id="function-list">GO • GOP • TO • DP</small></article>
+        <article class="instrument"><span class="instrument-label">TRACKED CHANGES</span><strong id="tracked-changes">--</strong><small id="priority-counts">-- high • -- moderate</small></article>
+      </section>
+
+      <section class="panel brief-panel">
+        <div class="panel-head">
+          <div><span class="section-kicker">MORNING BRIEF</span><h2>What needs attention</h2></div>
+          <a class="source-link" href="https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx">Open NERC source workbook ↗</a>
+        </div>
+        <div class="brief-grid">
+          <div class="brief-copy">
+            <p id="nerc-brief">Waiting for the latest record-aware NERC scan.</p>
+            <div class="health-strip" id="health-strip">
+              <span><i class="dot healthy"></i>NERC feed</span>
+              <span><i class="dot healthy"></i>Semantic comparison</span>
+              <span><i class="dot healthy"></i>Daily email</span>
+              <span><i class="dot healthy"></i>GitHub Pages</span>
+            </div>
+          </div>
+          <div class="brief-metrics">
+            <div><span>High Priority</span><strong id="brief-high">--</strong></div>
+            <div><span>Other NERC Activity</span><strong id="brief-other">--</strong></div>
+            <div><span>Records Reviewed</span><strong id="brief-records">--</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head"><div><span class="section-kicker">MY PROGRAM</span><h2>Tracked Standard Families</h2></div><span class="panel-note">BPU profile: GO • GOP • TO • DP</span></div>
+        <div id="family-grid" class="family-grid"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head stacked-mobile">
+          <div><span class="section-kicker">MY STANDARDS</span><h2>Standards Matrix</h2></div>
+          <div class="toolbar">
+            <input id="standard-search" type="search" placeholder="Search PRC-005, FAC, CIP…" aria-label="Search standards">
+            <select id="family-filter" aria-label="Filter standards by family"><option value="all">All families</option></select>
+          </div>
+        </div>
+        <div id="standards-grid" class="standards-grid"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head stacked-mobile">
+          <div><span class="section-kicker">CHANGE INTELLIGENCE</span><h2>Tracked NERC Changes</h2></div>
+          <div class="toolbar">
+            <select id="severity-filter" aria-label="Filter changes by severity">
+              <option value="all">All priorities</option><option value="high">High</option><option value="moderate">Moderate</option><option value="informational">Informational</option>
+            </select>
+            <input id="change-search" type="search" placeholder="Search changes…" aria-label="Search changes">
+          </div>
+        </div>
+        <div id="change-empty" class="empty-state hidden">No tracked-standard changes matched this view.</div>
+        <div id="change-list" class="change-list"></div>
+      </section>
+
+      <section class="two-column">
+        <section class="panel"><div class="panel-head"><div><span class="section-kicker">HISTORY</span><h2>Recent Scans</h2></div></div><div id="nerc-history" class="history"></div></section>
+        <section class="panel"><div class="panel-head"><div><span class="section-kicker">COVERAGE</span><h2>Workbook Health</h2></div></div><div id="sheet-grid" class="sheet-grid"></div></section>
+      </section>
     </section>
 
     <section id="ferc-view" class="view">
-      <div class="status-grid">
-        <article class="card hero"><span>TRACKING STATUS</span><strong id="ferc-status">LOADING</strong><small id="ferc-message">Checking official FERC sources…</small></article>
-        <article class="card"><span>LAST CHECK</span><strong id="ferc-last-check">--</strong><small>America/Chicago</small></article>
-        <article class="card"><span>NEW ITEMS</span><strong id="ferc-new">--</strong><small id="ferc-priority">-- priority items</small></article>
-        <article class="card"><span>SOURCES CHECKED</span><strong id="ferc-sources">--</strong><small id="ferc-total">-- total items reviewed</small></article>
-      </div>
-      <section class="panel"><div class="panel-head"><h2>Priority FERC Updates</h2><a href="https://www.ferc.gov/electric-reliability">Open FERC Reliability</a></div><div id="ferc-featured" class="update-grid"></div></section>
-      <section class="panel"><div class="panel-head"><h2>All Tracked FERC Activity</h2><div id="ferc-filters" class="filters"></div></div><div id="ferc-items" class="update-list"></div></section>
-      <section class="panel"><div class="panel-head"><h2>Recent Check History</h2></div><div id="ferc-history" class="history"></div></section>
+      <section class="status-grid">
+        <article class="instrument status-instrument"><span class="instrument-label">FERC STATUS</span><strong id="ferc-status">LOADING</strong><small id="ferc-message">Reading official FERC sources…</small></article>
+        <article class="instrument"><span class="instrument-label">LAST SCAN</span><strong id="ferc-last-check">--</strong><small>Central Time</small></article>
+        <article class="instrument"><span class="instrument-label">NEW ITEMS</span><strong id="ferc-new">--</strong><small id="ferc-priority">-- priority</small></article>
+        <article class="instrument"><span class="instrument-label">SOURCES</span><strong id="ferc-sources">--</strong><small id="ferc-total">-- reviewed</small></article>
+      </section>
+      <section class="panel"><div class="panel-head"><div><span class="section-kicker">FERC WATCH</span><h2>Priority Reliability Activity</h2></div><a class="source-link" href="https://www.ferc.gov/electric-reliability">Open FERC Electric Reliability ↗</a></div><div id="ferc-featured" class="update-grid"></div></section>
+      <section class="panel"><div class="panel-head stacked-mobile"><div><span class="section-kicker">OFFICIAL SOURCES</span><h2>Tracked FERC Activity</h2></div><div id="ferc-filters" class="filters"></div></div><div id="ferc-items" class="update-list"></div></section>
+      <section class="panel"><div class="panel-head"><div><span class="section-kicker">HISTORY</span><h2>Recent FERC Scans</h2></div></div><div id="ferc-history" class="history"></div></section>
     </section>
   </main>
-  <footer>Public-source regulatory monitoring • No confidential operational information</footer>
+
+  <footer><strong>BPU NERC Regulatory Control Room</strong><span>Public-source monitoring only • No confidential operational or registry information</span></footer>
   <script src="app.js"></script>
 </body>
 </html>
