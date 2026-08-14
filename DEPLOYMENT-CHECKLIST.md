@@ -24,11 +24,12 @@
 - [x] Verify Gmail delivery and V2 message content
 - [x] Inspect generated V2 dashboard data and standard-family counts
 - [x] Verify FERC tracker runs and writes current data
+- [x] Reconcile current `main` generated-data history with V2 branch
+- [x] Remove temporary GitHub write-test artifact
 
 ## Before production merge
 - [ ] Preview V2 Control Room rendering before replacing production
-- [ ] Reconcile current `main` generated-data commits with V2 branch
-- [ ] Review final branch diff and remove temporary build/test artifacts
+- [ ] Review final branch diff for release-only files and generated data
 - [ ] Merge once into production
 - [ ] Verify GitHub Pages rendering on desktop and mobile after merge
 - [ ] Confirm first scheduled 8:00 AM production run succeeds
