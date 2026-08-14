@@ -2,7 +2,8 @@ name: Regulatory Tracking Station
 
 on:
   schedule:
-    - cron: "0 13,14 * * *"
+    - cron: "7 8 * * *"
+      timezone: "America/Chicago"
   workflow_dispatch: {}
 
 permissions:
@@ -16,43 +17,27 @@ jobs:
   run-tracker:
     runs-on: ubuntu-latest
     steps:
-      - name: Check Central Time schedule
-        id: time_gate
-        shell: bash
-        run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$(TZ=America/Chicago date +%H)" = "08" ]; then
-            echo "run=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "run=false" >> "$GITHUB_OUTPUT"
-          fi
-
       - name: Check out repo
-        if: steps.time_gate.outputs.run == 'true'
         uses: actions/checkout@v4
         with:
           persist-credentials: true
           fetch-depth: 0
 
       - name: Set up Python
-        if: steps.time_gate.outputs.run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
       - name: Install dependencies
-        if: steps.time_gate.outputs.run == 'true'
         run: pip install -r requirements.txt
 
       - name: Run semantic comparison tests
-        if: steps.time_gate.outputs.run == 'true'
         run: python -m unittest discover -s tests -p "test_*.py"
 
       - name: Validate V2 data contract
-        if: steps.time_gate.outputs.run == 'true'
         run: python tests/validate_v2_contract.py
 
       - name: Run NERC semantic tracker
-        if: steps.time_gate.outputs.run == 'true'
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
@@ -60,12 +45,10 @@ jobs:
         run: python nerc_tracker.py
 
       - name: Run FERC tracker
-        if: steps.time_gate.outputs.run == 'true'
         continue-on-error: true
         run: python ferc_tracker.py
 
       - name: Commit regulatory tracking data
-        if: steps.time_gate.outputs.run == 'true'
         run: |
           if [ -n "$(git status --porcelain)" ]; then
             git config user.name "github-actions[bot]"
