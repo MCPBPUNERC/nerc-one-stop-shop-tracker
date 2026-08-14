@@ -1,0 +1,21 @@
+{
+  "product": "BPU NERC Regulatory Control Room",
+  "subtitle": "Regulatory Intelligence Dashboard",
+  "entity_display": "McPherson Board of Public Utilities",
+  "registered_functions": ["GO", "GOP", "TO", "DP"],
+  "tracked_standards": ["CIP-002","CIP-003","CIP-012","CIP-013","CIP-014","COM-001","COM-002","EOP-004","EOP-005","EOP-011","EOP-012","FAC-001","FAC-002","FAC-003","FAC-008","IRO-001","IRO-010","MOD-025","MOD-026","MOD-027","MOD-031","MOD-032","NUC-001","PER-005","PER-006","PRC-002","PRC-004","PRC-005","PRC-006","PRC-008","PRC-010","PRC-011","PRC-012","PRC-017","PRC-019","PRC-023","PRC-024","PRC-025","PRC-026","PRC-027","PRC-028","PRC-029","PRC-030","TOP-001","TOP-003","TPL-007","VAR-002"],
+  "families": [
+    {"code":"CIP","name":"Critical Infrastructure Protection","standards":["CIP-002","CIP-003","CIP-012","CIP-013","CIP-014"]},
+    {"code":"COM","name":"Communications","standards":["COM-001","COM-002"]},
+    {"code":"EOP","name":"Emergency Preparedness & Operations","standards":["EOP-004","EOP-005","EOP-011","EOP-012"]},
+    {"code":"FAC","name":"Facilities","standards":["FAC-001","FAC-002","FAC-003","FAC-008"]},
+    {"code":"IRO","name":"Interconnection Reliability Operations","standards":["IRO-001","IRO-010"]},
+    {"code":"MOD","name":"Modeling, Data & Analysis","standards":["MOD-025","MOD-026","MOD-027","MOD-031","MOD-032"]},
+    {"code":"NUC","name":"Nuclear","standards":["NUC-001"]},
+    {"code":"PER","name":"Personnel Performance, Training & Qualifications","standards":["PER-005","PER-006"]},
+    {"code":"PRC","name":"Protection & Control","standards":["PRC-002","PRC-004","PRC-005","PRC-006","PRC-008","PRC-010","PRC-011","PRC-012","PRC-017","PRC-019","PRC-023","PRC-024","PRC-025","PRC-026","PRC-027","PRC-028","PRC-029","PRC-030"]},
+    {"code":"TOP","name":"Transmission Operations","standards":["TOP-001","TOP-003"]},
+    {"code":"TPL","name":"Transmission Planning","standards":["TPL-007"]},
+    {"code":"VAR","name":"Voltage & Reactive","standards":["VAR-002"]}
+  ]
+}

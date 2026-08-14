@@ -1,0 +1,11 @@
+{
+  "release": "2.0.0",
+  "product": "BPU NERC Regulatory Control Room",
+  "tracked_standards": 47,
+  "registered_functions": ["GO", "GOP", "TO", "DP"],
+  "cost_model": "$0 additional operating cost",
+  "primary_view": "NERC",
+  "secondary_view": "FERC",
+  "comparison": "semantic record-aware",
+  "public_source_only": true
+}

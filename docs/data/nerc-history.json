@@ -1,17 +1,16 @@
 [
   {
-    "date": "Aug 13, 2026 09:49 PM CT",
-    "total_changes": 5970,
-    "status_text": "Changes detected"
+    "date": "Aug 13, 2026 09:53 PM CT",
+    "tracked_changes": 0,
+    "other_changes": 0,
+    "high": 0,
+    "status_text": "No tracked changes"
   },
   {
-    "date": "Aug 09, 2026 08:53 AM CT",
-    "total_changes": 0,
-    "status_text": "No changes detected"
-  },
-  {
-    "date": "Aug 08, 2026 08:50 AM CT",
-    "total_changes": 5970,
-    "status_text": "Changes detected"
+    "date": "Aug 13, 2026 09:50 PM CT",
+    "tracked_changes": 0,
+    "other_changes": 0,
+    "high": 0,
+    "status_text": "Semantic baseline established"
   }
 ]

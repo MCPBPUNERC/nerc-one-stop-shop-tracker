@@ -8,10 +8,13 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: regulatory-tracker
+  cancel-in-progress: false
+
 jobs:
   run-tracker:
     runs-on: ubuntu-latest
-
     steps:
       - name: Check Central Time schedule
         id: time_gate
@@ -40,7 +43,15 @@ jobs:
         if: steps.time_gate.outputs.run == 'true'
         run: pip install -r requirements.txt
 
-      - name: Run NERC tracker
+      - name: Run semantic comparison tests
+        if: steps.time_gate.outputs.run == 'true'
+        run: python -m unittest discover -s tests -p "test_*.py"
+
+      - name: Validate V2 data contract
+        if: steps.time_gate.outputs.run == 'true'
+        run: python tests/validate_v2_contract.py
+
+      - name: Run NERC semantic tracker
         if: steps.time_gate.outputs.run == 'true'
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
@@ -50,6 +61,7 @@ jobs:
 
       - name: Run FERC tracker
         if: steps.time_gate.outputs.run == 'true'
+        continue-on-error: true
         run: python ferc_tracker.py
 
       - name: Commit regulatory tracking data
@@ -58,9 +70,9 @@ jobs:
           if [ -n "$(git status --porcelain)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add last_snapshot.xlsx docs/data/
-            git commit -m "Update NERC and FERC tracking data"
+            git add docs/data/ state/
+            git commit -m "Update regulatory control room data"
             git push
           else
-            echo "No files changed."
+            echo "No data files changed."
           fi

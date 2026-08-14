@@ -1,0 +1,37 @@
+name: Validate V2 Control Room
+
+on:
+  push:
+    branches: [v2-unified-control-room]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run semantic comparison tests
+        run: python -m unittest discover -s tests -p "test_*.py"
+
+      - name: Validate V2 data contract
+        run: python tests/validate_v2_contract.py
+
+      - name: Check Python syntax
+        run: python -m py_compile nerc_tracker.py ferc_tracker.py
+
+      - name: Check JavaScript syntax
+        run: node --check docs/app.js
