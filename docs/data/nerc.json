@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "status": "ok",
-  "message": "Semantic baseline established",
-  "checked_at": "2026-08-14T02:50:47.886602+00:00",
-  "checked_at_display": "Aug 13, 2026 09:50 PM",
+  "message": "No tracked changes",
+  "checked_at": "2026-08-14T02:53:14.331530+00:00",
+  "checked_at_display": "Aug 13, 2026 09:53 PM",
   "source_url": "https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx",
-  "baseline": true,
+  "baseline": false,
   "summary": {
     "tracked_standards": 47,
     "registered_functions": [
@@ -23,7 +23,7 @@
     "moderate": 0,
     "informational": 0
   },
-  "brief": "Version 2 established a record-aware NERC baseline across 656 records. Future checks compare records by identity instead of Excel row or cell position.",
+  "brief": "No semantic record changes were detected in the NERC workbook.",
   "changes": [],
   "other_changes": [],
   "changes_truncated": false,
@@ -594,6 +594,13 @@
     }
   ],
   "history": [
+    {
+      "date": "Aug 13, 2026 09:53 PM CT",
+      "tracked_changes": 0,
+      "other_changes": 0,
+      "high": 0,
+      "status_text": "No tracked changes"
+    },
     {
       "date": "Aug 13, 2026 09:50 PM CT",
       "tracked_changes": 0,
