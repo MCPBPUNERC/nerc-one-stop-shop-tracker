@@ -1,5 +1,5 @@
 import unittest
-from nerc_tracker import compare_records, severity
+from nerc_tracker import compare_records, severity_for
 
 def record(key="abc", row=10, standard="PRC-005", status="Inactive", tracked=True):
     return {
@@ -53,7 +53,7 @@ class SemanticComparisonTests(unittest.TestCase):
 
     def test_untracked_change_is_information_only(self):
         item = {"tracked":False,"field":"Status","old":"Inactive","new":"Mandatory Subject to Enforcement"}
-        self.assertEqual(severity(item),"info")
+        self.assertEqual(severity_for(item),"info")
 
 if __name__ == "__main__":
     unittest.main()
