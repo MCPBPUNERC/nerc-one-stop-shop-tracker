@@ -1,5 +1,5 @@
 {
-  "release": "2.0.0-rc3",
+  "release": "2.0.0",
   "product": "BPU NERC Regulatory Control Room",
   "tracked_standards": 47,
   "registered_functions": ["GO", "GOP", "TO", "DP"],
