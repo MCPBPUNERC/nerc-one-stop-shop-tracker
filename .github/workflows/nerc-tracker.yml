@@ -25,20 +25,32 @@ jobs:
           else
             echo "run=false" >> "$GITHUB_OUTPUT"
           fi
+
       - name: Check out repo
         if: steps.time_gate.outputs.run == 'true'
         uses: actions/checkout@v4
         with:
           persist-credentials: true
           fetch-depth: 0
+
       - name: Set up Python
         if: steps.time_gate.outputs.run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+
       - name: Install dependencies
         if: steps.time_gate.outputs.run == 'true'
         run: pip install -r requirements.txt
+
+      - name: Run semantic comparison tests
+        if: steps.time_gate.outputs.run == 'true'
+        run: python -m unittest discover -s tests -p "test_*.py"
+
+      - name: Validate V2 data contract
+        if: steps.time_gate.outputs.run == 'true'
+        run: python tests/validate_v2_contract.py
+
       - name: Run NERC semantic tracker
         if: steps.time_gate.outputs.run == 'true'
         env:
@@ -46,10 +58,12 @@ jobs:
           GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
           RECIPIENTS: ${{ secrets.RECIPIENTS }}
         run: python nerc_tracker.py
+
       - name: Run FERC tracker
         if: steps.time_gate.outputs.run == 'true'
         continue-on-error: true
         run: python ferc_tracker.py
+
       - name: Commit regulatory tracking data
         if: steps.time_gate.outputs.run == 'true'
         run: |
