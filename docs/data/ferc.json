@@ -1,0 +1,179 @@
+{
+  "status": "ok",
+  "checked_at": "2026-08-14T02:50:50.021101+00:00",
+  "checked_at_display": "Aug 13, 2026 09:50 PM",
+  "message": "Official FERC sources checked successfully.",
+  "summary": {
+    "items_checked": 12,
+    "new_items": 0,
+    "priority_items": 0,
+    "sources_checked": 2
+  },
+  "source_urls": [
+    "https://www.ferc.gov/news-events/news/news-releases-headlines",
+    "https://www.ferc.gov/electric-reliability"
+  ],
+  "new_items": [],
+  "items": [
+    {
+      "id": "https://www.ferc.gov/news-events/news/ferc-issues-notice-dispute-resolution-services-proceedings-pjm-governance-and",
+      "title": "FERC Issues Notice for Dispute Resolution Services Proceedings for PJM Governance and Stakeholder Processes",
+      "url": "https://www.ferc.gov/news-events/news/ferc-issues-notice-dispute-resolution-services-proceedings-pjm-governance-and",
+      "date": "August 10, 2026",
+      "type": "Headlines",
+      "categories": [
+        "Other FERC Activity"
+      ],
+      "score": 1,
+      "source": "FERC News Releases & Headlines"
+    },
+    {
+      "id": "https://www.ferc.gov/news-events/news/julyaugust-2026-highlights-ferc-insight",
+      "title": "July/August 2026 Highlights | FERC insight",
+      "url": "https://www.ferc.gov/news-events/news/julyaugust-2026-highlights-ferc-insight",
+      "date": "August 3, 2026",
+      "type": "Headlines",
+      "categories": [
+        "Other FERC Activity"
+      ],
+      "score": 1,
+      "source": "FERC News Releases & Headlines"
+    },
+    {
+      "id": "https://www.ferc.gov/news-events/news/decisions-notices?new=",
+      "title": "Decisions and Notices",
+      "url": "https://www.ferc.gov/news-events/news/decisions-notices?new=",
+      "date": "Date not listed",
+      "type": "Notices",
+      "categories": [
+        "Other FERC Activity"
+      ],
+      "score": 1,
+      "source": "FERC News Releases & Headlines"
+    },
+    {
+      "id": "https://www.ferc.gov/news-events/news/decisions-notices",
+      "title": "Decisions and Notices",
+      "url": "https://www.ferc.gov/news-events/news/decisions-notices",
+      "date": "Date not listed",
+      "type": "Notices",
+      "categories": [
+        "Other FERC Activity"
+      ],
+      "score": 1,
+      "source": "FERC News Releases & Headlines"
+    },
+    {
+      "id": "https://www.ferc.gov/news-events/news/summaries-july-2026-commission-meeting",
+      "title": "Summaries | July 2026 Commission Meeting",
+      "url": "https://www.ferc.gov/news-events/news/summaries-july-2026-commission-meeting",
+      "date": "July 16, 2026",
+      "type": "Headlines",
+      "categories": [
+        "Other FERC Activity"
+      ],
+      "score": 1,
+      "source": "FERC News Releases & Headlines"
+    },
+    {
+      "id": "https://www.ferc.gov/news-events/news/ferc-fast-tracks-reviews-accelerate-actions-hydropower-projects",
+      "title": "FERC Fast-Tracks Reviews to Accelerate Actions at Hydropower Projects",
+      "url": "https://www.ferc.gov/news-events/news/ferc-fast-tracks-reviews-accelerate-actions-hydropower-projects",
+      "date": "July 16, 2026",
+      "type": "News Releases",
+      "categories": [
+        "Other FERC Activity"
+      ],
+      "score": 1,
+      "source": "FERC News Releases & Headlines"
+    },
+    {
+      "id": "https://www.ferc.gov/news-events/news/ferc-orders-western-grid-operators-deliver-joint-report-grid-coordination",
+      "title": "FERC Orders Western Grid Operators to Deliver Joint Report on Grid Coordination",
+      "url": "https://www.ferc.gov/news-events/news/ferc-orders-western-grid-operators-deliver-joint-report-grid-coordination",
+      "date": "July 16, 2026",
+      "type": "News Releases",
+      "categories": [
+        "Generation / Transmission"
+      ],
+      "score": 1,
+      "source": "FERC News Releases & Headlines"
+    },
+    {
+      "id": "https://www.ferc.gov/news-events/news/ferc-issues-supplemental-notice-commission-led-technical-conference-pjm-governance",
+      "title": "FERC Issues Supplemental Notice for the Commission-Led Technical Conference on PJM Governance and Stakeholder Reforms",
+      "url": "https://www.ferc.gov/news-events/news/ferc-issues-supplemental-notice-commission-led-technical-conference-pjm-governance",
+      "date": "July 16, 2026",
+      "type": "Headlines",
+      "categories": [
+        "Other FERC Activity"
+      ],
+      "score": 1,
+      "source": "FERC News Releases & Headlines"
+    },
+    {
+      "id": "https://www.ferc.gov/news-events/news/ferc-staff-issues-notice-agenda-commission-led-technical-conference-pjm-governance",
+      "title": "FERC Staff Issues Notice & Agenda for the Commission-Led Technical Conference on PJM Governance and Stakeholder Reforms",
+      "url": "https://www.ferc.gov/news-events/news/ferc-staff-issues-notice-agenda-commission-led-technical-conference-pjm-governance",
+      "date": "July 2, 2026",
+      "type": "Headlines",
+      "categories": [
+        "Other FERC Activity"
+      ],
+      "score": 1,
+      "source": "FERC News Releases & Headlines"
+    },
+    {
+      "id": "https://www.ferc.gov/news-events/news/ferc-staff-issues-final-environmental-impact-statement-kosciusko-junction-pipeline",
+      "title": "FERC Staff Issues the Final Environmental Impact Statement for the Kosciusko Junction Pipeline Project (CP25-547-000, CP25-549-000)",
+      "url": "https://www.ferc.gov/news-events/news/ferc-staff-issues-final-environmental-impact-statement-kosciusko-junction-pipeline",
+      "date": "July 24, 2026",
+      "type": "Headlines",
+      "categories": [
+        "Other FERC Activity"
+      ],
+      "score": 1,
+      "source": "FERC News Releases & Headlines"
+    },
+    {
+      "id": "https://www.ferc.gov/news-events/news/ferc-invites-public-comment-following-pjm-governance-and-stakeholder-reforms",
+      "title": "FERC Invites Public Comment Following PJM Governance and Stakeholder Reforms Conference",
+      "url": "https://www.ferc.gov/news-events/news/ferc-invites-public-comment-following-pjm-governance-and-stakeholder-reforms",
+      "date": "July 30, 2026",
+      "type": "News Releases",
+      "categories": [
+        "Other FERC Activity"
+      ],
+      "score": 1,
+      "source": "FERC News Releases & Headlines"
+    },
+    {
+      "id": "https://www.ferc.gov/news-events/news/sunshine-notice-july-2026-commission-meeting",
+      "title": "Sunshine Notice | July 2026 Commission Meeting",
+      "url": "https://www.ferc.gov/news-events/news/sunshine-notice-july-2026-commission-meeting",
+      "date": "July 9, 2026",
+      "type": "Headlines",
+      "categories": [
+        "Other FERC Activity"
+      ],
+      "score": 1,
+      "source": "FERC News Releases & Headlines"
+    }
+  ],
+  "history": [
+    {
+      "date": "Aug 13, 2026 09:50 PM CT",
+      "new_items": 0,
+      "items_checked": 12,
+      "status_text": "0 new relevant items"
+    }
+  ],
+  "topics": [
+    "NERC / Reliability Standards",
+    "CIP / Cybersecurity",
+    "Extreme Weather",
+    "Generation / Transmission",
+    "SPP / Regional Markets",
+    "Kansas / Public Power"
+  ]
+}

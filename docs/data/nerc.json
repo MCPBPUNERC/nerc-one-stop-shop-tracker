@@ -1,19 +1,610 @@
 {
-  "status": "waiting",
-  "message": "Waiting for the first tracker run",
-  "checked_at": "Not yet checked",
-  "checked_at_display": "Not yet checked",
+  "schema_version": 2,
+  "status": "ok",
+  "message": "Semantic baseline established",
+  "checked_at": "2026-08-14T02:50:47.886602+00:00",
+  "checked_at_display": "Aug 13, 2026 09:50 PM",
+  "source_url": "https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx",
+  "baseline": true,
   "summary": {
-    "sheets_checked": 0,
-    "cells_reviewed": 0,
-    "total_changes": 0,
-    "added": 0,
-    "removed": 0,
-    "modified": 0
+    "tracked_standards": 47,
+    "registered_functions": [
+      "GO",
+      "GOP",
+      "TO",
+      "DP"
+    ],
+    "sheets_checked": 1,
+    "records_reviewed": 656,
+    "cells_reviewed": 7341,
+    "tracked_changes": 0,
+    "other_changes": 0,
+    "high": 0,
+    "moderate": 0,
+    "informational": 0
   },
-  "summary_text": "The dashboard is installed. Run the GitHub Action after merging to populate live NERC workbook results.",
+  "brief": "Version 2 established a record-aware NERC baseline across 656 records. Future checks compare records by identity instead of Excel row or cell position.",
   "changes": [],
+  "other_changes": [],
   "changes_truncated": false,
-  "sheets": [],
-  "history": []
+  "standards": [
+    {
+      "standard": "CIP-002",
+      "family": "CIP",
+      "record_count": 64,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "CIP-003",
+      "family": "CIP",
+      "record_count": 13,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "CIP-012",
+      "family": "CIP",
+      "record_count": 2,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "CIP-013",
+      "family": "CIP",
+      "record_count": 3,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "CIP-014",
+      "family": "CIP",
+      "record_count": 4,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "COM-001",
+      "family": "COM",
+      "record_count": 6,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "COM-002",
+      "family": "COM",
+      "record_count": 6,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "EOP-004",
+      "family": "EOP",
+      "record_count": 5,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "EOP-005",
+      "family": "EOP",
+      "record_count": 4,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "EOP-011",
+      "family": "EOP",
+      "record_count": 4,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "EOP-012",
+      "family": "EOP",
+      "record_count": 3,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "FAC-001",
+      "family": "FAC",
+      "record_count": 5,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "FAC-002",
+      "family": "FAC",
+      "record_count": 5,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "FAC-003",
+      "family": "FAC",
+      "record_count": 6,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "FAC-008",
+      "family": "FAC",
+      "record_count": 7,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "IRO-001",
+      "family": "IRO",
+      "record_count": 6,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "IRO-010",
+      "family": "IRO",
+      "record_count": 7,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "MOD-025",
+      "family": "MOD",
+      "record_count": 3,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "MOD-026",
+      "family": "MOD",
+      "record_count": 2,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "MOD-027",
+      "family": "MOD",
+      "record_count": 1,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "MOD-031",
+      "family": "MOD",
+      "record_count": 3,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "MOD-032",
+      "family": "MOD",
+      "record_count": 3,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "NUC-001",
+      "family": "NUC",
+      "record_count": 6,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "PER-005",
+      "family": "PER",
+      "record_count": 2,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "PER-006",
+      "family": "PER",
+      "record_count": 1,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "PRC-002",
+      "family": "PRC",
+      "record_count": 7,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "PRC-004",
+      "family": "PRC",
+      "record_count": 17,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "PRC-005",
+      "family": "PRC",
+      "record_count": 14,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "PRC-006",
+      "family": "PRC",
+      "record_count": 12,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "PRC-008",
+      "family": "PRC",
+      "record_count": 1,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "PRC-010",
+      "family": "PRC",
+      "record_count": 3,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "PRC-011",
+      "family": "PRC",
+      "record_count": 1,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "PRC-012",
+      "family": "PRC",
+      "record_count": 3,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "PRC-017",
+      "family": "PRC",
+      "record_count": 2,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "PRC-019",
+      "family": "PRC",
+      "record_count": 2,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "PRC-023",
+      "family": "PRC",
+      "record_count": 6,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "PRC-024",
+      "family": "PRC",
+      "record_count": 4,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "PRC-025",
+      "family": "PRC",
+      "record_count": 2,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "PRC-026",
+      "family": "PRC",
+      "record_count": 2,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "PRC-027",
+      "family": "PRC",
+      "record_count": 1,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "PRC-028",
+      "family": "PRC",
+      "record_count": 1,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "PRC-029",
+      "family": "PRC",
+      "record_count": 1,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "PRC-030",
+      "family": "PRC",
+      "record_count": 1,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "TOP-001",
+      "family": "TOP",
+      "record_count": 8,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "TOP-003",
+      "family": "TOP",
+      "record_count": 9,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "TPL-007",
+      "family": "TPL",
+      "record_count": 4,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    },
+    {
+      "standard": "VAR-002",
+      "family": "VAR",
+      "record_count": 10,
+      "changes": 0,
+      "high": 0,
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
+    }
+  ],
+  "families": [
+    {
+      "code": "CIP",
+      "name": "Critical Infrastructure Protection",
+      "standards": 5,
+      "changes": 0,
+      "high": 0
+    },
+    {
+      "code": "COM",
+      "name": "Communications",
+      "standards": 2,
+      "changes": 0,
+      "high": 0
+    },
+    {
+      "code": "EOP",
+      "name": "Emergency Preparedness & Operations",
+      "standards": 4,
+      "changes": 0,
+      "high": 0
+    },
+    {
+      "code": "FAC",
+      "name": "Facilities",
+      "standards": 4,
+      "changes": 0,
+      "high": 0
+    },
+    {
+      "code": "IRO",
+      "name": "Interconnection Reliability Operations",
+      "standards": 2,
+      "changes": 0,
+      "high": 0
+    },
+    {
+      "code": "MOD",
+      "name": "Modeling, Data & Analysis",
+      "standards": 5,
+      "changes": 0,
+      "high": 0
+    },
+    {
+      "code": "NUC",
+      "name": "Nuclear",
+      "standards": 1,
+      "changes": 0,
+      "high": 0
+    },
+    {
+      "code": "PER",
+      "name": "Personnel Performance, Training & Qualifications",
+      "standards": 2,
+      "changes": 0,
+      "high": 0
+    },
+    {
+      "code": "PRC",
+      "name": "Protection & Control",
+      "standards": 18,
+      "changes": 0,
+      "high": 0
+    },
+    {
+      "code": "TOP",
+      "name": "Transmission Operations",
+      "standards": 2,
+      "changes": 0,
+      "high": 0
+    },
+    {
+      "code": "TPL",
+      "name": "Transmission Planning",
+      "standards": 1,
+      "changes": 0,
+      "high": 0
+    },
+    {
+      "code": "VAR",
+      "name": "Voltage & Reactive",
+      "standards": 1,
+      "changes": 0,
+      "high": 0
+    }
+  ],
+  "sheets": [
+    {
+      "name": "One Stop Shop",
+      "rows": 657,
+      "columns": 17,
+      "records": 656
+    }
+  ],
+  "history": [
+    {
+      "date": "Aug 13, 2026 09:50 PM CT",
+      "tracked_changes": 0,
+      "other_changes": 0,
+      "high": 0,
+      "status_text": "Semantic baseline established"
+    }
+  ],
+  "health": {
+    "nerc_feed": "ok",
+    "semantic_compare": "ok",
+    "email": "ok"
+  }
 }
