@@ -26,12 +26,14 @@
 - [x] Verify FERC tracker runs and writes current data
 - [x] Reconcile current `main` generated-data history with V2 branch
 - [x] Remove temporary GitHub write-test artifact
+- [x] Preview V2 Control Room rendering before replacing production
+- [x] Review final branch diff and remove obsolete cell-based snapshot
+- [x] Finalize Version 2.0.0 release metadata
+- [x] Confirm no plaintext Gmail password is present in repository search
 
-## Before production merge
-- [ ] Preview V2 Control Room rendering before replacing production
-- [ ] Review final branch diff for release-only files and generated data
-- [ ] Merge once into production
-- [ ] Verify GitHub Pages rendering on desktop and mobile after merge
+## After production merge
+- [ ] Verify GitHub Pages rendering on desktop and mobile
 - [ ] Confirm first scheduled 8:00 AM production run succeeds
+- [ ] Confirm production email output remains correct
 
 No confidential registry, evidence, or operational information belongs in the public site.
