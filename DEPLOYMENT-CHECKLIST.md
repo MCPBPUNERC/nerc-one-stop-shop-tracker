@@ -14,16 +14,20 @@
 - [x] Daily workflow definition
 - [x] Unit tests for semantic comparison
 - [x] Data-contract validation
+- [x] Python and JavaScript syntax validation in GitHub Actions
 - [x] Public-source-only architecture
+- [x] Write core V2 files to `v2-unified-control-room`
+- [x] V2 branch validation workflow passes in GitHub Actions
 
 ## Before production merge
-- [ ] Write V2 files to `v2-unified-control-room`
-- [ ] Run workflow manually on the branch
+- [ ] Run tracker workflow manually on `v2-unified-control-room`
 - [ ] Confirm first run creates semantic baseline
 - [ ] Run a second scan and verify no row-shift false positives
 - [ ] Verify Gmail delivery to configured recipients
-- [ ] Verify GitHub Pages rendering on desktop and mobile
+- [ ] Inspect generated V2 dashboard data and standard-family counts
+- [ ] Verify GitHub Pages rendering after production merge
 - [ ] Review any genuine tracked-standard changes
+- [ ] Reconcile current `main` data commits with V2 branch
 - [ ] Merge once into production
 
 No confidential registry, evidence, or operational information belongs in the public site.
