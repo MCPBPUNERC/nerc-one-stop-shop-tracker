@@ -18,16 +18,19 @@
 - [x] Public-source-only architecture
 - [x] Write core V2 files to `v2-unified-control-room`
 - [x] V2 branch validation workflow passes in GitHub Actions
+- [x] Run tracker workflow manually on `v2-unified-control-room`
+- [x] Confirm first run creates semantic baseline (656 records)
+- [x] Run a second scan and verify no row-shift false positives
+- [x] Verify Gmail delivery and V2 message content
+- [x] Inspect generated V2 dashboard data and standard-family counts
+- [x] Verify FERC tracker runs and writes current data
 
 ## Before production merge
-- [ ] Run tracker workflow manually on `v2-unified-control-room`
-- [ ] Confirm first run creates semantic baseline
-- [ ] Run a second scan and verify no row-shift false positives
-- [ ] Verify Gmail delivery to configured recipients
-- [ ] Inspect generated V2 dashboard data and standard-family counts
-- [ ] Verify GitHub Pages rendering after production merge
-- [ ] Review any genuine tracked-standard changes
-- [ ] Reconcile current `main` data commits with V2 branch
+- [ ] Preview V2 Control Room rendering before replacing production
+- [ ] Reconcile current `main` generated-data commits with V2 branch
+- [ ] Review final branch diff and remove temporary build/test artifacts
 - [ ] Merge once into production
+- [ ] Verify GitHub Pages rendering on desktop and mobile after merge
+- [ ] Confirm first scheduled 8:00 AM production run succeeds
 
 No confidential registry, evidence, or operational information belongs in the public site.
