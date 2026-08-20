@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "status": "ok",
-  "message": "No tracked changes",
-  "checked_at": "2026-08-19T10:37:06.068655+00:00",
-  "checked_at_display": "Aug 19, 2026 05:37 AM",
+  "message": "Tracked changes detected",
+  "checked_at": "2026-08-20T10:38:56.097671+00:00",
+  "checked_at_display": "Aug 20, 2026 05:38 AM",
   "source_url": "https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx",
   "baseline": false,
   "summary": {
@@ -15,17 +15,91 @@
       "DP"
     ],
     "sheets_checked": 1,
-    "records_reviewed": 656,
-    "cells_reviewed": 7341,
-    "tracked_changes": 0,
-    "other_changes": 0,
-    "high": 0,
+    "records_reviewed": 657,
+    "cells_reviewed": 7352,
+    "tracked_changes": 3,
+    "other_changes": 3,
+    "high": 1,
     "moderate": 0,
-    "informational": 0
+    "informational": 2
   },
-  "brief": "No semantic record changes were detected in the NERC workbook.",
-  "changes": [],
-  "other_changes": [],
+  "brief": "3 changes affect BPU-tracked standards (1 high priority, 0 moderate). 3 additional changes were outside the tracked-standard list.",
+  "changes": [
+    {
+      "standard": "EOP-004",
+      "family": "EOP",
+      "sheet": "One Stop Shop",
+      "field": "FERC Orders (Issued Date)",
+      "old": "",
+      "new": "2026-08-10T00:00:00",
+      "type": "added",
+      "tracked": true,
+      "source_row": 201,
+      "severity": "informational"
+    },
+    {
+      "standard": "EOP-004",
+      "family": "EOP",
+      "sheet": "One Stop Shop",
+      "field": "Regulatory Order Effective Date",
+      "old": "",
+      "new": "2026-08-10T00:00:00",
+      "type": "added",
+      "tracked": true,
+      "source_row": 201,
+      "severity": "high"
+    },
+    {
+      "standard": "PRC-029",
+      "family": "PRC",
+      "sheet": "One Stop Shop",
+      "field": "Record",
+      "old": "Record absent",
+      "new": "Record added",
+      "type": "record_added",
+      "tracked": true,
+      "source_row": 543,
+      "severity": "informational"
+    }
+  ],
+  "other_changes": [
+    {
+      "standard": "CIP-015",
+      "family": "CIP",
+      "sheet": "One Stop Shop",
+      "field": "Effective Date of Standard",
+      "old": "",
+      "new": "2029-10-01T00:00:00",
+      "type": "added",
+      "tracked": false,
+      "source_row": 168,
+      "severity": "info"
+    },
+    {
+      "standard": "CIP-015",
+      "family": "CIP",
+      "sheet": "One Stop Shop",
+      "field": "Status",
+      "old": "Filed and Pending Regulatory Approval",
+      "new": "Subject to Future Enforcement",
+      "type": "modified",
+      "tracked": false,
+      "source_row": 168,
+      "severity": "info"
+    },
+    {
+      "standard": "CIP-015",
+      "family": "CIP",
+      "sheet": "One Stop Shop",
+      "field": "Inactive Date of Standard",
+      "old": "",
+      "new": "2029-09-30T00:00:00",
+      "type": "added",
+      "tracked": false,
+      "source_row": 167,
+      "severity": "info"
+    }
+  ],
   "changes_truncated": false,
   "standards": [
     {
@@ -102,11 +176,11 @@
       "standard": "EOP-004",
       "family": "EOP",
       "record_count": 5,
-      "changes": 0,
-      "high": 0,
+      "changes": 2,
+      "high": 1,
       "moderate": 0,
-      "informational": 0,
-      "status": "normal"
+      "informational": 1,
+      "status": "attention"
     },
     {
       "standard": "EOP-005",
@@ -441,12 +515,12 @@
     {
       "standard": "PRC-029",
       "family": "PRC",
-      "record_count": 1,
-      "changes": 0,
+      "record_count": 2,
+      "changes": 1,
       "high": 0,
       "moderate": 0,
-      "informational": 0,
-      "status": "normal"
+      "informational": 1,
+      "status": "changed"
     },
     {
       "standard": "PRC-030",
@@ -518,8 +592,8 @@
       "code": "EOP",
       "name": "Emergency Preparedness & Operations",
       "standards": 4,
-      "changes": 0,
-      "high": 0
+      "changes": 2,
+      "high": 1
     },
     {
       "code": "FAC",
@@ -560,7 +634,7 @@
       "code": "PRC",
       "name": "Protection & Control",
       "standards": 18,
-      "changes": 0,
+      "changes": 1,
       "high": 0
     },
     {
@@ -588,12 +662,19 @@
   "sheets": [
     {
       "name": "One Stop Shop",
-      "rows": 657,
+      "rows": 658,
       "columns": 17,
-      "records": 656
+      "records": 657
     }
   ],
   "history": [
+    {
+      "date": "Aug 20, 2026 05:38 AM CT",
+      "tracked_changes": 3,
+      "other_changes": 3,
+      "high": 1,
+      "status_text": "Tracked changes detected"
+    },
     {
       "date": "Aug 19, 2026 05:37 AM CT",
       "tracked_changes": 0,

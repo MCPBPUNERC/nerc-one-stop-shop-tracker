@@ -4297,6 +4297,7 @@
         "FERC Orders (Issued Date)": "2025-06-26T00:00:00",
         "Regulatory Order Effective Date": "2025-09-02T00:00:00",
         "Effective Date of Standard": "2028-10-01T00:00:00",
+        "Inactive Date of Standard": "2029-09-30T00:00:00",
         "Implementation Plan": "Implementation Plan",
         "Public Notes": "Filing/Order Docket No. RM24-7-000",
         "Project Page": "Project 2023-03",
@@ -4315,7 +4316,7 @@
       "family": "CIP",
       "tracked": false,
       "fields": {
-        "Status": "Filed and Pending Regulatory Approval",
+        "Status": "Subject to Future Enforcement",
         "Standard Number": "CIP-015-2",
         "Standard Title": "Cyber Security – Internal Network Security Monitoring",
         "Purpose": "To improve the probability of detecting anomalous or unauthorized network activity in order to facilitate improved response and recovery from an attack.",
@@ -4323,6 +4324,7 @@
         "Filing Date of Standard": "2026-06-18T00:00:00",
         "FERC Orders (Issued Date)": "2026-08-10T00:00:00",
         "Regulatory Order Effective Date": "2026-08-10T00:00:00",
+        "Effective Date of Standard": "2029-10-01T00:00:00",
         "Implementation Plan": "Implementation Plan",
         "Public Notes": "Filing/Order Docket No. RD26-6-000",
         "Project Page": "2025-02",
@@ -5131,6 +5133,8 @@
         "Purpose": "To improve the reliability of the Bulk Power System by requiring the reporting of events by Responsible Entities.",
         "Board Adopted Date": "2026-06-18T00:00:00",
         "Filing Date of Standard": "2026-06-26T00:00:00",
+        "FERC Orders (Issued Date)": "2026-08-10T00:00:00",
+        "Regulatory Order Effective Date": "2026-08-10T00:00:00",
         "Implementation Plan": "Implementation Plan",
         "Project Page": "2023-01",
         "Technical Rationale": "Technical Rationale"
@@ -13741,10 +13745,31 @@
       }
     },
     {
+      "key": "eaf5e62057a7ba4e193c",
+      "identity_text": "PRC-029|standard number=prc 029 2|standard title=frequency and voltage ride through requirements for inverter based resources|project page=2025 05",
+      "sheet": "One Stop Shop",
+      "source_row": 543,
+      "standards": [
+        "PRC-029"
+      ],
+      "standard": "PRC-029",
+      "family": "PRC",
+      "tracked": true,
+      "fields": {
+        "Status": "Pending Regulatory Filing",
+        "Standard Number": "PRC-029-2",
+        "Standard Title": "Frequency and Voltage Ride-through Requirements for Inverter-Based Resources",
+        "Purpose": "To ensure that Inverter-Based Resources Ride-through to support the Bulk Power System during and after defined frequency and voltage excursions.",
+        "Board Adopted Date": "2026-08-18T00:00:00",
+        "Implementation Plan": "Implementation Plan",
+        "Project Page": "2025-05"
+      }
+    },
+    {
       "key": "8ef1c364df31f9444ea9",
       "identity_text": "PRC-030|standard number=prc 030 1|standard title=unexpected inverter based resource event mitigation|project page=project 2023 02",
       "sheet": "One Stop Shop",
-      "source_row": 543,
+      "source_row": 544,
       "standards": [
         "PRC-030"
       ],
@@ -13773,7 +13798,7 @@
       "key": "a16165ef9584e5d6a6aa",
       "identity_text": "STD-001|standard number=prc std 001 1|standard title=certification of protective relay applications and settings wecc",
       "sheet": "One Stop Shop",
-      "source_row": 544,
+      "source_row": 545,
       "standards": [
         "STD-001"
       ],
@@ -13798,7 +13823,7 @@
       "key": "18c43d87c95c4585f24e",
       "identity_text": "STD-003|standard number=prc std 003 1|standard title=protective relay and remedial action scheme misoperation wecc",
       "sheet": "One Stop Shop",
-      "source_row": 545,
+      "source_row": 546,
       "standards": [
         "STD-003"
       ],
@@ -13823,7 +13848,7 @@
       "key": "fa53ecaf4b8c344f64cd",
       "identity_text": "STD-005|standard number=prc std 005 1|standard title=transmission maintenance wecc",
       "sheet": "One Stop Shop",
-      "source_row": 546,
+      "source_row": 547,
       "standards": [
         "STD-005"
       ],
@@ -13848,7 +13873,7 @@
       "key": "594dbff7025b55759f24",
       "identity_text": "TOP-001|standard number=top 001 0|standard title=reliability responsibilities and authorities",
       "sheet": "One Stop Shop",
-      "source_row": 547,
+      "source_row": 548,
       "standards": [
         "TOP-001"
       ],
@@ -13870,7 +13895,7 @@
       "key": "d7ae4026856cf6124c96",
       "identity_text": "TOP-001|standard number=top 001 1|standard title=reliability responsibilities and authorities",
       "sheet": "One Stop Shop",
-      "source_row": 548,
+      "source_row": 549,
       "standards": [
         "TOP-001"
       ],
@@ -13895,7 +13920,7 @@
       "key": "cdaea4e3b4a4fcfbfa74",
       "identity_text": "TOP-001|standard number=top 001 1a|standard title=reliability responsibilities and authorities|project page=project 2009 31",
       "sheet": "One Stop Shop",
-      "source_row": 549,
+      "source_row": 550,
       "standards": [
         "TOP-001"
       ],
@@ -13921,7 +13946,7 @@
       "key": "1714692687c3e25fd864",
       "identity_text": "TOP-001|standard number=top 001 2|standard title=transmission operations|project page=project 2007 03",
       "sheet": "One Stop Shop",
-      "source_row": 550,
+      "source_row": 551,
       "standards": [
         "TOP-001"
       ],
@@ -13944,7 +13969,7 @@
       "key": "c881aa7b2e9730f07249",
       "identity_text": "TOP-001|standard number=top 001 3|standard title=transmission operations|project page=project 2014 03",
       "sheet": "One Stop Shop",
-      "source_row": 551,
+      "source_row": 552,
       "standards": [
         "TOP-001"
       ],
@@ -13970,7 +13995,7 @@
       "key": "5af16baeb2b9f8c11e17",
       "identity_text": "TOP-001|standard number=top 001 4|standard title=transmission operations|project page=project 2016 01",
       "sheet": "One Stop Shop",
-      "source_row": 552,
+      "source_row": 553,
       "standards": [
         "TOP-001"
       ],
@@ -13996,7 +14021,7 @@
       "key": "8e46b42948c19c173646",
       "identity_text": "TOP-001|standard number=top 001 5|standard title=transmission operations|project page=project 2018 03",
       "sheet": "One Stop Shop",
-      "source_row": 553,
+      "source_row": 554,
       "standards": [
         "TOP-001"
       ],
@@ -14022,7 +14047,7 @@
       "key": "3d835697ae1209794bff",
       "identity_text": "TOP-001|standard number=top 001 6|standard title=transmission operations|project page=project 2015 09",
       "sheet": "One Stop Shop",
-      "source_row": 554,
+      "source_row": 555,
       "standards": [
         "TOP-001"
       ],
@@ -14050,7 +14075,7 @@
       "key": "6b79fa2e17c594e2ed7a",
       "identity_text": "TOP-002|standard number=top 002 0|standard title=normal operations planning",
       "sheet": "One Stop Shop",
-      "source_row": 555,
+      "source_row": 556,
       "standards": [
         "TOP-002"
       ],
@@ -14072,7 +14097,7 @@
       "key": "9a2a4d9c3db59e9e7375",
       "identity_text": "TOP-002|standard number=top 002 1|standard title=normal operations planning",
       "sheet": "One Stop Shop",
-      "source_row": 556,
+      "source_row": 557,
       "standards": [
         "TOP-002"
       ],
@@ -14093,7 +14118,7 @@
       "key": "77d9fdb7df6ce655b712",
       "identity_text": "TOP-002|standard number=top 002 2|standard title=normal operations planning",
       "sheet": "One Stop Shop",
-      "source_row": 557,
+      "source_row": 558,
       "standards": [
         "TOP-002"
       ],
@@ -14118,7 +14143,7 @@
       "key": "8bd4c05a162fe90339e1",
       "identity_text": "TOP-002|standard number=top 002 2 1b|standard title=normal operations planning|project page=project 2009 31",
       "sheet": "One Stop Shop",
-      "source_row": 558,
+      "source_row": 559,
       "standards": [
         "TOP-002"
       ],
@@ -14144,7 +14169,7 @@
       "key": "3d13e8cbd4b815790dde",
       "identity_text": "TOP-002|standard number=top 002 2a|standard title=normal operations planning",
       "sheet": "One Stop Shop",
-      "source_row": 559,
+      "source_row": 560,
       "standards": [
         "TOP-002"
       ],
@@ -14169,7 +14194,7 @@
       "key": "90a7cac020ece8639648",
       "identity_text": "TOP-002|standard number=top 002 2b|standard title=normal operations planning",
       "sheet": "One Stop Shop",
-      "source_row": 560,
+      "source_row": 561,
       "standards": [
         "TOP-002"
       ],
@@ -14194,7 +14219,7 @@
       "key": "786a119ce160ce8be982",
       "identity_text": "TOP-002|standard number=top 002 3|standard title=operations planning|project page=project 2007 03",
       "sheet": "One Stop Shop",
-      "source_row": 561,
+      "source_row": 562,
       "standards": [
         "TOP-002"
       ],
@@ -14217,7 +14242,7 @@
       "key": "5f6a4d5b8da3f68c638b",
       "identity_text": "TOP-002|standard number=top 002 4|standard title=operations planning|project page=project 2014 03",
       "sheet": "One Stop Shop",
-      "source_row": 562,
+      "source_row": 563,
       "standards": [
         "TOP-002"
       ],
@@ -14243,7 +14268,7 @@
       "key": "014dcff81e08c556ff21",
       "identity_text": "TOP-002|standard number=top 002 5|standard title=operations planning|project page=project 2021 07",
       "sheet": "One Stop Shop",
-      "source_row": 563,
+      "source_row": 564,
       "standards": [
         "TOP-002"
       ],
@@ -14271,7 +14296,7 @@
       "key": "b2cbd811a057745ae92f",
       "identity_text": "TOP-003|standard number=top 003 0|standard title=planned outage coordination",
       "sheet": "One Stop Shop",
-      "source_row": 564,
+      "source_row": 565,
       "standards": [
         "TOP-003"
       ],
@@ -14296,7 +14321,7 @@
       "key": "dc2586e9378042266fcb",
       "identity_text": "TOP-003|standard number=top 003 1|standard title=planned outage coordination|project page=irol",
       "sheet": "One Stop Shop",
-      "source_row": 565,
+      "source_row": 566,
       "standards": [
         "TOP-003"
       ],
@@ -14322,7 +14347,7 @@
       "key": "a0e7aeec06f9b6271647",
       "identity_text": "TOP-003|standard number=top 003 2|standard title=operational reliability data|project page=project 2007 03",
       "sheet": "One Stop Shop",
-      "source_row": 566,
+      "source_row": 567,
       "standards": [
         "TOP-003"
       ],
@@ -14345,7 +14370,7 @@
       "key": "ce2ff1e4bceaace52ad8",
       "identity_text": "TOP-003|standard number=top 003 3|standard title=operational reliability data|project page=project 2014 03",
       "sheet": "One Stop Shop",
-      "source_row": 567,
+      "source_row": 568,
       "standards": [
         "TOP-003"
       ],
@@ -14372,7 +14397,7 @@
       "key": "8365803b3bf16f5034bb",
       "identity_text": "TOP-003|standard number=top 003 4|standard title=operational reliability data|project page=project 2017 07",
       "sheet": "One Stop Shop",
-      "source_row": 568,
+      "source_row": 569,
       "standards": [
         "TOP-003"
       ],
@@ -14398,7 +14423,7 @@
       "key": "a63e35c175cb5ff86ccc",
       "identity_text": "TOP-003|standard number=top 003 5|standard title=operational reliability data|project page=project 2019 06",
       "sheet": "One Stop Shop",
-      "source_row": 569,
+      "source_row": 570,
       "standards": [
         "TOP-003"
       ],
@@ -14424,7 +14449,7 @@
       "key": "9b1e87d8638a1993f46f",
       "identity_text": "TOP-003|standard number=top 003 6 1|standard title=transmission operator and balancing authority data and information specification and collection|project page=project 2021 06",
       "sheet": "One Stop Shop",
-      "source_row": 570,
+      "source_row": 571,
       "standards": [
         "TOP-003"
       ],
@@ -14453,7 +14478,7 @@
       "key": "e73d165ebf3cd285f7b9",
       "identity_text": "TOP-003|standard number=top 003 7|standard title=transmission operator and balancing authority data and information specification and collection|project page=project 2022 03",
       "sheet": "One Stop Shop",
-      "source_row": 571,
+      "source_row": 572,
       "standards": [
         "TOP-003"
       ],
@@ -14482,7 +14507,7 @@
       "key": "e324aaf6fe981615bc32",
       "identity_text": "TOP-003|standard number=top 003 8|standard title=transmission operator and balancing authority data and information specification and collection|project page=project 2022 02",
       "sheet": "One Stop Shop",
-      "source_row": 572,
+      "source_row": 573,
       "standards": [
         "TOP-003"
       ],
@@ -14509,7 +14534,7 @@
       "key": "45b51a9668a23a20575b",
       "identity_text": "TOP-004|standard number=top 004 0|standard title=transmission operations",
       "sheet": "One Stop Shop",
-      "source_row": 573,
+      "source_row": 574,
       "standards": [
         "TOP-004"
       ],
@@ -14531,7 +14556,7 @@
       "key": "8a2cc020f0cb63765951",
       "identity_text": "TOP-004|standard number=top 004 1|standard title=transmission operations",
       "sheet": "One Stop Shop",
-      "source_row": 574,
+      "source_row": 575,
       "standards": [
         "TOP-004"
       ],
@@ -14556,7 +14581,7 @@
       "key": "72a56f021af6fe1f8db4",
       "identity_text": "TOP-004|standard number=top 004 2|standard title=transmission operations|project page=project 2007 03",
       "sheet": "One Stop Shop",
-      "source_row": 575,
+      "source_row": 576,
       "standards": [
         "TOP-004"
       ],
@@ -14581,7 +14606,7 @@
       "key": "d2ae70f99baef2d22139",
       "identity_text": "TOP-005|standard number=top 005 0|standard title=operational reliability information",
       "sheet": "One Stop Shop",
-      "source_row": 576,
+      "source_row": 577,
       "standards": [
         "TOP-005"
       ],
@@ -14602,7 +14627,7 @@
       "key": "a8e20791f4ba25d872c8",
       "identity_text": "TOP-005|standard number=top 005 1|standard title=operational reliability information",
       "sheet": "One Stop Shop",
-      "source_row": 577,
+      "source_row": 578,
       "standards": [
         "TOP-005"
       ],
@@ -14627,7 +14652,7 @@
       "key": "2546ac1b821155bb137a",
       "identity_text": "TOP-005|standard number=top 005 1 1|standard title=operational reliability information",
       "sheet": "One Stop Shop",
-      "source_row": 578,
+      "source_row": 579,
       "standards": [
         "TOP-005"
       ],
@@ -14652,7 +14677,7 @@
       "key": "4d84f7b22994bc6a2f90",
       "identity_text": "TOP-005|standard number=top 005 1 1a|standard title=operational reliability information",
       "sheet": "One Stop Shop",
-      "source_row": 579,
+      "source_row": 580,
       "standards": [
         "TOP-005"
       ],
@@ -14677,7 +14702,7 @@
       "key": "55a102534221c3fe46ff",
       "identity_text": "TOP-005|standard number=top 005 2|standard title=operational reliability information",
       "sheet": "One Stop Shop",
-      "source_row": 580,
+      "source_row": 581,
       "standards": [
         "TOP-005"
       ],
@@ -14701,7 +14726,7 @@
       "key": "42f0fbaf0310f4d3e87b",
       "identity_text": "TOP-005|standard number=top 005 2a|standard title=operational reliability information|project page=irol",
       "sheet": "One Stop Shop",
-      "source_row": 581,
+      "source_row": 582,
       "standards": [
         "TOP-005"
       ],
@@ -14727,7 +14752,7 @@
       "key": "d798e1ea4e8c345e7ddf",
       "identity_text": "TOP-005|standard number=top 005 3a|standard title=operational reliability information|project page=project 2010 05 2",
       "sheet": "One Stop Shop",
-      "source_row": 582,
+      "source_row": 583,
       "standards": [
         "TOP-005"
       ],
@@ -14749,7 +14774,7 @@
       "key": "80db4c1aa78fb10ac917",
       "identity_text": "TOP-006|standard number=top 006 0|standard title=monitoring system conditions",
       "sheet": "One Stop Shop",
-      "source_row": 583,
+      "source_row": 584,
       "standards": [
         "TOP-006"
       ],
@@ -14771,7 +14796,7 @@
       "key": "7bb0aece8b3a713edba0",
       "identity_text": "TOP-006|standard number=top 006 1|standard title=monitoring system conditions|project page=real time operations project 2007 03",
       "sheet": "One Stop Shop",
-      "source_row": 584,
+      "source_row": 585,
       "standards": [
         "TOP-006"
       ],
@@ -14797,7 +14822,7 @@
       "key": "db6d744d3754e303cc20",
       "identity_text": "TOP-006|standard number=top 006 2|standard title=monitoring system conditions|project page=project page",
       "sheet": "One Stop Shop",
-      "source_row": 585,
+      "source_row": 586,
       "standards": [
         "TOP-006"
       ],
@@ -14823,7 +14848,7 @@
       "key": "562009b0729e13ea63d1",
       "identity_text": "TOP-006|standard number=top 006 3|standard title=monitoring system conditions|project page=interpretation 2010 int 01 rapid revision of top 006 2 for fmpp",
       "sheet": "One Stop Shop",
-      "source_row": 586,
+      "source_row": 587,
       "standards": [
         "TOP-006"
       ],
@@ -14846,7 +14871,7 @@
       "key": "c438c14a40a755b062d6",
       "identity_text": "TOP-007|standard number=top 007 0|standard title=reporting system operating limit sol and interconnection reliability operating limit irol violations|project page=project 2007 03 real time transmission operations",
       "sheet": "One Stop Shop",
-      "source_row": 587,
+      "source_row": 588,
       "standards": [
         "TOP-007"
       ],
@@ -14872,7 +14897,7 @@
       "key": "30bceb99804031968d45",
       "identity_text": "TOP-007|standard number=top 007 wecc 1|standard title=system operating limits",
       "sheet": "One Stop Shop",
-      "source_row": 588,
+      "source_row": 589,
       "standards": [
         "TOP-007"
       ],
@@ -14897,7 +14922,7 @@
       "key": "4dd49c94a2edc1db606a",
       "identity_text": "TOP-007|standard number=top 007 wecc 1a|standard title=system operating limits|project page=wecc",
       "sheet": "One Stop Shop",
-      "source_row": 589,
+      "source_row": 590,
       "standards": [
         "TOP-007"
       ],
@@ -14923,7 +14948,7 @@
       "key": "edc1991a9d6580dfc115",
       "identity_text": "TOP-008|standard number=top 008 0|standard title=response to transmission limit violations|project page=real time operations project 2007 03",
       "sheet": "One Stop Shop",
-      "source_row": 590,
+      "source_row": 591,
       "standards": [
         "TOP-008"
       ],
@@ -14946,7 +14971,7 @@
       "key": "c6229683f4a539bc445a",
       "identity_text": "TOP-008|standard number=top 008 1|standard title=response to transmission limit violations",
       "sheet": "One Stop Shop",
-      "source_row": 591,
+      "source_row": 592,
       "standards": [
         "TOP-008"
       ],
@@ -14971,7 +14996,7 @@
       "key": "b00b1a67f83be8e1ed43",
       "identity_text": "TOP-010|standard number=top 010 1|standard title=real time reliability monitoring and analysis capabilities|project page=project 2009 02",
       "sheet": "One Stop Shop",
-      "source_row": 592,
+      "source_row": 593,
       "standards": [
         "TOP-010"
       ],
@@ -14996,7 +15021,7 @@
       "key": "96867945993a0ea7c546",
       "identity_text": "TOP-010|standard number=top 010 1 i|standard title=real time reliability monitoring and analysis capabilities|project page=project 2009 02",
       "sheet": "One Stop Shop",
-      "source_row": 593,
+      "source_row": 594,
       "standards": [
         "TOP-010"
       ],
@@ -15023,7 +15048,7 @@
       "key": "4a1dd1d231d25ef98df9",
       "identity_text": "STD-007|standard number=top std 007 0|standard title=operating transfer capability wecc",
       "sheet": "One Stop Shop",
-      "source_row": 594,
+      "source_row": 595,
       "standards": [
         "STD-007"
       ],
@@ -15048,7 +15073,7 @@
       "key": "cf4401bac31ed9faec9b",
       "identity_text": "TPL-001|standard number=tpl 001 0|standard title=system performance under normal no contingency conditions category a",
       "sheet": "One Stop Shop",
-      "source_row": 595,
+      "source_row": 596,
       "standards": [
         "TPL-001"
       ],
@@ -15073,7 +15098,7 @@
       "key": "c5140b8ba0edd6fbe5b6",
       "identity_text": "TPL-001|standard number=tpl 001 0 1|standard title=system performance under normal no contingency conditions category a|project page=000 version 0",
       "sheet": "One Stop Shop",
-      "source_row": 596,
+      "source_row": 597,
       "standards": [
         "TPL-001"
       ],
@@ -15099,7 +15124,7 @@
       "key": "ba6f9176168e8cf3c680",
       "identity_text": "TPL-001|standard number=tpl 001 0 1 i|standard title=system performance under normal no contingency conditions category a|project page=project 2010 05 2",
       "sheet": "One Stop Shop",
-      "source_row": 597,
+      "source_row": 598,
       "standards": [
         "TPL-001"
       ],
@@ -15124,7 +15149,7 @@
       "key": "ab49d1f9c79050994ec5",
       "identity_text": "TPL-001|standard number=tpl 001 1|standard title=system performance under normal no contingency conditions category a",
       "sheet": "One Stop Shop",
-      "source_row": 598,
+      "source_row": 599,
       "standards": [
         "TPL-001"
       ],
@@ -15148,7 +15173,7 @@
       "key": "72aa8d8a7341d81c591d",
       "identity_text": "TPL-001|standard number=tpl 001 2|standard title=transmission system planning performance requirements|project page=project page",
       "sheet": "One Stop Shop",
-      "source_row": 599,
+      "source_row": 600,
       "standards": [
         "TPL-001"
       ],
@@ -15171,7 +15196,7 @@
       "key": "1b38ee678c389bb343e9",
       "identity_text": "TPL-001|standard number=tpl 001 3|standard title=system performance under normal no contingency conditions category a|project page=project page",
       "sheet": "One Stop Shop",
-      "source_row": 600,
+      "source_row": 601,
       "standards": [
         "TPL-001"
       ],
@@ -15194,7 +15219,7 @@
       "key": "e43879196cc2e1ac0fdb",
       "identity_text": "TPL-001|standard number=tpl 001 4|standard title=transmission system planning performance requirements|project page=project 2010 11",
       "sheet": "One Stop Shop",
-      "source_row": 601,
+      "source_row": 602,
       "standards": [
         "TPL-001"
       ],
@@ -15220,7 +15245,7 @@
       "key": "3e04bb3ddfe3ec8b1aa3",
       "identity_text": "TPL-001|standard number=tpl 001 5|standard title=transmission system planning performance requirements|project page=project 2015 10",
       "sheet": "One Stop Shop",
-      "source_row": 602,
+      "source_row": 603,
       "standards": [
         "TPL-001"
       ],
@@ -15245,7 +15270,7 @@
       "key": "9c9335cf7e7a7542e017",
       "identity_text": "TPL-001|standard number=tpl 001 5 1|standard title=transmission system planning performance requirements|project page=project 2015 10",
       "sheet": "One Stop Shop",
-      "source_row": 603,
+      "source_row": 604,
       "standards": [
         "TPL-001"
       ],
@@ -15274,7 +15299,7 @@
       "key": "b27dc3adbb97ab4ca9a6",
       "identity_text": "TPL-002|standard number=tpl 002 0|standard title=system performance following loss of a single bulk electric system element category b|project page=project page",
       "sheet": "One Stop Shop",
-      "source_row": 604,
+      "source_row": 605,
       "standards": [
         "TPL-002"
       ],
@@ -15300,7 +15325,7 @@
       "key": "20a973e726da01b062ab",
       "identity_text": "TPL-002|standard number=tpl 002 0a|standard title=system performance following loss of a single bulk electric system element category b",
       "sheet": "One Stop Shop",
-      "source_row": 605,
+      "source_row": 606,
       "standards": [
         "TPL-002"
       ],
@@ -15325,7 +15350,7 @@
       "key": "06956cbeaab96b2303a4",
       "identity_text": "TPL-002|standard number=tpl 002 0b|standard title=system performance following loss of a single bulk electric system element category b|project page=project 2007 24",
       "sheet": "One Stop Shop",
-      "source_row": 606,
+      "source_row": 607,
       "standards": [
         "TPL-002"
       ],
@@ -15351,7 +15376,7 @@
       "key": "edf5c55f31577fa23354",
       "identity_text": "TPL-002|standard number=tpl 002 0 i b|standard title=system performance following loss of a single bulk electric system element category b|project page=project 2010 05 2",
       "sheet": "One Stop Shop",
-      "source_row": 607,
+      "source_row": 608,
       "standards": [
         "TPL-002"
       ],
@@ -15376,7 +15401,7 @@
       "key": "c7b87c6d26af5f18f787",
       "identity_text": "TPL-002|standard number=tpl 002 1b|standard title=system performance following loss of a single bulk electric system element category b|project page=project2010 11 tpl",
       "sheet": "One Stop Shop",
-      "source_row": 608,
+      "source_row": 609,
       "standards": [
         "TPL-002"
       ],
@@ -15401,7 +15426,7 @@
       "key": "89fc2593df5081d2a16a",
       "identity_text": "TPL-001,TPL-002|standard number=tpl 002 2b|standard title=system performance following loss of a single bulk electric system element category b|project page=project2010 11 tpl",
       "sheet": "One Stop Shop",
-      "source_row": 609,
+      "source_row": 610,
       "standards": [
         "TPL-001",
         "TPL-002"
@@ -15425,7 +15450,7 @@
       "key": "c5ad392978a4c364f486",
       "identity_text": "TPL-003|standard number=tpl 003 0|standard title=system performance following loss of two or more bulk electric system elements category c|project page=project 2010 05 2 special protection systems",
       "sheet": "One Stop Shop",
-      "source_row": 610,
+      "source_row": 611,
       "standards": [
         "TPL-003"
       ],
@@ -15451,7 +15476,7 @@
       "key": "3311b200345572e2111c",
       "identity_text": "TPL-003|standard number=tpl 003 0a|standard title=system performance following loss of two or more bulk electric system elements category c|project page=project 2010 05 2",
       "sheet": "One Stop Shop",
-      "source_row": 611,
+      "source_row": 612,
       "standards": [
         "TPL-003"
       ],
@@ -15477,7 +15502,7 @@
       "key": "2acb22d75d42651e9641",
       "identity_text": "TPL-003|standard number=tpl 003 0b|standard title=system performance following loss of two or more bulk electric system elements category c|project page=000 version 0",
       "sheet": "One Stop Shop",
-      "source_row": 612,
+      "source_row": 613,
       "standards": [
         "TPL-003"
       ],
@@ -15503,7 +15528,7 @@
       "key": "aa396d721d4bd19e2114",
       "identity_text": "TPL-003|standard number=tpl 003 0 i b|standard title=system performance following loss of two or more bulk electric system elements category c|project page=project 2010 05 2",
       "sheet": "One Stop Shop",
-      "source_row": 613,
+      "source_row": 614,
       "standards": [
         "TPL-003"
       ],
@@ -15528,7 +15553,7 @@
       "key": "16fdb107be0bc43ee692",
       "identity_text": "TPL-003|standard number=tpl 003 1a|standard title=system performance following loss of two or more bulk electric system elements category c|project page=project2010 11 tpl table 1",
       "sheet": "One Stop Shop",
-      "source_row": 614,
+      "source_row": 615,
       "standards": [
         "TPL-003"
       ],
@@ -15553,7 +15578,7 @@
       "key": "2ee0bb371f9e6671d7f7",
       "identity_text": "TPL-003|standard number=tpl 003 2a|standard title=system performance following loss of two or more bulk electric system elements category c|project page=project2010 11 tpl",
       "sheet": "One Stop Shop",
-      "source_row": 615,
+      "source_row": 616,
       "standards": [
         "TPL-003"
       ],
@@ -15576,7 +15601,7 @@
       "key": "e34c564af7e69bbe2129",
       "identity_text": "TPL-003|standard number=tpl 003 2b|standard title=system performance following loss of two or more bulk electric system elements category c|project page=project2010 11 tpl table",
       "sheet": "One Stop Shop",
-      "source_row": 616,
+      "source_row": 617,
       "standards": [
         "TPL-003"
       ],
@@ -15599,7 +15624,7 @@
       "key": "d08d6b91032b016ecd3b",
       "identity_text": "TPL-004|standard number=tpl 004 0|standard title=system performance following extreme events resulting in the loss of two or more bulk electric system elements category d|project page=version 0 reliability standards",
       "sheet": "One Stop Shop",
-      "source_row": 617,
+      "source_row": 618,
       "standards": [
         "TPL-004"
       ],
@@ -15625,7 +15650,7 @@
       "key": "a3c02b413123814d732a",
       "identity_text": "TPL-004|standard number=tpl 004 0a|standard title=system performance following extreme events resulting in the loss of two or more bulk electric system elements category d|project page=000 version 0",
       "sheet": "One Stop Shop",
-      "source_row": 618,
+      "source_row": 619,
       "standards": [
         "TPL-004"
       ],
@@ -15651,7 +15676,7 @@
       "key": "6052c39d85d4e14a9b38",
       "identity_text": "TPL-004|standard number=tpl 004 0 i a|standard title=system performance following extreme events resulting in the loss of two or more bulk electric system elements category d|project page=project 2010 05 2",
       "sheet": "One Stop Shop",
-      "source_row": 619,
+      "source_row": 620,
       "standards": [
         "TPL-004"
       ],
@@ -15676,7 +15701,7 @@
       "key": "74adf64e5789d57a7a6b",
       "identity_text": "TPL-004|standard number=tpl 004 1|standard title=system performance following extreme events resulting in the loss of two or more bulk electric system elements category d",
       "sheet": "One Stop Shop",
-      "source_row": 620,
+      "source_row": 621,
       "standards": [
         "TPL-004"
       ],
@@ -15700,7 +15725,7 @@
       "key": "f261b8106b8d82c1446c",
       "identity_text": "TPL-004|standard number=tpl 004 2|standard title=system performance following extreme events resulting in the loss of two or more bulk electric system elements category d",
       "sheet": "One Stop Shop",
-      "source_row": 621,
+      "source_row": 622,
       "standards": [
         "TPL-004"
       ],
@@ -15722,7 +15747,7 @@
       "key": "2237faa8d66560a90a45",
       "identity_text": "TPL-004|standard number=tpl 004 2a|standard title=system performance following extreme events resulting in the loss of two or more bulk electric system elements category d|project page=tpl 004 2a project page",
       "sheet": "One Stop Shop",
-      "source_row": 622,
+      "source_row": 623,
       "standards": [
         "TPL-004"
       ],
@@ -15745,7 +15770,7 @@
       "key": "12f9385eb8107e017fb8",
       "identity_text": "TPL-005|standard number=tpl 005 0|standard title=regional and interregional self assessment reliability reports|project page=version 0 reliability standards project page",
       "sheet": "One Stop Shop",
-      "source_row": 623,
+      "source_row": 624,
       "standards": [
         "TPL-005"
       ],
@@ -15768,7 +15793,7 @@
       "key": "e97e176098931f5e1809",
       "identity_text": "TPL-006|standard number=tpl 006 0|standard title=data from the regional reliability organization needed to assess reliability|project page=version 0 reliability standards project page",
       "sheet": "One Stop Shop",
-      "source_row": 624,
+      "source_row": 625,
       "standards": [
         "TPL-006"
       ],
@@ -15791,7 +15816,7 @@
       "key": "e28c6e1313c27b2edfd2",
       "identity_text": "TPL-006|standard number=tpl 006 0 1|standard title=data from the regional reliability organization needed to assess reliability|project page=reliability standards errata project page",
       "sheet": "One Stop Shop",
-      "source_row": 625,
+      "source_row": 626,
       "standards": [
         "TPL-006"
       ],
@@ -15813,7 +15838,7 @@
       "key": "2ca45f7d871605abe728",
       "identity_text": "TPL-007|standard number=tpl 007 1|standard title=transmission system planned performance for geomagnetic disturbance events|project page=project 2013 03",
       "sheet": "One Stop Shop",
-      "source_row": 626,
+      "source_row": 627,
       "standards": [
         "TPL-007"
       ],
@@ -15840,7 +15865,7 @@
       "key": "85ab74119811da0c6da6",
       "identity_text": "TPL-007|standard number=tpl 007 2|standard title=transmission system planned performance for geomagnetic disturbance events|project page=project 2013 03",
       "sheet": "One Stop Shop",
-      "source_row": 627,
+      "source_row": 628,
       "standards": [
         "TPL-007"
       ],
@@ -15867,7 +15892,7 @@
       "key": "5003c05ba6b6b369ed92",
       "identity_text": "TPL-007|standard number=tpl 007 3|standard title=transmission system planned performance for geomagnetic disturbance events|project page=project 2018 01",
       "sheet": "One Stop Shop",
-      "source_row": 628,
+      "source_row": 629,
       "standards": [
         "TPL-007"
       ],
@@ -15894,7 +15919,7 @@
       "key": "f0f099a9f02eed72b191",
       "identity_text": "TPL-007|standard number=tpl 007 4|standard title=transmission system planned performance for geomagnetic disturbance events|project page=project 2019 01",
       "sheet": "One Stop Shop",
-      "source_row": 629,
+      "source_row": 630,
       "standards": [
         "TPL-007"
       ],
@@ -15923,7 +15948,7 @@
       "key": "7c1f4e4185a13909ca06",
       "identity_text": "TPL-008|standard number=tpl 008 1|standard title=transmission system planning performance requirements for extreme temperature events|project page=project 2023 07",
       "sheet": "One Stop Shop",
-      "source_row": 630,
+      "source_row": 631,
       "standards": [
         "TPL-008"
       ],
@@ -15952,7 +15977,7 @@
       "key": "64c596669fe260b7bf49",
       "identity_text": "VAR-001|standard number=var 001 0|standard title=voltage and reactive control",
       "sheet": "One Stop Shop",
-      "source_row": 631,
+      "source_row": 632,
       "standards": [
         "VAR-001"
       ],
@@ -15974,7 +15999,7 @@
       "key": "38529ff3b3579ba1f775",
       "identity_text": "VAR-001|standard number=var 001 1|standard title=voltage and reactive control",
       "sheet": "One Stop Shop",
-      "source_row": 632,
+      "source_row": 633,
       "standards": [
         "VAR-001"
       ],
@@ -15999,7 +16024,7 @@
       "key": "09af215603110b8c8c7f",
       "identity_text": "VAR-001|standard number=var 001 1a|standard title=voltage and reactive control",
       "sheet": "One Stop Shop",
-      "source_row": 633,
+      "source_row": 634,
       "standards": [
         "VAR-001"
       ],
@@ -16020,7 +16045,7 @@
       "key": "253d6cc5bab97a0f3e3b",
       "identity_text": "VAR-001|standard number=var 001 2|standard title=voltage and reactive control|project page=project 2010 12",
       "sheet": "One Stop Shop",
-      "source_row": 634,
+      "source_row": 635,
       "standards": [
         "VAR-001"
       ],
@@ -16046,7 +16071,7 @@
       "key": "38a12af301c4d4c50b3a",
       "identity_text": "VAR-001|standard number=var 001 3|standard title=voltage and reactive control|project page=project 2010 12",
       "sheet": "One Stop Shop",
-      "source_row": 635,
+      "source_row": 636,
       "standards": [
         "VAR-001"
       ],
@@ -16072,7 +16097,7 @@
       "key": "4fa6b7b8aa11fc0153c5",
       "identity_text": "VAR-001|standard number=var 001 4|standard title=voltage and reactive control|project page=project 2013 04",
       "sheet": "One Stop Shop",
-      "source_row": 636,
+      "source_row": 637,
       "standards": [
         "VAR-001"
       ],
@@ -16098,7 +16123,7 @@
       "key": "bda9e765eeaeb85be841",
       "identity_text": "VAR-001|standard number=var 001 4 1|standard title=voltage and reactive control|project page=project 2013 04",
       "sheet": "One Stop Shop",
-      "source_row": 637,
+      "source_row": 638,
       "standards": [
         "VAR-001"
       ],
@@ -16124,7 +16149,7 @@
       "key": "5bf314b2cbf2953a3f2b",
       "identity_text": "VAR-001|standard number=var 001 4 2|standard title=voltage and reactive control|project page=project 2016 epr 02",
       "sheet": "One Stop Shop",
-      "source_row": 638,
+      "source_row": 639,
       "standards": [
         "VAR-001"
       ],
@@ -16150,7 +16175,7 @@
       "key": "762e6dcb1eb8269b622d",
       "identity_text": "VAR-001|standard number=var 001 5|standard title=voltage and reactive control|project page=wecc",
       "sheet": "One Stop Shop",
-      "source_row": 639,
+      "source_row": 640,
       "standards": [
         "VAR-001"
       ],
@@ -16176,7 +16201,7 @@
       "key": "bde132f9b4553a15820f",
       "identity_text": "VAR-001|standard number=var 001 6|standard title=voltage and reactive control|project page=project 2018 03",
       "sheet": "One Stop Shop",
-      "source_row": 640,
+      "source_row": 641,
       "standards": [
         "VAR-001"
       ],
@@ -16199,7 +16224,7 @@
       "key": "57725e2496b7f563f98f",
       "identity_text": "VAR-002|standard number=var 002 1|standard title=generator operation for maintaining network voltage schedules",
       "sheet": "One Stop Shop",
-      "source_row": 641,
+      "source_row": 642,
       "standards": [
         "VAR-002"
       ],
@@ -16224,7 +16249,7 @@
       "key": "84144251979a2b982ce9",
       "identity_text": "VAR-002|standard number=var 002 1 1a|standard title=generator operation for maintaining network voltage schedules",
       "sheet": "One Stop Shop",
-      "source_row": 642,
+      "source_row": 643,
       "standards": [
         "VAR-002"
       ],
@@ -16249,7 +16274,7 @@
       "key": "174fbc4612a6ffd25288",
       "identity_text": "VAR-002|standard number=var 002 1 1b|standard title=generator operation for maintaining network voltage schedules|project page=project 2008 11",
       "sheet": "One Stop Shop",
-      "source_row": 643,
+      "source_row": 644,
       "standards": [
         "VAR-002"
       ],
@@ -16275,7 +16300,7 @@
       "key": "80511f98311da575cc34",
       "identity_text": "VAR-002|standard number=var 002 1a|standard title=generator operation for maintaining network voltage schedules",
       "sheet": "One Stop Shop",
-      "source_row": 644,
+      "source_row": 645,
       "standards": [
         "VAR-002"
       ],
@@ -16300,7 +16325,7 @@
       "key": "76a1cb94f280f5755d5f",
       "identity_text": "VAR-002|standard number=var 002 2b|standard title=generator operation for maintaining network voltage schedules|project page=project 2011 int 02",
       "sheet": "One Stop Shop",
-      "source_row": 645,
+      "source_row": 646,
       "standards": [
         "VAR-002"
       ],
@@ -16326,7 +16351,7 @@
       "key": "665e5c69cfbdf95f2ff5",
       "identity_text": "VAR-002|standard number=var 002 3|standard title=generator operation for maintaining network voltage schedules|project page=project 2013 04",
       "sheet": "One Stop Shop",
-      "source_row": 646,
+      "source_row": 647,
       "standards": [
         "VAR-002"
       ],
@@ -16352,7 +16377,7 @@
       "key": "c57829bf4588698463d0",
       "identity_text": "VAR-002|standard number=var 002 4|standard title=generator operation for maintaining network voltage schedules|project page=project 2014 01",
       "sheet": "One Stop Shop",
-      "source_row": 647,
+      "source_row": 648,
       "standards": [
         "VAR-002"
       ],
@@ -16378,7 +16403,7 @@
       "key": "abc21f3255423ce2a2ac",
       "identity_text": "VAR-002|standard number=var 002 4 1|standard title=generator operation for maintaining network voltage schedules|project page=project 2016 epr 02",
       "sheet": "One Stop Shop",
-      "source_row": 648,
+      "source_row": 649,
       "standards": [
         "VAR-002"
       ],
@@ -16405,7 +16430,7 @@
       "key": "2f1aa86e807ac9dc5c72",
       "identity_text": "VAR-002|standard number=var 002 wecc 1|standard title=automatic voltage regulators avr|project page=wecc",
       "sheet": "One Stop Shop",
-      "source_row": 649,
+      "source_row": 650,
       "standards": [
         "VAR-002"
       ],
@@ -16431,7 +16456,7 @@
       "key": "4a4a24ff0fc1df5b94d4",
       "identity_text": "VAR-002|standard number=var 002 wecc 2|standard title=automatic voltage regulators avr|project page=wecc",
       "sheet": "One Stop Shop",
-      "source_row": 650,
+      "source_row": 651,
       "standards": [
         "VAR-002"
       ],
@@ -16457,7 +16482,7 @@
       "key": "13469005eba8675416ab",
       "identity_text": "VAR-501|standard number=var 501 wecc 1|standard title=power system stabilizer pss|project page=wecc",
       "sheet": "One Stop Shop",
-      "source_row": 651,
+      "source_row": 652,
       "standards": [
         "VAR-501"
       ],
@@ -16483,7 +16508,7 @@
       "key": "a4a3b98aea306c665208",
       "identity_text": "VAR-501|standard number=var 501 wecc 2|standard title=power system stabilizer pss|project page=wecc",
       "sheet": "One Stop Shop",
-      "source_row": 652,
+      "source_row": 653,
       "standards": [
         "VAR-501"
       ],
@@ -16509,7 +16534,7 @@
       "key": "bd43d60fbb3175ad5943",
       "identity_text": "VAR-501|standard number=var 501 wecc 3|standard title=power system stabilizer pss|project page=regional reliability standards under development",
       "sheet": "One Stop Shop",
-      "source_row": 653,
+      "source_row": 654,
       "standards": [
         "VAR-501"
       ],
@@ -16535,7 +16560,7 @@
       "key": "b97d45b5171861e72c27",
       "identity_text": "VAR-501|standard number=var 501 wecc 3 1|standard title=power system stabilizer pss|project page=wecc",
       "sheet": "One Stop Shop",
-      "source_row": 654,
+      "source_row": 655,
       "standards": [
         "VAR-501"
       ],
@@ -16561,7 +16586,7 @@
       "key": "2111be2b6d606f706823",
       "identity_text": "VAR-501|standard number=var 501 wecc 4|standard title=power system stabilizer pss|project page=wecc",
       "sheet": "One Stop Shop",
-      "source_row": 655,
+      "source_row": 656,
       "standards": [
         "VAR-501"
       ],
@@ -16587,7 +16612,7 @@
       "key": "04486b459359e2fd48eb",
       "identity_text": "VAR-501|standard number=var std 002a 1|standard title=automatic voltage regulators wecc",
       "sheet": "One Stop Shop",
-      "source_row": 656,
+      "source_row": 657,
       "standards": [
         "VAR-501"
       ],
@@ -16612,7 +16637,7 @@
       "key": "1829e5a9fc4711fef692",
       "identity_text": "VAR-501|standard number=var std 002b 1|standard title=power system stabilizer wecc",
       "sheet": "One Stop Shop",
-      "source_row": 657,
+      "source_row": 658,
       "standards": [
         "VAR-501"
       ],
