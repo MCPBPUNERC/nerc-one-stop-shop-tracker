@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "status": "ok",
-  "message": "Tracked changes detected",
-  "checked_at": "2026-08-20T10:38:56.097671+00:00",
-  "checked_at_display": "Aug 20, 2026 05:38 AM",
+  "message": "No tracked changes",
+  "checked_at": "2026-08-21T10:37:59.644307+00:00",
+  "checked_at_display": "Aug 21, 2026 05:37 AM",
   "source_url": "https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx",
   "baseline": false,
   "summary": {
@@ -17,89 +17,15 @@
     "sheets_checked": 1,
     "records_reviewed": 657,
     "cells_reviewed": 7352,
-    "tracked_changes": 3,
-    "other_changes": 3,
-    "high": 1,
+    "tracked_changes": 0,
+    "other_changes": 0,
+    "high": 0,
     "moderate": 0,
-    "informational": 2
+    "informational": 0
   },
-  "brief": "3 changes affect BPU-tracked standards (1 high priority, 0 moderate). 3 additional changes were outside the tracked-standard list.",
-  "changes": [
-    {
-      "standard": "EOP-004",
-      "family": "EOP",
-      "sheet": "One Stop Shop",
-      "field": "FERC Orders (Issued Date)",
-      "old": "",
-      "new": "2026-08-10T00:00:00",
-      "type": "added",
-      "tracked": true,
-      "source_row": 201,
-      "severity": "informational"
-    },
-    {
-      "standard": "EOP-004",
-      "family": "EOP",
-      "sheet": "One Stop Shop",
-      "field": "Regulatory Order Effective Date",
-      "old": "",
-      "new": "2026-08-10T00:00:00",
-      "type": "added",
-      "tracked": true,
-      "source_row": 201,
-      "severity": "high"
-    },
-    {
-      "standard": "PRC-029",
-      "family": "PRC",
-      "sheet": "One Stop Shop",
-      "field": "Record",
-      "old": "Record absent",
-      "new": "Record added",
-      "type": "record_added",
-      "tracked": true,
-      "source_row": 543,
-      "severity": "informational"
-    }
-  ],
-  "other_changes": [
-    {
-      "standard": "CIP-015",
-      "family": "CIP",
-      "sheet": "One Stop Shop",
-      "field": "Effective Date of Standard",
-      "old": "",
-      "new": "2029-10-01T00:00:00",
-      "type": "added",
-      "tracked": false,
-      "source_row": 168,
-      "severity": "info"
-    },
-    {
-      "standard": "CIP-015",
-      "family": "CIP",
-      "sheet": "One Stop Shop",
-      "field": "Status",
-      "old": "Filed and Pending Regulatory Approval",
-      "new": "Subject to Future Enforcement",
-      "type": "modified",
-      "tracked": false,
-      "source_row": 168,
-      "severity": "info"
-    },
-    {
-      "standard": "CIP-015",
-      "family": "CIP",
-      "sheet": "One Stop Shop",
-      "field": "Inactive Date of Standard",
-      "old": "",
-      "new": "2029-09-30T00:00:00",
-      "type": "added",
-      "tracked": false,
-      "source_row": 167,
-      "severity": "info"
-    }
-  ],
+  "brief": "No semantic record changes were detected in the NERC workbook.",
+  "changes": [],
+  "other_changes": [],
   "changes_truncated": false,
   "standards": [
     {
@@ -176,11 +102,11 @@
       "standard": "EOP-004",
       "family": "EOP",
       "record_count": 5,
-      "changes": 2,
-      "high": 1,
+      "changes": 0,
+      "high": 0,
       "moderate": 0,
-      "informational": 1,
-      "status": "attention"
+      "informational": 0,
+      "status": "normal"
     },
     {
       "standard": "EOP-005",
@@ -516,11 +442,11 @@
       "standard": "PRC-029",
       "family": "PRC",
       "record_count": 2,
-      "changes": 1,
+      "changes": 0,
       "high": 0,
       "moderate": 0,
-      "informational": 1,
-      "status": "changed"
+      "informational": 0,
+      "status": "normal"
     },
     {
       "standard": "PRC-030",
@@ -592,8 +518,8 @@
       "code": "EOP",
       "name": "Emergency Preparedness & Operations",
       "standards": 4,
-      "changes": 2,
-      "high": 1
+      "changes": 0,
+      "high": 0
     },
     {
       "code": "FAC",
@@ -634,7 +560,7 @@
       "code": "PRC",
       "name": "Protection & Control",
       "standards": 18,
-      "changes": 1,
+      "changes": 0,
       "high": 0
     },
     {
@@ -668,6 +594,13 @@
     }
   ],
   "history": [
+    {
+      "date": "Aug 21, 2026 05:37 AM CT",
+      "tracked_changes": 0,
+      "other_changes": 0,
+      "high": 0,
+      "status_text": "No tracked changes"
+    },
     {
       "date": "Aug 20, 2026 05:38 AM CT",
       "tracked_changes": 3,
