@@ -4,6 +4,14 @@ on:
   schedule:
     - cron: "7 5 * * *"
       timezone: "America/Chicago"
+    - cron: "37 5 * * *"
+      timezone: "America/Chicago"
+    - cron: "7 6 * * *"
+      timezone: "America/Chicago"
+    - cron: "37 6 * * *"
+      timezone: "America/Chicago"
+    - cron: "7 7 * * *"
+      timezone: "America/Chicago"
   workflow_dispatch: {}
 
 permissions:
@@ -23,21 +31,67 @@ jobs:
           persist-credentials: true
           fetch-depth: 0
 
+      - name: Decide whether today's scan is still needed
+        id: freshness
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            echo "Manual run requested."
+            exit 0
+          fi
+
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          from datetime import datetime
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+
+          today = datetime.now(ZoneInfo("America/Chicago")).date()
+          path = Path("docs/data/nerc.json")
+
+          should_run = True
+          reason = "No prior NERC data found for today."
+
+          if path.exists():
+              try:
+                  data = json.loads(path.read_text(encoding="utf-8"))
+                  raw = data.get("checked_at")
+                  if raw:
+                      checked = datetime.fromisoformat(raw.replace("Z", "+00:00")).astimezone(ZoneInfo("America/Chicago"))
+                      if checked.date() == today:
+                          should_run = False
+                          reason = f"Today's NERC scan already completed at {checked:%I:%M %p CT}."
+              except Exception as exc:
+                  reason = f"Freshness check could not read prior data ({exc}); running as fail-safe."
+
+          print(f"should_run={'true' if should_run else 'false'}")
+          print(f"reason={reason}")
+          PY
+
+      - name: Freshness decision
+        run: echo "${{ steps.freshness.outputs.reason }}"
+
       - name: Set up Python
+        if: steps.freshness.outputs.should_run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
       - name: Install dependencies
+        if: steps.freshness.outputs.should_run == 'true'
         run: pip install -r requirements.txt
 
       - name: Run semantic comparison tests
+        if: steps.freshness.outputs.should_run == 'true'
         run: python -m unittest discover -s tests -p "test_*.py"
 
       - name: Validate V2 data contract
+        if: steps.freshness.outputs.should_run == 'true'
         run: python tests/validate_v2_contract.py
 
       - name: Run NERC semantic tracker
+        if: steps.freshness.outputs.should_run == 'true'
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
@@ -45,10 +99,12 @@ jobs:
         run: python nerc_tracker.py
 
       - name: Run FERC tracker
+        if: steps.freshness.outputs.should_run == 'true'
         continue-on-error: true
         run: python ferc_tracker.py
 
       - name: Commit regulatory tracking data
+        if: steps.freshness.outputs.should_run == 'true'
         run: |
           if [ -n "$(git status --porcelain)" ]; then
             git config user.name "github-actions[bot]"
