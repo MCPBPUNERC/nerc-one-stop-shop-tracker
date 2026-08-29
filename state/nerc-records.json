@@ -13756,11 +13756,12 @@
       "family": "PRC",
       "tracked": true,
       "fields": {
-        "Status": "Pending Regulatory Filing",
+        "Status": "Filed and Pending Regulatory Approval",
         "Standard Number": "PRC-029-2",
         "Standard Title": "Frequency and Voltage Ride-through Requirements for Inverter-Based Resources",
         "Purpose": "To ensure that Inverter-Based Resources Ride-through to support the Bulk Power System during and after defined frequency and voltage excursions.",
         "Board Adopted Date": "2026-08-18T00:00:00",
+        "Filing Date of Standard": "2026-08-28T00:00:00",
         "Implementation Plan": "Implementation Plan",
         "Project Page": "2025-05"
       }

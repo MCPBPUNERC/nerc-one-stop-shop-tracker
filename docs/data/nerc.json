@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "status": "ok",
-  "message": "No tracked changes",
-  "checked_at": "2026-08-28T21:10:02.363653+00:00",
-  "checked_at_display": "Aug 28, 2026 04:10 PM",
+  "message": "Tracked changes detected",
+  "checked_at": "2026-08-29T14:59:43.964593+00:00",
+  "checked_at_display": "Aug 29, 2026 09:59 AM",
   "source_url": "https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx",
   "baseline": false,
   "summary": {
@@ -16,15 +16,40 @@
     ],
     "sheets_checked": 1,
     "records_reviewed": 657,
-    "cells_reviewed": 7352,
-    "tracked_changes": 0,
+    "cells_reviewed": 7353,
+    "tracked_changes": 2,
     "other_changes": 0,
     "high": 0,
-    "moderate": 0,
-    "informational": 0
+    "moderate": 1,
+    "informational": 1
   },
-  "brief": "No semantic record changes were detected in the NERC workbook.",
-  "changes": [],
+  "brief": "2 changes affect BPU-tracked standards (0 high priority, 1 moderate). 0 additional changes were outside the tracked-standard list.",
+  "changes": [
+    {
+      "standard": "PRC-029",
+      "family": "PRC",
+      "sheet": "One Stop Shop",
+      "field": "Filing Date of Standard",
+      "old": "",
+      "new": "2026-08-28T00:00:00",
+      "type": "added",
+      "tracked": true,
+      "source_row": 543,
+      "severity": "informational"
+    },
+    {
+      "standard": "PRC-029",
+      "family": "PRC",
+      "sheet": "One Stop Shop",
+      "field": "Status",
+      "old": "Pending Regulatory Filing",
+      "new": "Filed and Pending Regulatory Approval",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 543,
+      "severity": "moderate"
+    }
+  ],
   "other_changes": [],
   "changes_truncated": false,
   "standards": [
@@ -442,11 +467,11 @@
       "standard": "PRC-029",
       "family": "PRC",
       "record_count": 2,
-      "changes": 0,
+      "changes": 2,
       "high": 0,
-      "moderate": 0,
-      "informational": 0,
-      "status": "normal"
+      "moderate": 1,
+      "informational": 1,
+      "status": "changed"
     },
     {
       "standard": "PRC-030",
@@ -560,7 +585,7 @@
       "code": "PRC",
       "name": "Protection & Control",
       "standards": 18,
-      "changes": 0,
+      "changes": 2,
       "high": 0
     },
     {
@@ -594,6 +619,13 @@
     }
   ],
   "history": [
+    {
+      "date": "Aug 29, 2026 09:59 AM CT",
+      "tracked_changes": 2,
+      "other_changes": 0,
+      "high": 0,
+      "status_text": "Tracked changes detected"
+    },
     {
       "date": "Aug 28, 2026 04:10 PM CT",
       "tracked_changes": 0,
