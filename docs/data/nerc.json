@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "status": "ok",
-  "message": "No tracked changes",
-  "checked_at": "2026-09-09T14:23:24.991202+00:00",
-  "checked_at_display": "Sep 09, 2026 09:23 AM",
+  "message": "Tracked changes detected",
+  "checked_at": "2026-09-10T14:16:02.625772+00:00",
+  "checked_at_display": "Sep 10, 2026 09:16 AM",
   "source_url": "https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx",
   "baseline": false,
   "summary": {
@@ -16,15 +16,52 @@
     ],
     "sheets_checked": 1,
     "records_reviewed": 657,
-    "cells_reviewed": 7353,
-    "tracked_changes": 0,
+    "cells_reviewed": 7355,
+    "tracked_changes": 3,
     "other_changes": 0,
-    "high": 0,
+    "high": 3,
     "moderate": 0,
     "informational": 0
   },
-  "brief": "No semantic record changes were detected in the NERC workbook.",
-  "changes": [],
+  "brief": "3 changes affect BPU-tracked standards (3 high priority, 0 moderate). 0 additional changes were outside the tracked-standard list.",
+  "changes": [
+    {
+      "standard": "EOP-004",
+      "family": "EOP",
+      "sheet": "One Stop Shop",
+      "field": "Effective Date of Standard",
+      "old": "",
+      "new": "2027-10-01T00:00:00",
+      "type": "added",
+      "tracked": true,
+      "source_row": 201,
+      "severity": "high"
+    },
+    {
+      "standard": "EOP-004",
+      "family": "EOP",
+      "sheet": "One Stop Shop",
+      "field": "Status",
+      "old": "Filed and Pending Regulatory Approval",
+      "new": "Subject to Future Enforcement",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 201,
+      "severity": "high"
+    },
+    {
+      "standard": "EOP-004",
+      "family": "EOP",
+      "sheet": "One Stop Shop",
+      "field": "Inactive Date of Standard",
+      "old": "",
+      "new": "2027-09-30T00:00:00",
+      "type": "added",
+      "tracked": true,
+      "source_row": 200,
+      "severity": "high"
+    }
+  ],
   "other_changes": [],
   "changes_truncated": false,
   "standards": [
@@ -102,11 +139,11 @@
       "standard": "EOP-004",
       "family": "EOP",
       "record_count": 5,
-      "changes": 0,
-      "high": 0,
+      "changes": 3,
+      "high": 3,
       "moderate": 0,
       "informational": 0,
-      "status": "normal"
+      "status": "attention"
     },
     {
       "standard": "EOP-005",
@@ -518,8 +555,8 @@
       "code": "EOP",
       "name": "Emergency Preparedness & Operations",
       "standards": 4,
-      "changes": 0,
-      "high": 0
+      "changes": 3,
+      "high": 3
     },
     {
       "code": "FAC",
@@ -594,6 +631,13 @@
     }
   ],
   "history": [
+    {
+      "date": "Sep 10, 2026 09:16 AM CT",
+      "tracked_changes": 3,
+      "other_changes": 0,
+      "high": 3,
+      "status_text": "Tracked changes detected"
+    },
     {
       "date": "Sep 09, 2026 09:23 AM CT",
       "tracked_changes": 0,

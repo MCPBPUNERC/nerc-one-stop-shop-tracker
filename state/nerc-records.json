@@ -5109,6 +5109,7 @@
         "FERC Orders (Issued Date)": "2018-01-18T00:00:00",
         "Regulatory Order Effective Date": "2018-03-26T00:00:00",
         "Effective Date of Standard": "2019-04-01T00:00:00",
+        "Inactive Date of Standard": "2027-09-30T00:00:00",
         "Implementation Plan": "Implementation Plan",
         "Public Notes": "Filing/Order Docket No. RM17-12-000",
         "Project Page": "Project 2015-08",
@@ -5127,7 +5128,7 @@
       "family": "EOP",
       "tracked": true,
       "fields": {
-        "Status": "Filed and Pending Regulatory Approval",
+        "Status": "Subject to Future Enforcement",
         "Standard Number": "EOP-004-5",
         "Standard Title": "Event Reporting",
         "Purpose": "To improve the reliability of the Bulk Power System by requiring the reporting of events by Responsible Entities.",
@@ -5135,6 +5136,7 @@
         "Filing Date of Standard": "2026-06-26T00:00:00",
         "FERC Orders (Issued Date)": "2026-08-10T00:00:00",
         "Regulatory Order Effective Date": "2026-08-10T00:00:00",
+        "Effective Date of Standard": "2027-10-01T00:00:00",
         "Implementation Plan": "Implementation Plan",
         "Project Page": "2023-01",
         "Technical Rationale": "Technical Rationale"
