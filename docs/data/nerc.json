@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "status": "ok",
-  "message": "No tracked changes",
-  "checked_at": "2026-09-11T14:16:07.729702+00:00",
-  "checked_at_display": "Sep 11, 2026 09:16 AM",
+  "message": "Tracked changes detected",
+  "checked_at": "2026-09-12T13:31:21.799670+00:00",
+  "checked_at_display": "Sep 12, 2026 08:31 AM",
   "source_url": "https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx",
   "baseline": false,
   "summary": {
@@ -16,37 +16,435 @@
     ],
     "sheets_checked": 1,
     "records_reviewed": 657,
-    "cells_reviewed": 7355,
-    "tracked_changes": 0,
-    "other_changes": 0,
-    "high": 0,
+    "cells_reviewed": 7362,
+    "tracked_changes": 29,
+    "other_changes": 4,
+    "high": 10,
     "moderate": 0,
-    "informational": 0
+    "informational": 19
   },
-  "brief": "No semantic record changes were detected in the NERC workbook.",
-  "changes": [],
-  "other_changes": [],
+  "brief": "29 changes affect BPU-tracked standards (10 high priority, 0 moderate). 4 additional changes were outside the tracked-standard list.",
+  "changes": [
+    {
+      "standard": "IRO-010",
+      "family": "IRO",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RD26-1-000",
+      "new": "Docket No. RD26-1-000",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 353,
+      "severity": "informational"
+    },
+    {
+      "standard": "PRC-002",
+      "family": "PRC",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RD25-2-000",
+      "new": "Docket No. RD25-2-000",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 451,
+      "severity": "informational"
+    },
+    {
+      "standard": "CIP-014",
+      "family": "CIP",
+      "sheet": "One Stop Shop",
+      "field": "Effective Date of Standard",
+      "old": "",
+      "new": "2028-10-01T00:00:00",
+      "type": "added",
+      "tracked": true,
+      "source_row": 166,
+      "severity": "high"
+    },
+    {
+      "standard": "CIP-014",
+      "family": "CIP",
+      "sheet": "One Stop Shop",
+      "field": "FERC Orders (Issued Date)",
+      "old": "",
+      "new": "2026-09-10T00:00:00",
+      "type": "added",
+      "tracked": true,
+      "source_row": 166,
+      "severity": "informational"
+    },
+    {
+      "standard": "CIP-014",
+      "family": "CIP",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "",
+      "new": "Docket No. RD26-9-000",
+      "type": "added",
+      "tracked": true,
+      "source_row": 166,
+      "severity": "informational"
+    },
+    {
+      "standard": "CIP-014",
+      "family": "CIP",
+      "sheet": "One Stop Shop",
+      "field": "Regulatory Order Effective Date",
+      "old": "",
+      "new": "2026-09-10T00:00:00",
+      "type": "added",
+      "tracked": true,
+      "source_row": 166,
+      "severity": "high"
+    },
+    {
+      "standard": "CIP-014",
+      "family": "CIP",
+      "sheet": "One Stop Shop",
+      "field": "Status",
+      "old": "Filed and Pending Regulatory Approval",
+      "new": "Subject to Future Enforcement",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 166,
+      "severity": "high"
+    },
+    {
+      "standard": "TOP-003",
+      "family": "TOP",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RD25-5-000",
+      "new": "Docket No. RD25-5-000",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 572,
+      "severity": "informational"
+    },
+    {
+      "standard": "PRC-028",
+      "family": "PRC",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RD25-2-000",
+      "new": "Docket No. RD25-2-000",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 541,
+      "severity": "informational"
+    },
+    {
+      "standard": "CIP-002",
+      "family": "CIP",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RM25-8-000",
+      "new": "Docket No. RM25-8-000",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 66,
+      "severity": "informational"
+    },
+    {
+      "standard": "IRO-010",
+      "family": "IRO",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RD23-6-000",
+      "new": "Docket No. RD23-6-000",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 352,
+      "severity": "informational"
+    },
+    {
+      "standard": "EOP-012",
+      "family": "EOP",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RD24-5-000",
+      "new": "Docket No. RD24-5-000",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 221,
+      "severity": "informational"
+    },
+    {
+      "standard": "CIP-003",
+      "family": "CIP",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RM24-8-000",
+      "new": "Docket No. RM24-8-000",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 68,
+      "severity": "informational"
+    },
+    {
+      "standard": "FAC-002",
+      "family": "FAC",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RD22-5-000 See Implementation Plan for additional compliance information",
+      "new": "Docket No. RD22-5-000 See Implementation Plan for additional compliance information",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 232,
+      "severity": "high"
+    },
+    {
+      "standard": "CIP-002",
+      "family": "CIP",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Approved/superseded by CIP-002-8 Filing/Order Docket No. RM24-8-000",
+      "new": "Approved/superseded by CIP-002-8 Docket No. RM24-8-000",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 65,
+      "severity": "informational"
+    },
+    {
+      "standard": "MOD-032",
+      "family": "MOD",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RD26-1-000 Additional Effective Date Details Requirements R2, R3, and R4 - April 1, 2029 Entities shall not be required to comply with Requirements R2, R3, and R4 relating to revised Planning Coordinator and Transmission Planner data requirements and reporting procedures developed under MOD-032-2 Requirement R1 and Attachment 1 until 12 months after the effective date of Reliability Standard MOD-032-2. During the phased-in compliance period, entities shall continue to comply with Requirements R2, R3, and R4 related to Planning Coordinator / Transmission Planner data requirements and reporting procedures developed under MOD-032-1 Requirement R1 and Attachment 1 unless they are compliant with revised Planning Coordinator / Transmission Planner data requirements and reporting procedures under Reliability Standard MOD-032-2 Requirement R1.",
+      "new": "Docket No. RD26-1-000 Additional Effective Date Details Requirements R2, R3, and R4 - April 1, 2029 Entities shall not be required to comply with Requirements R2, R3, and R4 relating to revised Planning Coordinator and Transmission Planner data requirements and reporting procedures developed under MOD-032-2 Requirement R1 and Attachment 1 until 12 months after the effective date of Reliability Standard MOD-032-2. During the phased-in compliance period, entities shall continue to comply with Requirements R2, R3, and R4 related to Planning Coordinator / Transmission Planner data requirements and reporting procedures developed under MOD-032-1 Requirement R1 and Attachment 1 unless they are compliant with revised Planning Coordinator / Transmission Planner data requirements and reporting procedures under Reliability Standard MOD-032-2 Requirement R1.",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 417,
+      "severity": "high"
+    },
+    {
+      "standard": "TOP-003",
+      "family": "TOP",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RD26-1-000",
+      "new": "Docket No. RD26-1-000",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 573,
+      "severity": "informational"
+    },
+    {
+      "standard": "MOD-032",
+      "family": "MOD",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RD14-5-000 Please see the implementation plan for specific compliance dates and timeframes.",
+      "new": "Docket No. RD14-5-000 Please see the implementation plan for specific compliance dates and timeframes.",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 416,
+      "severity": "high"
+    },
+    {
+      "standard": "EOP-012",
+      "family": "EOP",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RD25-7-000",
+      "new": "Docket No. RD25-7-000",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 222,
+      "severity": "informational"
+    },
+    {
+      "standard": "MOD-026",
+      "family": "MOD",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RD26-3-000 Additional Effective Date Details Requirements R1 and R7 - April 1, 2027 Entities shall not be required to comply with Requirement R1 relating to the jointly developed dynamic model requirements between the Planning Coordinator and Transmission Planner and Requirement R7 relating to the provision of the current (in-use) models until twelve (12) months after the effective date of the Reliability Standard MOD-026-2. Requirements R2, R3, R4, R5, and R6 - April 1, 2029 Entities shall not be required to comply with Requirements R2, R3, R4, R5, and R6 until thirty-six (36) months after the effective date of Reliability Standard MOD-026-2. See the Implementation Plan for additional information on Initial Performance Dates for periodic requirements, newly commissioned and newly applicable facilities, and early compliance.",
+      "new": "Docket No. RD26-3-000 Additional Effective Date Details Requirements R1 and R7 - April 1, 2027 Entities shall not be required to comply with Requirement R1 relating to the jointly developed dynamic model requirements between the Planning Coordinator and Transmission Planner and Requirement R7 relating to the provision of the current (in-use) models until twelve (12) months after the effective date of the Reliability Standard MOD-026-2. Requirements R2, R3, R4, R5, and R6 - April 1, 2029 Entities shall not be required to comply with Requirements R2, R3, R4, R5, and R6 until thirty-six (36) months after the effective date of Reliability Standard MOD-026-2. See the Implementation Plan for additional information on Initial Performance Dates for periodic requirements, newly commissioned and newly applicable facilities, and early compliance.",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 403,
+      "severity": "high"
+    },
+    {
+      "standard": "FAC-001",
+      "family": "FAC",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RD22-5-000 See Implementation Plan for additional compliance information",
+      "new": "Docket No. RD22-5-000 See Implementation Plan for additional compliance information",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 227,
+      "severity": "high"
+    },
+    {
+      "standard": "CIP-003",
+      "family": "CIP",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RD23-3-000",
+      "new": "Docket No. RD23-3-000",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 79,
+      "severity": "informational"
+    },
+    {
+      "standard": "TOP-003",
+      "family": "TOP",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RD23-6-000",
+      "new": "Docket No. RD23-6-000",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 571,
+      "severity": "informational"
+    },
+    {
+      "standard": "CIP-014",
+      "family": "CIP",
+      "sheet": "One Stop Shop",
+      "field": "Inactive Date of Standard",
+      "old": "",
+      "new": "2028-09-30T00:00:00",
+      "type": "added",
+      "tracked": true,
+      "source_row": 165,
+      "severity": "high"
+    },
+    {
+      "standard": "CIP-003",
+      "family": "CIP",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RM25-8-000",
+      "new": "Docket No. RM25-8-000",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 69,
+      "severity": "informational"
+    },
+    {
+      "standard": "EOP-004",
+      "family": "EOP",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "",
+      "new": "Docket No. RD26-8-000",
+      "type": "added",
+      "tracked": true,
+      "source_row": 201,
+      "severity": "informational"
+    },
+    {
+      "standard": "PRC-030",
+      "family": "PRC",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RD25-3-000 See Implementation Plan for more effective/compliance date information",
+      "new": "Docket No. RD25-3-000 See Implementation Plan for more effective/compliance date information",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 544,
+      "severity": "high"
+    },
+    {
+      "standard": "PRC-024",
+      "family": "PRC",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RD20-7-000",
+      "new": "Docket No. RD20-7-000",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 534,
+      "severity": "informational"
+    },
+    {
+      "standard": "PRC-029",
+      "family": "PRC",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "",
+      "new": "Docket No. RD26-10-000",
+      "type": "added",
+      "tracked": true,
+      "source_row": 543,
+      "severity": "informational"
+    }
+  ],
+  "other_changes": [
+    {
+      "standard": "BAL-007",
+      "family": "BAL",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RD26-4-000 Replaces BAL-007-1 (Errata)",
+      "new": "Docket No. RD26-4-000 Replaces BAL-007-1 (Errata)",
+      "type": "modified",
+      "tracked": false,
+      "source_row": 44,
+      "severity": "info"
+    },
+    {
+      "standard": "CIP-015",
+      "family": "CIP",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RD26-6-000",
+      "new": "Docket No. RD26-6-000",
+      "type": "modified",
+      "tracked": false,
+      "source_row": 168,
+      "severity": "info"
+    },
+    {
+      "standard": "MOD-033",
+      "family": "MOD",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RD26-2-000",
+      "new": "Docket No. RD26-2-000",
+      "type": "modified",
+      "tracked": false,
+      "source_row": 420,
+      "severity": "info"
+    },
+    {
+      "standard": "CIP-015",
+      "family": "CIP",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RM24-7-000",
+      "new": "Docket No. RM24-7-000",
+      "type": "modified",
+      "tracked": false,
+      "source_row": 167,
+      "severity": "info"
+    }
+  ],
   "changes_truncated": false,
   "standards": [
     {
       "standard": "CIP-002",
       "family": "CIP",
       "record_count": 64,
-      "changes": 0,
+      "changes": 2,
       "high": 0,
       "moderate": 0,
-      "informational": 0,
-      "status": "normal"
+      "informational": 2,
+      "status": "changed"
     },
     {
       "standard": "CIP-003",
       "family": "CIP",
       "record_count": 13,
-      "changes": 0,
+      "changes": 3,
       "high": 0,
       "moderate": 0,
-      "informational": 0,
-      "status": "normal"
+      "informational": 3,
+      "status": "changed"
     },
     {
       "standard": "CIP-012",
@@ -72,11 +470,11 @@
       "standard": "CIP-014",
       "family": "CIP",
       "record_count": 4,
-      "changes": 0,
-      "high": 0,
+      "changes": 6,
+      "high": 4,
       "moderate": 0,
-      "informational": 0,
-      "status": "normal"
+      "informational": 2,
+      "status": "attention"
     },
     {
       "standard": "COM-001",
@@ -102,11 +500,11 @@
       "standard": "EOP-004",
       "family": "EOP",
       "record_count": 5,
-      "changes": 0,
+      "changes": 1,
       "high": 0,
       "moderate": 0,
-      "informational": 0,
-      "status": "normal"
+      "informational": 1,
+      "status": "changed"
     },
     {
       "standard": "EOP-005",
@@ -132,31 +530,31 @@
       "standard": "EOP-012",
       "family": "EOP",
       "record_count": 3,
-      "changes": 0,
+      "changes": 2,
       "high": 0,
       "moderate": 0,
-      "informational": 0,
-      "status": "normal"
+      "informational": 2,
+      "status": "changed"
     },
     {
       "standard": "FAC-001",
       "family": "FAC",
       "record_count": 5,
-      "changes": 0,
-      "high": 0,
+      "changes": 1,
+      "high": 1,
       "moderate": 0,
       "informational": 0,
-      "status": "normal"
+      "status": "attention"
     },
     {
       "standard": "FAC-002",
       "family": "FAC",
       "record_count": 5,
-      "changes": 0,
-      "high": 0,
+      "changes": 1,
+      "high": 1,
       "moderate": 0,
       "informational": 0,
-      "status": "normal"
+      "status": "attention"
     },
     {
       "standard": "FAC-003",
@@ -192,11 +590,11 @@
       "standard": "IRO-010",
       "family": "IRO",
       "record_count": 7,
-      "changes": 0,
+      "changes": 2,
       "high": 0,
       "moderate": 0,
-      "informational": 0,
-      "status": "normal"
+      "informational": 2,
+      "status": "changed"
     },
     {
       "standard": "MOD-025",
@@ -212,11 +610,11 @@
       "standard": "MOD-026",
       "family": "MOD",
       "record_count": 2,
-      "changes": 0,
-      "high": 0,
+      "changes": 1,
+      "high": 1,
       "moderate": 0,
       "informational": 0,
-      "status": "normal"
+      "status": "attention"
     },
     {
       "standard": "MOD-027",
@@ -242,11 +640,11 @@
       "standard": "MOD-032",
       "family": "MOD",
       "record_count": 3,
-      "changes": 0,
-      "high": 0,
+      "changes": 2,
+      "high": 2,
       "moderate": 0,
       "informational": 0,
-      "status": "normal"
+      "status": "attention"
     },
     {
       "standard": "NUC-001",
@@ -282,11 +680,11 @@
       "standard": "PRC-002",
       "family": "PRC",
       "record_count": 7,
-      "changes": 0,
+      "changes": 1,
       "high": 0,
       "moderate": 0,
-      "informational": 0,
-      "status": "normal"
+      "informational": 1,
+      "status": "changed"
     },
     {
       "standard": "PRC-004",
@@ -392,11 +790,11 @@
       "standard": "PRC-024",
       "family": "PRC",
       "record_count": 4,
-      "changes": 0,
+      "changes": 1,
       "high": 0,
       "moderate": 0,
-      "informational": 0,
-      "status": "normal"
+      "informational": 1,
+      "status": "changed"
     },
     {
       "standard": "PRC-025",
@@ -432,31 +830,31 @@
       "standard": "PRC-028",
       "family": "PRC",
       "record_count": 1,
-      "changes": 0,
+      "changes": 1,
       "high": 0,
       "moderate": 0,
-      "informational": 0,
-      "status": "normal"
+      "informational": 1,
+      "status": "changed"
     },
     {
       "standard": "PRC-029",
       "family": "PRC",
       "record_count": 2,
-      "changes": 0,
+      "changes": 1,
       "high": 0,
       "moderate": 0,
-      "informational": 0,
-      "status": "normal"
+      "informational": 1,
+      "status": "changed"
     },
     {
       "standard": "PRC-030",
       "family": "PRC",
       "record_count": 1,
-      "changes": 0,
-      "high": 0,
+      "changes": 1,
+      "high": 1,
       "moderate": 0,
       "informational": 0,
-      "status": "normal"
+      "status": "attention"
     },
     {
       "standard": "TOP-001",
@@ -472,11 +870,11 @@
       "standard": "TOP-003",
       "family": "TOP",
       "record_count": 9,
-      "changes": 0,
+      "changes": 3,
       "high": 0,
       "moderate": 0,
-      "informational": 0,
-      "status": "normal"
+      "informational": 3,
+      "status": "changed"
     },
     {
       "standard": "TPL-007",
@@ -504,8 +902,8 @@
       "code": "CIP",
       "name": "Critical Infrastructure Protection",
       "standards": 5,
-      "changes": 0,
-      "high": 0
+      "changes": 11,
+      "high": 4
     },
     {
       "code": "COM",
@@ -518,29 +916,29 @@
       "code": "EOP",
       "name": "Emergency Preparedness & Operations",
       "standards": 4,
-      "changes": 0,
+      "changes": 3,
       "high": 0
     },
     {
       "code": "FAC",
       "name": "Facilities",
       "standards": 4,
-      "changes": 0,
-      "high": 0
+      "changes": 2,
+      "high": 2
     },
     {
       "code": "IRO",
       "name": "Interconnection Reliability Operations",
       "standards": 2,
-      "changes": 0,
+      "changes": 2,
       "high": 0
     },
     {
       "code": "MOD",
       "name": "Modeling, Data & Analysis",
       "standards": 5,
-      "changes": 0,
-      "high": 0
+      "changes": 3,
+      "high": 3
     },
     {
       "code": "NUC",
@@ -560,14 +958,14 @@
       "code": "PRC",
       "name": "Protection & Control",
       "standards": 18,
-      "changes": 0,
-      "high": 0
+      "changes": 5,
+      "high": 1
     },
     {
       "code": "TOP",
       "name": "Transmission Operations",
       "standards": 2,
-      "changes": 0,
+      "changes": 3,
       "high": 0
     },
     {
@@ -594,6 +992,13 @@
     }
   ],
   "history": [
+    {
+      "date": "Sep 12, 2026 08:31 AM CT",
+      "tracked_changes": 29,
+      "other_changes": 4,
+      "high": 10,
+      "status_text": "Tracked changes detected"
+    },
     {
       "date": "Sep 11, 2026 09:16 AM CT",
       "tracked_changes": 0,

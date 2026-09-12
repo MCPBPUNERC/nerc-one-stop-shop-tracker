@@ -1,5 +1,12 @@
 [
   {
+    "date": "Sep 12, 2026 08:31 AM CT",
+    "tracked_changes": 29,
+    "other_changes": 4,
+    "high": 10,
+    "status_text": "Tracked changes detected"
+  },
+  {
     "date": "Sep 11, 2026 09:16 AM CT",
     "tracked_changes": 0,
     "other_changes": 0,

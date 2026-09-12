@@ -1084,7 +1084,7 @@
         "Regulatory Order Effective Date": "2026-03-26T00:00:00",
         "Effective Date of Standard": "2027-04-01T00:00:00",
         "Implementation Plan": "Implementation Plan",
-        "Public Notes": "Filing/Order Docket No. RD26-4-000 Replaces BAL-007-1 (Errata)",
+        "Public Notes": "Docket No. RD26-4-000 Replaces BAL-007-1 (Errata)",
         "Project Page": "Project 2022-03",
         "Technical Rationale": "Technical Rationale"
       }
@@ -1600,7 +1600,7 @@
         "Regulatory Order Effective Date": "2026-03-19T00:00:00",
         "Effective Date of Standard": "2028-07-01T00:00:00",
         "Implementation Plan": "Implementation Plan",
-        "Public Notes": "Approved/superseded by CIP-002-8 Filing/Order Docket No. RM24-8-000",
+        "Public Notes": "Approved/superseded by CIP-002-8 Docket No. RM24-8-000",
         "Project Page": "Project 2016-02",
         "RSAW": "RSAW",
         "Technical Rationale": "Technical Rationale"
@@ -1628,7 +1628,7 @@
         "Regulatory Order Effective Date": "2026-05-26T00:00:00",
         "Effective Date of Standard": "2028-07-01T00:00:00",
         "Implementation Plan": "Implementation Plan",
-        "Public Notes": "Filing/Order Docket No. RM25-8-000",
+        "Public Notes": "Docket No. RM25-8-000",
         "Project Page": "Project 2021-03",
         "Technical Rationale": "Technical Rationale"
       }
@@ -1683,7 +1683,7 @@
         "Effective Date of Standard": "2028-07-01T00:00:00",
         "Inactive Date of Standard": "2029-06-30T00:00:00",
         "Implementation Plan": "Implementation Plan",
-        "Public Notes": "Filing/Order Docket No. RM24-8-000",
+        "Public Notes": "Docket No. RM24-8-000",
         "Project Page": "Project 2016-02",
         "RSAW": "RSAW",
         "Technical Rationale": "Technical Rationale"
@@ -1711,7 +1711,7 @@
         "Regulatory Order Effective Date": "2026-05-26T00:00:00",
         "Effective Date of Standard": "2029-07-01T00:00:00",
         "Implementation Plan": "Implementation Plan",
-        "Public Notes": "Filing/Order Docket No. RM25-8-000",
+        "Public Notes": "Docket No. RM25-8-000",
         "Project Page": "Project 2023-04",
         "Technical Rationale": "Technical Rationale"
       }
@@ -1972,7 +1972,7 @@
         "Effective Date of Standard": "2026-04-01T00:00:00",
         "Inactive Date of Standard": "2028-06-30T00:00:00",
         "Implementation Plan": "Implementation Plan",
-        "Public Notes": "Filing/Order Docket No. RD23-3-000",
+        "Public Notes": "Docket No. RD23-3-000",
         "Project Page": "Project 2020-03",
         "RSAW": "RSAW",
         "Technical Rationale": "Technical Rationale"
@@ -4247,6 +4247,7 @@
         "FERC Orders (Issued Date)": "2022-06-16T00:00:00",
         "Regulatory Order Effective Date": "2022-06-16T00:00:00",
         "Effective Date of Standard": "2022-06-16T00:00:00",
+        "Inactive Date of Standard": "2028-09-30T00:00:00",
         "Implementation Plan": "Implementation Plan",
         "Public Notes": "Filing/Order Docket No. RD22-3-000",
         "Project Page": "Project 2015-09",
@@ -4265,13 +4266,17 @@
       "family": "CIP",
       "tracked": true,
       "fields": {
-        "Status": "Filed and Pending Regulatory Approval",
+        "Status": "Subject to Future Enforcement",
         "Standard Number": "CIP-014-4",
         "Standard Title": "Physical Security",
         "Purpose": "To identify and protect Transmission stations and Transmission substations, and their associated primary control centers, that if rendered inoperable or damaged due to a physical attack, could result in instability, uncontrolled separation, or Cascading within an Interconnection.",
         "Board Adopted Date": "2026-06-17T00:00:00",
         "Filing Date of Standard": "2026-07-16T00:00:00",
+        "FERC Orders (Issued Date)": "2026-09-10T00:00:00",
+        "Regulatory Order Effective Date": "2026-09-10T00:00:00",
+        "Effective Date of Standard": "2028-10-01T00:00:00",
         "Implementation Plan": "Implementation Plan",
+        "Public Notes": "Docket No. RD26-9-000",
         "Project Page": "2023-06",
         "Technical Rationale": "Technical Rationale"
       }
@@ -4299,7 +4304,7 @@
         "Effective Date of Standard": "2028-10-01T00:00:00",
         "Inactive Date of Standard": "2029-09-30T00:00:00",
         "Implementation Plan": "Implementation Plan",
-        "Public Notes": "Filing/Order Docket No. RM24-7-000",
+        "Public Notes": "Docket No. RM24-7-000",
         "Project Page": "Project 2023-03",
         "Technical Rationale": "Technical Rationale"
       }
@@ -4326,7 +4331,7 @@
         "Regulatory Order Effective Date": "2026-08-10T00:00:00",
         "Effective Date of Standard": "2029-10-01T00:00:00",
         "Implementation Plan": "Implementation Plan",
-        "Public Notes": "Filing/Order Docket No. RD26-6-000",
+        "Public Notes": "Docket No. RD26-6-000",
         "Project Page": "2025-02",
         "Technical Rationale": "Technical Rationale"
       }
@@ -5138,6 +5143,7 @@
         "Regulatory Order Effective Date": "2026-08-10T00:00:00",
         "Effective Date of Standard": "2027-10-01T00:00:00",
         "Implementation Plan": "Implementation Plan",
+        "Public Notes": "Docket No. RD26-8-000",
         "Project Page": "2023-01",
         "Technical Rationale": "Technical Rationale"
       }
@@ -5656,7 +5662,7 @@
         "Effective Date of Standard": "2024-10-01T00:00:00",
         "Phased-in Implementation": "X",
         "Inactive Date of Standard": "2025-09-30T00:00:00",
-        "Public Notes": "Filing/Order Docket No. RD24-5-000",
+        "Public Notes": "Docket No. RD24-5-000",
         "Project Page": "Project-2021-07"
       }
     },
@@ -5682,7 +5688,7 @@
         "Regulatory Order Effective Date": "2025-09-18T00:00:00",
         "Effective Date of Standard": "2025-10-01T00:00:00",
         "Implementation Plan": "Implementation Plan",
-        "Public Notes": "Filing/Order Docket No. RD25-7-000",
+        "Public Notes": "Docket No. RD25-7-000",
         "Project Page": "Project 2024-03",
         "RSAW": "RSAW",
         "Technical Rationale": "Technical Rationale"
@@ -5815,7 +5821,7 @@
         "Effective Date of Standard": "2024-01-01T00:00:00",
         "Phased-in Implementation": "X",
         "Implementation Plan": "Implementation Plan",
-        "Public Notes": "Filing/Order Docket No. RD22-5-000 See Implementation Plan for additional compliance information",
+        "Public Notes": "Docket No. RD22-5-000 See Implementation Plan for additional compliance information",
         "Project Page": "Project-2020-05",
         "RSAW": "RSAW",
         "Technical Rationale": "Technical Rationale"
@@ -5947,7 +5953,7 @@
         "Effective Date of Standard": "2024-01-01T00:00:00",
         "Phased-in Implementation": "X",
         "Implementation Plan": "Implementation Plan",
-        "Public Notes": "Filing/Order Docket No. RD22-5-000 See Implementation Plan for additional compliance information",
+        "Public Notes": "Docket No. RD22-5-000 See Implementation Plan for additional compliance information",
         "Project Page": "Project-2020-05",
         "RSAW": "RSAW",
         "Technical Rationale": "Technical Rationale"
@@ -8937,7 +8943,7 @@
         "Effective Date of Standard": "2025-07-01T00:00:00",
         "Inactive Date of Standard": "2029-03-31T00:00:00",
         "Implementation Plan": "Implementation Plan",
-        "Public Notes": "Filing/Order Docket No. RD23-6-000",
+        "Public Notes": "Docket No. RD23-6-000",
         "Project Page": "Project 2021-06",
         "RSAW": "RSAW",
         "Technical Rationale": "Technical Rationale"
@@ -8965,7 +8971,7 @@
         "Regulatory Order Effective Date": "2026-02-19T00:00:00",
         "Effective Date of Standard": "2029-04-01T00:00:00",
         "Implementation Plan": "Implementation Plan",
-        "Public Notes": "Filing/Order Docket No. RD26-1-000",
+        "Public Notes": "Docket No. RD26-1-000",
         "Project Page": "Project 2022-02",
         "Technical Rationale": "Technical Rationale"
       }
@@ -10188,7 +10194,7 @@
         "Effective Date of Standard": "2026-04-01T00:00:00",
         "Phased-in Implementation": "X",
         "Implementation Plan": "Implementation Plan",
-        "Public Notes": "Filing/Order Docket No. RD26-3-000 Additional Effective Date Details Requirements R1 and R7 - April 1, 2027 Entities shall not be required to comply with Requirement R1 relating to the jointly developed dynamic model requirements between the Planning Coordinator and Transmission Planner and Requirement R7 relating to the provision of the current (in-use) models until twelve (12) months after the effective date of the Reliability Standard MOD-026-2. Requirements R2, R3, R4, R5, and R6 - April 1, 2029 Entities shall not be required to comply with Requirements R2, R3, R4, R5, and R6 until thirty-six (36) months after the effective date of Reliability Standard MOD-026-2. See the Implementation Plan for additional information on Initial Performance Dates for periodic requirements, newly commissioned and newly applicable facilities, and early compliance.",
+        "Public Notes": "Docket No. RD26-3-000 Additional Effective Date Details Requirements R1 and R7 - April 1, 2027 Entities shall not be required to comply with Requirement R1 relating to the jointly developed dynamic model requirements between the Planning Coordinator and Transmission Planner and Requirement R7 relating to the provision of the current (in-use) models until twelve (12) months after the effective date of the Reliability Standard MOD-026-2. Requirements R2, R3, R4, R5, and R6 - April 1, 2029 Entities shall not be required to comply with Requirements R2, R3, R4, R5, and R6 until thirty-six (36) months after the effective date of Reliability Standard MOD-026-2. See the Implementation Plan for additional information on Initial Performance Dates for periodic requirements, newly commissioned and newly applicable facilities, and early compliance.",
         "Project Page": "Project 2020-06",
         "RSAW": "RSAW",
         "Technical Rationale": "Technical Rationale"
@@ -10525,7 +10531,7 @@
         "Phased-in Implementation": "X",
         "Inactive Date of Standard": "2028-03-31T00:00:00",
         "Implementation Plan": "Implementation Plan",
-        "Public Notes": "Filing/Order Docket No. RD14-5-000 Please see the implementation plan for specific compliance dates and timeframes.",
+        "Public Notes": "Docket No. RD14-5-000 Please see the implementation plan for specific compliance dates and timeframes.",
         "Project Page": "Project 2010-03",
         "RSAW": "RSAW"
       }
@@ -10553,7 +10559,7 @@
         "Effective Date of Standard": "2028-04-01T00:00:00",
         "Phased-in Implementation": "X",
         "Implementation Plan": "Implementation Plan",
-        "Public Notes": "Filing/Order Docket No. RD26-1-000 Additional Effective Date Details Requirements R2, R3, and R4 - April 1, 2029 Entities shall not be required to comply with Requirements R2, R3, and R4 relating to revised Planning Coordinator and Transmission Planner data requirements and reporting procedures developed under MOD-032-2 Requirement R1 and Attachment 1 until 12 months after the effective date of Reliability Standard MOD-032-2. During the phased-in compliance period, entities shall continue to comply with Requirements R2, R3, and R4 related to Planning Coordinator / Transmission Planner data requirements and reporting procedures developed under MOD-032-1 Requirement R1 and Attachment 1 unless they are compliant with revised Planning Coordinator / Transmission Planner data requirements and reporting procedures under Reliability Standard MOD-032-2 Requirement R1.",
+        "Public Notes": "Docket No. RD26-1-000 Additional Effective Date Details Requirements R2, R3, and R4 - April 1, 2029 Entities shall not be required to comply with Requirements R2, R3, and R4 relating to revised Planning Coordinator and Transmission Planner data requirements and reporting procedures developed under MOD-032-2 Requirement R1 and Attachment 1 until 12 months after the effective date of Reliability Standard MOD-032-2. During the phased-in compliance period, entities shall continue to comply with Requirements R2, R3, and R4 related to Planning Coordinator / Transmission Planner data requirements and reporting procedures developed under MOD-032-1 Requirement R1 and Attachment 1 unless they are compliant with revised Planning Coordinator / Transmission Planner data requirements and reporting procedures under Reliability Standard MOD-032-2 Requirement R1.",
         "Project Page": "Project 2022-02",
         "Technical Rationale": "Technical Rationale"
       }
@@ -10632,7 +10638,7 @@
         "Regulatory Order Effective Date": "2026-02-19T00:00:00",
         "Effective Date of Standard": "2026-04-01T00:00:00",
         "Implementation Plan": "Implementation Plan",
-        "Public Notes": "Filing/Order Docket No. RD26-2-000",
+        "Public Notes": "Docket No. RD26-2-000",
         "Project Page": "Project 2021-01",
         "Technical Rationale": "Technical Rationale"
       }
@@ -11416,7 +11422,7 @@
         "Regulatory Order Effective Date": "2025-02-20T00:00:00",
         "Effective Date of Standard": "2025-04-01T00:00:00",
         "Implementation Plan": "Implementation Plan",
-        "Public Notes": "Filing/Order Docket No. RD25-2-000",
+        "Public Notes": "Docket No. RD25-2-000",
         "Project Page": "Project 2021-04",
         "RSAW": "RSAW",
         "Technical Rationale": "Technical Rationale"
@@ -13519,7 +13525,7 @@
         "Effective Date of Standard": "2022-10-01T00:00:00",
         "Inactive Date of Standard": "2026-09-30T00:00:00",
         "Implementation Plan": "Implementation Plan",
-        "Public Notes": "Filing/Order Docket No. RD20-7-000",
+        "Public Notes": "Docket No. RD20-7-000",
         "Project Page": "Project 2018-04",
         "RSAW": "RSAW"
       }
@@ -13711,7 +13717,7 @@
         "Effective Date of Standard": "2025-04-01T00:00:00",
         "Phased-in Implementation": "X",
         "Implementation Plan": "Implementation Plan",
-        "Public Notes": "Filing/Order Docket No. RD25-2-000",
+        "Public Notes": "Docket No. RD25-2-000",
         "Project Page": "Project 2021-04",
         "RSAW": "RSAW",
         "Technical Rationale": "Technical Rationale"
@@ -13765,6 +13771,7 @@
         "Board Adopted Date": "2026-08-18T00:00:00",
         "Filing Date of Standard": "2026-08-28T00:00:00",
         "Implementation Plan": "Implementation Plan",
+        "Public Notes": "Docket No. RD26-10-000",
         "Project Page": "2025-05"
       }
     },
@@ -13791,7 +13798,7 @@
         "Effective Date of Standard": "2026-10-01T00:00:00",
         "Phased-in Implementation": "X",
         "Implementation Plan": "Implementation Plan",
-        "Public Notes": "Filing/Order Docket No. RD25-3-000 See Implementation Plan for more effective/compliance date information",
+        "Public Notes": "Docket No. RD25-3-000 See Implementation Plan for more effective/compliance date information",
         "Project Page": "Project 2023-02",
         "RSAW": "RSAW",
         "Technical Rationale": "Technical Rationale"
@@ -14471,7 +14478,7 @@
         "Effective Date of Standard": "2025-07-01T00:00:00",
         "Inactive Date of Standard": "2026-09-30T00:00:00",
         "Implementation Plan": "Implementation Plan",
-        "Public Notes": "Filing/Order Docket No. RD23-6-000",
+        "Public Notes": "Docket No. RD23-6-000",
         "Project Page": "Project 2021-06",
         "RSAW": "RSAW",
         "Technical Rationale": "Technical Rationale"
@@ -14500,7 +14507,7 @@
         "Effective Date of Standard": "2026-10-01T00:00:00",
         "Inactive Date of Standard": "2029-03-31T00:00:00",
         "Implementation Plan": "Implementation Plan",
-        "Public Notes": "Filing/Order Docket No. RD25-5-000",
+        "Public Notes": "Docket No. RD25-5-000",
         "Project Page": "Project 2022-03",
         "RSAW": "RSAW",
         "Technical Rationale": "Technical Rationale"
@@ -14528,7 +14535,7 @@
         "Regulatory Order Effective Date": "2026-02-19T00:00:00",
         "Effective Date of Standard": "2029-04-01T00:00:00",
         "Implementation Plan": "Implementation Plan",
-        "Public Notes": "Filing/Order Docket No. RD26-1-000",
+        "Public Notes": "Docket No. RD26-1-000",
         "Project Page": "Project 2022-02",
         "Technical Rationale": "Technical Rationale"
       }
