@@ -2,8 +2,8 @@
   "schema_version": 2,
   "status": "ok",
   "message": "No tracked changes",
-  "checked_at": "2026-09-25T15:07:51.618593+00:00",
-  "checked_at_display": "Sep 25, 2026 10:07 AM",
+  "checked_at": "2026-09-26T14:19:48.020551+00:00",
+  "checked_at_display": "Sep 26, 2026 09:19 AM",
   "source_url": "https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx",
   "baseline": false,
   "summary": {
@@ -16,16 +16,29 @@
     ],
     "sheets_checked": 1,
     "records_reviewed": 657,
-    "cells_reviewed": 7362,
+    "cells_reviewed": 7363,
     "tracked_changes": 0,
-    "other_changes": 0,
+    "other_changes": 1,
     "high": 0,
     "moderate": 0,
     "informational": 0
   },
-  "brief": "No semantic record changes were detected in the NERC workbook.",
+  "brief": "No changes were detected in BPU's tracked standards. 1 changes were detected elsewhere in the NERC workbook.",
   "changes": [],
-  "other_changes": [],
+  "other_changes": [
+    {
+      "standard": "BAL-007",
+      "family": "BAL",
+      "sheet": "One Stop Shop",
+      "field": "RSAW",
+      "old": "",
+      "new": "RSAW",
+      "type": "added",
+      "tracked": false,
+      "source_row": 44,
+      "severity": "info"
+    }
+  ],
   "changes_truncated": false,
   "standards": [
     {
@@ -595,6 +608,13 @@
   ],
   "history": [
     {
+      "date": "Sep 26, 2026 09:19 AM CT",
+      "tracked_changes": 0,
+      "other_changes": 1,
+      "high": 0,
+      "status_text": "No tracked changes"
+    },
+    {
       "date": "Sep 25, 2026 10:07 AM CT",
       "tracked_changes": 0,
       "other_changes": 0,
@@ -901,13 +921,6 @@
       "other_changes": 0,
       "high": 0,
       "status_text": "No tracked changes"
-    },
-    {
-      "date": "Aug 13, 2026 09:50 PM CT",
-      "tracked_changes": 0,
-      "other_changes": 0,
-      "high": 0,
-      "status_text": "Semantic baseline established"
     }
   ],
   "health": {
