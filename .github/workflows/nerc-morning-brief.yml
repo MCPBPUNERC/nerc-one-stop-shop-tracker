@@ -1,0 +1,58 @@
+name: NERC Morning Brief
+
+on:
+  schedule:
+    - cron: "0 8 * * *"
+      timezone: "America/Chicago"
+    - cron: "10 8 * * *"
+      timezone: "America/Chicago"
+    - cron: "20 8 * * *"
+      timezone: "America/Chicago"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: nerc-morning-brief
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Check whether today's brief was already sent
+        id: sent
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "should_send=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          TODAY=$(TZ=America/Chicago date +%F)
+          COUNT=$(gh run list --workflow "NERC Morning Brief" --status success --limit 20 --json createdAt,event --jq "[.[] | select(.event == \"schedule\") | select((.createdAt | fromdateiso8601 | strftime(\"%Y-%m-%d\")) == \"$TODAY\")] | length")
+          if [ "$COUNT" -gt 0 ]; then
+            echo "should_send=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "should_send=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Send 8 AM NERC Morning Brief
+        if: steps.sent.outputs.should_send == 'true'
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
+          RECIPIENTS: ${{ secrets.RECIPIENTS }}
+        run: python send_morning_brief.py
