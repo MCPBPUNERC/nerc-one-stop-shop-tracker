@@ -2,15 +2,15 @@ name: Regulatory Tracking Station
 
 on:
   schedule:
+    - cron: "7 4 * * *"
+      timezone: "America/Chicago"
+    - cron: "37 4 * * *"
+      timezone: "America/Chicago"
     - cron: "7 5 * * *"
       timezone: "America/Chicago"
     - cron: "37 5 * * *"
       timezone: "America/Chicago"
     - cron: "7 6 * * *"
-      timezone: "America/Chicago"
-    - cron: "37 6 * * *"
-      timezone: "America/Chicago"
-    - cron: "7 7 * * *"
       timezone: "America/Chicago"
   workflow_dispatch: {}
 
