@@ -1,7 +1,7 @@
 {
   "status": "ok",
-  "checked_at": "2026-09-28T18:04:20.866048+00:00",
-  "checked_at_display": "Sep 28, 2026 01:04 PM",
+  "checked_at": "2026-09-29T16:27:41.877130+00:00",
+  "checked_at_display": "Sep 29, 2026 11:27 AM",
   "message": "Official FERC sources checked successfully.",
   "summary": {
     "items_checked": 12,
@@ -162,6 +162,12 @@
     }
   ],
   "history": [
+    {
+      "date": "Sep 29, 2026 11:27 AM CT",
+      "new_items": 0,
+      "items_checked": 12,
+      "status_text": "0 new relevant items"
+    },
     {
       "date": "Sep 28, 2026 01:04 PM CT",
       "new_items": 0,
@@ -332,12 +338,6 @@
     },
     {
       "date": "Aug 31, 2026 12:31 PM CT",
-      "new_items": 0,
-      "items_checked": 12,
-      "status_text": "0 new relevant items"
-    },
-    {
-      "date": "Aug 30, 2026 09:47 AM CT",
       "new_items": 0,
       "items_checked": 12,
       "status_text": "0 new relevant items"
