@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "status": "ok",
-  "message": "No tracked changes",
-  "checked_at": "2026-09-29T16:27:39.088282+00:00",
-  "checked_at_display": "Sep 29, 2026 11:27 AM",
+  "message": "Tracked changes detected",
+  "checked_at": "2026-09-30T15:52:20.176876+00:00",
+  "checked_at_display": "Sep 30, 2026 10:52 AM",
   "source_url": "https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx",
   "baseline": false,
   "summary": {
@@ -16,15 +16,100 @@
     ],
     "sheets_checked": 1,
     "records_reviewed": 657,
-    "cells_reviewed": 7363,
-    "tracked_changes": 0,
+    "cells_reviewed": 7358,
+    "tracked_changes": 7,
     "other_changes": 0,
-    "high": 0,
+    "high": 4,
     "moderate": 0,
-    "informational": 0
+    "informational": 3
   },
-  "brief": "No semantic record changes were detected in the NERC workbook.",
-  "changes": [],
+  "brief": "7 changes affect BPU-tracked standards (4 high priority, 0 moderate). 0 additional changes were outside the tracked-standard list.",
+  "changes": [
+    {
+      "standard": "PRC-024",
+      "family": "PRC",
+      "sheet": "One Stop Shop",
+      "field": "Implementation Plan",
+      "old": "Implementation Plan",
+      "new": "",
+      "type": "removed",
+      "tracked": true,
+      "source_row": 534,
+      "severity": "high"
+    },
+    {
+      "standard": "PRC-024",
+      "family": "PRC",
+      "sheet": "One Stop Shop",
+      "field": "RSAW",
+      "old": "RSAW",
+      "new": "",
+      "type": "removed",
+      "tracked": true,
+      "source_row": 534,
+      "severity": "informational"
+    },
+    {
+      "standard": "PRC-024",
+      "family": "PRC",
+      "sheet": "One Stop Shop",
+      "field": "Status",
+      "old": "Mandatory Subject to Enforcement",
+      "new": "Inactive",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 534,
+      "severity": "high"
+    },
+    {
+      "standard": "TOP-003",
+      "family": "TOP",
+      "sheet": "One Stop Shop",
+      "field": "Implementation Plan",
+      "old": "Implementation Plan",
+      "new": "",
+      "type": "removed",
+      "tracked": true,
+      "source_row": 571,
+      "severity": "high"
+    },
+    {
+      "standard": "TOP-003",
+      "family": "TOP",
+      "sheet": "One Stop Shop",
+      "field": "RSAW",
+      "old": "RSAW",
+      "new": "",
+      "type": "removed",
+      "tracked": true,
+      "source_row": 571,
+      "severity": "informational"
+    },
+    {
+      "standard": "TOP-003",
+      "family": "TOP",
+      "sheet": "One Stop Shop",
+      "field": "Status",
+      "old": "Mandatory Subject to Enforcement",
+      "new": "Inactive",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 571,
+      "severity": "high"
+    },
+    {
+      "standard": "TOP-003",
+      "family": "TOP",
+      "sheet": "One Stop Shop",
+      "field": "Technical Rationale",
+      "old": "Technical Rationale",
+      "new": "",
+      "type": "removed",
+      "tracked": true,
+      "source_row": 571,
+      "severity": "informational"
+    }
+  ],
   "other_changes": [],
   "changes_truncated": false,
   "standards": [
@@ -392,11 +477,11 @@
       "standard": "PRC-024",
       "family": "PRC",
       "record_count": 4,
-      "changes": 0,
-      "high": 0,
+      "changes": 3,
+      "high": 2,
       "moderate": 0,
-      "informational": 0,
-      "status": "normal"
+      "informational": 1,
+      "status": "attention"
     },
     {
       "standard": "PRC-025",
@@ -472,11 +557,11 @@
       "standard": "TOP-003",
       "family": "TOP",
       "record_count": 9,
-      "changes": 0,
-      "high": 0,
+      "changes": 4,
+      "high": 2,
       "moderate": 0,
-      "informational": 0,
-      "status": "normal"
+      "informational": 2,
+      "status": "attention"
     },
     {
       "standard": "TPL-007",
@@ -560,15 +645,15 @@
       "code": "PRC",
       "name": "Protection & Control",
       "standards": 18,
-      "changes": 0,
-      "high": 0
+      "changes": 3,
+      "high": 2
     },
     {
       "code": "TOP",
       "name": "Transmission Operations",
       "standards": 2,
-      "changes": 0,
-      "high": 0
+      "changes": 4,
+      "high": 2
     },
     {
       "code": "TPL",
@@ -594,6 +679,13 @@
     }
   ],
   "history": [
+    {
+      "date": "Sep 30, 2026 10:52 AM CT",
+      "tracked_changes": 7,
+      "other_changes": 0,
+      "high": 4,
+      "status_text": "Tracked changes detected"
+    },
     {
       "date": "Sep 29, 2026 11:27 AM CT",
       "tracked_changes": 0,
@@ -897,13 +989,6 @@
     },
     {
       "date": "Aug 17, 2026 08:50 AM CT",
-      "tracked_changes": 0,
-      "other_changes": 0,
-      "high": 0,
-      "status_text": "No tracked changes"
-    },
-    {
-      "date": "Aug 16, 2026 08:40 AM CT",
       "tracked_changes": 0,
       "other_changes": 0,
       "high": 0,
