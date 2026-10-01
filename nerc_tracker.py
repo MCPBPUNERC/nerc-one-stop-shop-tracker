@@ -461,30 +461,8 @@ def main():
     }
     write_dashboard(payload, history, records)
 
-    details = []
-    for item in tracked_changes[:MAX_EMAIL_CHANGES]:
-        details.append(
-            f"{item['standard']} | {item['field']} | {item['severity'].upper()}\n"
-            f"  Previous: {item['old'] or '(blank)'}\n"
-            f"  Current:  {item['new'] or '(blank)'}"
-        )
-    if len(tracked_changes) > MAX_EMAIL_CHANGES:
-        details.append(
-            f"...and {len(tracked_changes) - MAX_EMAIL_CHANGES} additional tracked changes. "
-            "See the Control Room for detail."
-        )
-
-    subject = f"[BPU NERC Control Room] {status_text} - {today}"
-    body = brief + (("\n\n" + "\n\n".join(details)) if details else "")
-    body += "\n\nControl Room: https://mcpbpunerc.github.io/nerc-one-stop-shop-tracker/"
-
-    try:
-        send_email(subject, body)
-        payload["health"]["email"] = "ok"
-    except Exception as exc:
-        payload["health"]["email"] = "error"
-        payload["health"]["email_error"] = type(exc).__name__
-        print(f"WARNING: email delivery failed: {exc}")
+    # Email delivery is handled only by the dedicated 8:00 AM Morning Brief workflow.
+    payload["health"]["email"] = "scheduled_for_0800"
 
     DATA_PATH.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
 
