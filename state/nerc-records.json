@@ -13541,7 +13541,7 @@
       "family": "PRC",
       "tracked": true,
       "fields": {
-        "Status": "Subject to Future Enforcement",
+        "Status": "Mandatory Subject to Enforcement",
         "Standard Number": "PRC-024-4",
         "Standard Title": "Frequency and Voltage Protection Settings for Synchronous Generators, Type 1 and Type 2 Wind Resources, and Synchronous Condensers",
         "Purpose": "To assure that protection of synchronous generators, type 1 and type 2 wind resources, and synchronous condensers do not cause tripping during defined frequency and voltage excursions in support of the Bulk Power System (BPS).",
@@ -13734,7 +13734,7 @@
       "family": "PRC",
       "tracked": true,
       "fields": {
-        "Status": "Subject to Future Enforcement",
+        "Status": "Inactive",
         "Standard Number": "PRC-029-1",
         "Standard Title": "Frequency and Voltage Ride-through Requirements for Inverter-based Resources",
         "Purpose": "To ensure that IBRs Ride-through to support the Bulk Power System (BPS) during and after defined frequency and voltage excursions.",
@@ -13742,13 +13742,10 @@
         "Filing Date of Standard": "2024-11-04T00:00:00",
         "FERC Orders (Issued Date)": "2025-07-24T00:00:00",
         "Regulatory Order Effective Date": "2025-08-28T00:00:00",
-        "Effective Date of Standard": "2026-10-01T00:00:00",
         "Phased-in Implementation": "X",
-        "Implementation Plan": "Implementation Plan",
+        "Inactive Date of Standard": "2026-09-30T00:00:00",
         "Public Notes": "Docket No. RM25-3-000 See Implementation Plan for more information on effective/compliance dates",
-        "Project Page": "Project 2020-02",
-        "RSAW": "RSAW",
-        "Technical Rationale": "Technical Rationale"
+        "Project Page": "Project 2020-02"
       }
     },
     {
@@ -13763,12 +13760,16 @@
       "family": "PRC",
       "tracked": true,
       "fields": {
-        "Status": "Filed and Pending Regulatory Approval",
+        "Status": "Mandatory Subject to Enforcement",
         "Standard Number": "PRC-029-2",
         "Standard Title": "Frequency and Voltage Ride-through Requirements for Inverter-Based Resources",
         "Purpose": "To ensure that Inverter-Based Resources Ride-through to support the Bulk Power System during and after defined frequency and voltage excursions.",
         "Board Adopted Date": "2026-08-18T00:00:00",
         "Filing Date of Standard": "2026-08-28T00:00:00",
+        "FERC Orders (Issued Date)": "2026-09-30T00:00:00",
+        "Regulatory Order Effective Date": "2026-09-30T00:00:00",
+        "Effective Date of Standard": "2026-10-01T00:00:00",
+        "Phased-in Implementation": "X",
         "Implementation Plan": "Implementation Plan",
         "Public Notes": "Docket No. RD26-10-000",
         "Project Page": "2025-05"
@@ -13786,7 +13787,7 @@
       "family": "PRC",
       "tracked": true,
       "fields": {
-        "Status": "Subject to Future Enforcement",
+        "Status": "Mandatory Subject to Enforcement",
         "Standard Number": "PRC-030-1",
         "Standard Title": "Unexpected Inverter-Based Resource Event Mitigation",
         "Purpose": "Identify, analyze, and mitigate unexpected Inverter-Based Resource (IBR) change of power output.",
@@ -14492,7 +14493,7 @@
       "family": "TOP",
       "tracked": true,
       "fields": {
-        "Status": "Subject to Future Enforcement",
+        "Status": "Mandatory Subject to Enforcement",
         "Standard Number": "TOP-003-7",
         "Standard Title": "Transmission Operator and Balancing Authority Data and Information Specification and Collection",
         "Purpose": "To ensure that each Transmission Operator and Balancing Authority has the data and information it needs to plan, monitor, and assess the operation of its Transmission Operator Area or Balancing Authority Area.",

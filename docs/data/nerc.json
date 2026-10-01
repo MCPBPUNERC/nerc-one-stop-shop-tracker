@@ -2,8 +2,8 @@
   "schema_version": 2,
   "status": "ok",
   "message": "Tracked changes detected",
-  "checked_at": "2026-09-30T15:52:20.176876+00:00",
-  "checked_at_display": "Sep 30, 2026 10:52 AM",
+  "checked_at": "2026-10-01T16:20:20.515786+00:00",
+  "checked_at_display": "Oct 01, 2026 11:20 AM",
   "source_url": "https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx",
   "baseline": false,
   "summary": {
@@ -16,17 +16,53 @@
     ],
     "sheets_checked": 1,
     "records_reviewed": 657,
-    "cells_reviewed": 7358,
-    "tracked_changes": 7,
+    "cells_reviewed": 7359,
+    "tracked_changes": 14,
     "other_changes": 0,
-    "high": 4,
+    "high": 11,
     "moderate": 0,
     "informational": 3
   },
-  "brief": "7 changes affect BPU-tracked standards (4 high priority, 0 moderate). 0 additional changes were outside the tracked-standard list.",
+  "brief": "14 changes affect BPU-tracked standards (11 high priority, 0 moderate). 0 additional changes were outside the tracked-standard list.",
   "changes": [
     {
-      "standard": "PRC-024",
+      "standard": "TOP-003",
+      "family": "TOP",
+      "sheet": "One Stop Shop",
+      "field": "Status",
+      "old": "Subject to Future Enforcement",
+      "new": "Mandatory Subject to Enforcement",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 572,
+      "severity": "high"
+    },
+    {
+      "standard": "PRC-030",
+      "family": "PRC",
+      "sheet": "One Stop Shop",
+      "field": "Status",
+      "old": "Subject to Future Enforcement",
+      "new": "Mandatory Subject to Enforcement",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 544,
+      "severity": "high"
+    },
+    {
+      "standard": "PRC-029",
+      "family": "PRC",
+      "sheet": "One Stop Shop",
+      "field": "Effective Date of Standard",
+      "old": "2026-10-01T00:00:00",
+      "new": "",
+      "type": "removed",
+      "tracked": true,
+      "source_row": 542,
+      "severity": "high"
+    },
+    {
+      "standard": "PRC-029",
       "family": "PRC",
       "sheet": "One Stop Shop",
       "field": "Implementation Plan",
@@ -34,11 +70,23 @@
       "new": "",
       "type": "removed",
       "tracked": true,
-      "source_row": 534,
+      "source_row": 542,
       "severity": "high"
     },
     {
-      "standard": "PRC-024",
+      "standard": "PRC-029",
+      "family": "PRC",
+      "sheet": "One Stop Shop",
+      "field": "Inactive Date of Standard",
+      "old": "",
+      "new": "2026-09-30T00:00:00",
+      "type": "added",
+      "tracked": true,
+      "source_row": 542,
+      "severity": "high"
+    },
+    {
+      "standard": "PRC-029",
       "family": "PRC",
       "sheet": "One Stop Shop",
       "field": "RSAW",
@@ -46,68 +94,104 @@
       "new": "",
       "type": "removed",
       "tracked": true,
-      "source_row": 534,
+      "source_row": 542,
       "severity": "informational"
     },
     {
-      "standard": "PRC-024",
+      "standard": "PRC-029",
       "family": "PRC",
       "sheet": "One Stop Shop",
       "field": "Status",
-      "old": "Mandatory Subject to Enforcement",
+      "old": "Subject to Future Enforcement",
       "new": "Inactive",
       "type": "modified",
       "tracked": true,
-      "source_row": 534,
+      "source_row": 542,
       "severity": "high"
     },
     {
-      "standard": "TOP-003",
-      "family": "TOP",
-      "sheet": "One Stop Shop",
-      "field": "Implementation Plan",
-      "old": "Implementation Plan",
-      "new": "",
-      "type": "removed",
-      "tracked": true,
-      "source_row": 571,
-      "severity": "high"
-    },
-    {
-      "standard": "TOP-003",
-      "family": "TOP",
-      "sheet": "One Stop Shop",
-      "field": "RSAW",
-      "old": "RSAW",
-      "new": "",
-      "type": "removed",
-      "tracked": true,
-      "source_row": 571,
-      "severity": "informational"
-    },
-    {
-      "standard": "TOP-003",
-      "family": "TOP",
-      "sheet": "One Stop Shop",
-      "field": "Status",
-      "old": "Mandatory Subject to Enforcement",
-      "new": "Inactive",
-      "type": "modified",
-      "tracked": true,
-      "source_row": 571,
-      "severity": "high"
-    },
-    {
-      "standard": "TOP-003",
-      "family": "TOP",
+      "standard": "PRC-029",
+      "family": "PRC",
       "sheet": "One Stop Shop",
       "field": "Technical Rationale",
       "old": "Technical Rationale",
       "new": "",
       "type": "removed",
       "tracked": true,
-      "source_row": 571,
+      "source_row": 542,
       "severity": "informational"
+    },
+    {
+      "standard": "PRC-024",
+      "family": "PRC",
+      "sheet": "One Stop Shop",
+      "field": "Status",
+      "old": "Subject to Future Enforcement",
+      "new": "Mandatory Subject to Enforcement",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 535,
+      "severity": "high"
+    },
+    {
+      "standard": "PRC-029",
+      "family": "PRC",
+      "sheet": "One Stop Shop",
+      "field": "Effective Date of Standard",
+      "old": "",
+      "new": "2026-10-01T00:00:00",
+      "type": "added",
+      "tracked": true,
+      "source_row": 543,
+      "severity": "high"
+    },
+    {
+      "standard": "PRC-029",
+      "family": "PRC",
+      "sheet": "One Stop Shop",
+      "field": "FERC Orders (Issued Date)",
+      "old": "",
+      "new": "2026-09-30T00:00:00",
+      "type": "added",
+      "tracked": true,
+      "source_row": 543,
+      "severity": "informational"
+    },
+    {
+      "standard": "PRC-029",
+      "family": "PRC",
+      "sheet": "One Stop Shop",
+      "field": "Phased-in Implementation",
+      "old": "",
+      "new": "X",
+      "type": "added",
+      "tracked": true,
+      "source_row": 543,
+      "severity": "high"
+    },
+    {
+      "standard": "PRC-029",
+      "family": "PRC",
+      "sheet": "One Stop Shop",
+      "field": "Regulatory Order Effective Date",
+      "old": "",
+      "new": "2026-09-30T00:00:00",
+      "type": "added",
+      "tracked": true,
+      "source_row": 543,
+      "severity": "high"
+    },
+    {
+      "standard": "PRC-029",
+      "family": "PRC",
+      "sheet": "One Stop Shop",
+      "field": "Status",
+      "old": "Filed and Pending Regulatory Approval",
+      "new": "Mandatory Subject to Enforcement",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 543,
+      "severity": "high"
     }
   ],
   "other_changes": [],
@@ -477,10 +561,10 @@
       "standard": "PRC-024",
       "family": "PRC",
       "record_count": 4,
-      "changes": 3,
-      "high": 2,
+      "changes": 1,
+      "high": 1,
       "moderate": 0,
-      "informational": 1,
+      "informational": 0,
       "status": "attention"
     },
     {
@@ -527,21 +611,21 @@
       "standard": "PRC-029",
       "family": "PRC",
       "record_count": 2,
-      "changes": 0,
-      "high": 0,
+      "changes": 11,
+      "high": 8,
       "moderate": 0,
-      "informational": 0,
-      "status": "normal"
+      "informational": 3,
+      "status": "attention"
     },
     {
       "standard": "PRC-030",
       "family": "PRC",
       "record_count": 1,
-      "changes": 0,
-      "high": 0,
+      "changes": 1,
+      "high": 1,
       "moderate": 0,
       "informational": 0,
-      "status": "normal"
+      "status": "attention"
     },
     {
       "standard": "TOP-001",
@@ -557,10 +641,10 @@
       "standard": "TOP-003",
       "family": "TOP",
       "record_count": 9,
-      "changes": 4,
-      "high": 2,
+      "changes": 1,
+      "high": 1,
       "moderate": 0,
-      "informational": 2,
+      "informational": 0,
       "status": "attention"
     },
     {
@@ -645,15 +729,15 @@
       "code": "PRC",
       "name": "Protection & Control",
       "standards": 18,
-      "changes": 3,
-      "high": 2
+      "changes": 13,
+      "high": 10
     },
     {
       "code": "TOP",
       "name": "Transmission Operations",
       "standards": 2,
-      "changes": 4,
-      "high": 2
+      "changes": 1,
+      "high": 1
     },
     {
       "code": "TPL",
@@ -679,6 +763,13 @@
     }
   ],
   "history": [
+    {
+      "date": "Oct 01, 2026 11:20 AM CT",
+      "tracked_changes": 14,
+      "other_changes": 0,
+      "high": 11,
+      "status_text": "Tracked changes detected"
+    },
     {
       "date": "Sep 30, 2026 10:52 AM CT",
       "tracked_changes": 7,
@@ -982,13 +1073,6 @@
     },
     {
       "date": "Aug 18, 2026 05:37 AM CT",
-      "tracked_changes": 0,
-      "other_changes": 0,
-      "high": 0,
-      "status_text": "No tracked changes"
-    },
-    {
-      "date": "Aug 17, 2026 08:50 AM CT",
       "tracked_changes": 0,
       "other_changes": 0,
       "high": 0,
