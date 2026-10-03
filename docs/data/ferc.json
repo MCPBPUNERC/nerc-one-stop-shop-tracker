@@ -1,11 +1,11 @@
 {
   "status": "ok",
-  "checked_at": "2026-10-02T15:44:04.037856+00:00",
-  "checked_at_display": "Oct 02, 2026 10:44 AM",
+  "checked_at": "2026-10-03T14:18:03.277973+00:00",
+  "checked_at_display": "Oct 03, 2026 09:18 AM",
   "message": "Official FERC sources checked successfully.",
   "summary": {
     "items_checked": 12,
-    "new_items": 1,
+    "new_items": 0,
     "priority_items": 1,
     "sources_checked": 2
   },
@@ -13,20 +13,7 @@
     "https://www.ferc.gov/news-events/news/news-releases-headlines",
     "https://www.ferc.gov/electric-reliability"
   ],
-  "new_items": [
-    {
-      "id": "https://www.ferc.gov/news-events/news/ferc-announces-2027-commission-meeting-schedule",
-      "title": "FERC Announces 2027 Commission Meeting Schedule",
-      "url": "https://www.ferc.gov/news-events/news/ferc-announces-2027-commission-meeting-schedule",
-      "date": "October 1, 2026",
-      "type": "News Releases",
-      "categories": [
-        "Other FERC Activity"
-      ],
-      "score": 1,
-      "source": "FERC News Releases & Headlines"
-    }
-  ],
+  "new_items": [],
   "items": [
     {
       "id": "https://www.ferc.gov/news-events/news/ferc-nerc-review-shows-bulk-power-system-improvements-preparation-and-coordination",
@@ -175,6 +162,12 @@
     }
   ],
   "history": [
+    {
+      "date": "Oct 03, 2026 09:18 AM CT",
+      "new_items": 0,
+      "items_checked": 12,
+      "status_text": "0 new relevant items"
+    },
     {
       "date": "Oct 02, 2026 10:44 AM CT",
       "new_items": 1,
@@ -345,12 +338,6 @@
     },
     {
       "date": "Sep 04, 2026 09:11 AM CT",
-      "new_items": 0,
-      "items_checked": 12,
-      "status_text": "0 new relevant items"
-    },
-    {
-      "date": "Sep 03, 2026 09:22 AM CT",
       "new_items": 0,
       "items_checked": 12,
       "status_text": "0 new relevant items"
