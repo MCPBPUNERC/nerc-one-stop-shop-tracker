@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "status": "ok",
-  "message": "No tracked changes",
-  "checked_at": "2026-10-08T16:24:13.177245+00:00",
-  "checked_at_display": "Oct 08, 2026 11:24 AM",
+  "message": "Tracked changes detected",
+  "checked_at": "2026-10-09T16:07:26.035232+00:00",
+  "checked_at_display": "Oct 09, 2026 11:07 AM",
   "source_url": "https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx",
   "baseline": false,
   "summary": {
@@ -15,16 +15,29 @@
       "DP"
     ],
     "sheets_checked": 1,
-    "records_reviewed": 657,
-    "cells_reviewed": 7359,
-    "tracked_changes": 0,
+    "records_reviewed": 658,
+    "cells_reviewed": 7366,
+    "tracked_changes": 1,
     "other_changes": 0,
     "high": 0,
     "moderate": 0,
-    "informational": 0
+    "informational": 1
   },
-  "brief": "No semantic record changes were detected in the NERC workbook.",
-  "changes": [],
+  "brief": "1 changes affect BPU-tracked standards (0 high priority, 0 moderate). 0 additional changes were outside the tracked-standard list.",
+  "changes": [
+    {
+      "standard": "EOP-012",
+      "family": "EOP",
+      "sheet": "One Stop Shop",
+      "field": "Record",
+      "old": "Record absent",
+      "new": "Record added",
+      "type": "record_added",
+      "tracked": true,
+      "source_row": 223,
+      "severity": "informational"
+    }
+  ],
   "other_changes": [],
   "changes_truncated": false,
   "standards": [
@@ -131,12 +144,12 @@
     {
       "standard": "EOP-012",
       "family": "EOP",
-      "record_count": 3,
-      "changes": 0,
+      "record_count": 4,
+      "changes": 1,
       "high": 0,
       "moderate": 0,
-      "informational": 0,
-      "status": "normal"
+      "informational": 1,
+      "status": "changed"
     },
     {
       "standard": "FAC-001",
@@ -518,7 +531,7 @@
       "code": "EOP",
       "name": "Emergency Preparedness & Operations",
       "standards": 4,
-      "changes": 0,
+      "changes": 1,
       "high": 0
     },
     {
@@ -588,12 +601,19 @@
   "sheets": [
     {
       "name": "One Stop Shop",
-      "rows": 658,
+      "rows": 659,
       "columns": 17,
-      "records": 657
+      "records": 658
     }
   ],
   "history": [
+    {
+      "date": "Oct 09, 2026 11:07 AM CT",
+      "tracked_changes": 1,
+      "other_changes": 0,
+      "high": 0,
+      "status_text": "Tracked changes detected"
+    },
     {
       "date": "Oct 08, 2026 11:24 AM CT",
       "tracked_changes": 0,
@@ -897,13 +917,6 @@
     },
     {
       "date": "Aug 26, 2026 05:42 AM CT",
-      "tracked_changes": 0,
-      "other_changes": 0,
-      "high": 0,
-      "status_text": "No tracked changes"
-    },
-    {
-      "date": "Aug 25, 2026 05:40 AM CT",
       "tracked_changes": 0,
       "other_changes": 0,
       "high": 0,
