@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "status": "ok",
-  "message": "Tracked changes detected",
-  "checked_at": "2026-10-09T16:07:26.035232+00:00",
-  "checked_at_display": "Oct 09, 2026 11:07 AM",
+  "message": "No tracked changes",
+  "checked_at": "2026-10-10T15:16:38.194062+00:00",
+  "checked_at_display": "Oct 10, 2026 10:16 AM",
   "source_url": "https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx",
   "baseline": false,
   "summary": {
@@ -17,27 +17,14 @@
     "sheets_checked": 1,
     "records_reviewed": 658,
     "cells_reviewed": 7366,
-    "tracked_changes": 1,
+    "tracked_changes": 0,
     "other_changes": 0,
     "high": 0,
     "moderate": 0,
-    "informational": 1
+    "informational": 0
   },
-  "brief": "1 changes affect BPU-tracked standards (0 high priority, 0 moderate). 0 additional changes were outside the tracked-standard list.",
-  "changes": [
-    {
-      "standard": "EOP-012",
-      "family": "EOP",
-      "sheet": "One Stop Shop",
-      "field": "Record",
-      "old": "Record absent",
-      "new": "Record added",
-      "type": "record_added",
-      "tracked": true,
-      "source_row": 223,
-      "severity": "informational"
-    }
-  ],
+  "brief": "No semantic record changes were detected in the NERC workbook.",
+  "changes": [],
   "other_changes": [],
   "changes_truncated": false,
   "standards": [
@@ -145,11 +132,11 @@
       "standard": "EOP-012",
       "family": "EOP",
       "record_count": 4,
-      "changes": 1,
+      "changes": 0,
       "high": 0,
       "moderate": 0,
-      "informational": 1,
-      "status": "changed"
+      "informational": 0,
+      "status": "normal"
     },
     {
       "standard": "FAC-001",
@@ -531,7 +518,7 @@
       "code": "EOP",
       "name": "Emergency Preparedness & Operations",
       "standards": 4,
-      "changes": 1,
+      "changes": 0,
       "high": 0
     },
     {
@@ -607,6 +594,13 @@
     }
   ],
   "history": [
+    {
+      "date": "Oct 10, 2026 10:16 AM CT",
+      "tracked_changes": 0,
+      "other_changes": 0,
+      "high": 0,
+      "status_text": "No tracked changes"
+    },
     {
       "date": "Oct 09, 2026 11:07 AM CT",
       "tracked_changes": 1,
@@ -910,13 +904,6 @@
     },
     {
       "date": "Aug 27, 2026 03:17 PM CT",
-      "tracked_changes": 0,
-      "other_changes": 0,
-      "high": 0,
-      "status_text": "No tracked changes"
-    },
-    {
-      "date": "Aug 26, 2026 05:42 AM CT",
       "tracked_changes": 0,
       "other_changes": 0,
       "high": 0,
