@@ -1,7 +1,7 @@
 {
   "status": "ok",
-  "checked_at": "2026-10-13T16:54:17.126757+00:00",
-  "checked_at_display": "Oct 13, 2026 11:54 AM",
+  "checked_at": "2026-10-14T14:28:16.857082+00:00",
+  "checked_at_display": "Oct 14, 2026 09:28 AM",
   "message": "Official FERC sources checked successfully.",
   "summary": {
     "items_checked": 12,
@@ -15,9 +15,9 @@
   ],
   "new_items": [
     {
-      "id": "https://www.ferc.gov/news-events/news/ferc-staff-report-offers-lessons-learned-2026cip-audits",
-      "title": "FERC Staff Report Offers Lessons Learned from 2026CIP Audits",
-      "url": "https://www.ferc.gov/news-events/news/ferc-staff-report-offers-lessons-learned-2026cip-audits",
+      "id": "https://www.ferc.gov/news-events/news/ferc-staff-report-offers-lessons-learned-2026-cip-audits",
+      "title": "FERC Staff Report Offers Lessons Learned from 2026 CIP Audits",
+      "url": "https://www.ferc.gov/news-events/news/ferc-staff-report-offers-lessons-learned-2026-cip-audits",
       "date": "October 13, 2026",
       "type": "Headlines",
       "categories": [
@@ -78,9 +78,9 @@
       "source": "FERC News Releases & Headlines"
     },
     {
-      "id": "https://www.ferc.gov/news-events/news/ferc-staff-report-offers-lessons-learned-2026cip-audits",
-      "title": "FERC Staff Report Offers Lessons Learned from 2026CIP Audits",
-      "url": "https://www.ferc.gov/news-events/news/ferc-staff-report-offers-lessons-learned-2026cip-audits",
+      "id": "https://www.ferc.gov/news-events/news/ferc-staff-report-offers-lessons-learned-2026-cip-audits",
+      "title": "FERC Staff Report Offers Lessons Learned from 2026 CIP Audits",
+      "url": "https://www.ferc.gov/news-events/news/ferc-staff-report-offers-lessons-learned-2026-cip-audits",
       "date": "October 13, 2026",
       "type": "Headlines",
       "categories": [
@@ -175,6 +175,12 @@
     }
   ],
   "history": [
+    {
+      "date": "Oct 14, 2026 09:28 AM CT",
+      "new_items": 1,
+      "items_checked": 12,
+      "status_text": "1 new relevant item"
+    },
     {
       "date": "Oct 13, 2026 11:54 AM CT",
       "new_items": 1,
@@ -345,12 +351,6 @@
     },
     {
       "date": "Sep 15, 2026 09:50 AM CT",
-      "new_items": 0,
-      "items_checked": 12,
-      "status_text": "0 new relevant items"
-    },
-    {
-      "date": "Sep 14, 2026 11:17 AM CT",
       "new_items": 0,
       "items_checked": 12,
       "status_text": "0 new relevant items"
