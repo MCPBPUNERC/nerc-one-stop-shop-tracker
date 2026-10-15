@@ -2,8 +2,8 @@
   "schema_version": 2,
   "status": "ok",
   "message": "Tracked changes detected",
-  "checked_at": "2026-10-14T14:28:16.277043+00:00",
-  "checked_at_display": "Oct 14, 2026 09:28 AM",
+  "checked_at": "2026-10-15T14:07:53.191232+00:00",
+  "checked_at_display": "Oct 15, 2026 09:07 AM",
   "source_url": "https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx",
   "baseline": false,
   "summary": {
@@ -16,78 +16,41 @@
     ],
     "sheets_checked": 1,
     "records_reviewed": 662,
-    "cells_reviewed": 7399,
-    "tracked_changes": 3,
-    "other_changes": 2,
+    "cells_reviewed": 7400,
+    "tracked_changes": 2,
+    "other_changes": 0,
     "high": 0,
-    "moderate": 0,
-    "informational": 3
+    "moderate": 1,
+    "informational": 1
   },
-  "brief": "3 changes affect BPU-tracked standards (0 high priority, 0 moderate). 2 additional changes were outside the tracked-standard list.",
+  "brief": "2 changes affect BPU-tracked standards (0 high priority, 1 moderate). 0 additional changes were outside the tracked-standard list.",
   "changes": [
     {
       "standard": "EOP-012",
       "family": "EOP",
       "sheet": "One Stop Shop",
-      "field": "Technical Rationale",
+      "field": "Filing Date of Standard",
       "old": "",
-      "new": "Technical Rationale",
+      "new": "2026-10-14T00:00:00",
       "type": "added",
       "tracked": true,
       "source_row": 223,
       "severity": "informational"
     },
     {
-      "standard": "TOP-003",
-      "family": "TOP",
+      "standard": "EOP-012",
+      "family": "EOP",
       "sheet": "One Stop Shop",
-      "field": "Record",
-      "old": "Record absent",
-      "new": "Record added",
-      "type": "record_added",
+      "field": "Status",
+      "old": "Pending Regulatory Filing",
+      "new": "Filed and Pending Regulatory Approval",
+      "type": "modified",
       "tracked": true,
-      "source_row": 577,
-      "severity": "informational"
-    },
-    {
-      "standard": "PRC-006",
-      "family": "PRC",
-      "sheet": "One Stop Shop",
-      "field": "Record",
-      "old": "Record absent",
-      "new": "Record added",
-      "type": "record_added",
-      "tracked": true,
-      "source_row": 495,
-      "severity": "informational"
+      "source_row": 223,
+      "severity": "moderate"
     }
   ],
-  "other_changes": [
-    {
-      "standard": "FAC-011",
-      "family": "FAC",
-      "sheet": "One Stop Shop",
-      "field": "Record",
-      "old": "Record absent",
-      "new": "Record added",
-      "type": "record_added",
-      "tracked": false,
-      "source_row": 256,
-      "severity": "info"
-    },
-    {
-      "standard": "TPL-001",
-      "family": "TPL",
-      "sheet": "One Stop Shop",
-      "field": "Record",
-      "old": "Record absent",
-      "new": "Record added",
-      "type": "record_added",
-      "tracked": false,
-      "source_row": 609,
-      "severity": "info"
-    }
-  ],
+  "other_changes": [],
   "changes_truncated": false,
   "standards": [
     {
@@ -194,9 +157,9 @@
       "standard": "EOP-012",
       "family": "EOP",
       "record_count": 4,
-      "changes": 1,
+      "changes": 2,
       "high": 0,
-      "moderate": 0,
+      "moderate": 1,
       "informational": 1,
       "status": "changed"
     },
@@ -374,11 +337,11 @@
       "standard": "PRC-006",
       "family": "PRC",
       "record_count": 13,
-      "changes": 1,
+      "changes": 0,
       "high": 0,
       "moderate": 0,
-      "informational": 1,
-      "status": "changed"
+      "informational": 0,
+      "status": "normal"
     },
     {
       "standard": "PRC-008",
@@ -534,11 +497,11 @@
       "standard": "TOP-003",
       "family": "TOP",
       "record_count": 10,
-      "changes": 1,
+      "changes": 0,
       "high": 0,
       "moderate": 0,
-      "informational": 1,
-      "status": "changed"
+      "informational": 0,
+      "status": "normal"
     },
     {
       "standard": "TPL-007",
@@ -580,7 +543,7 @@
       "code": "EOP",
       "name": "Emergency Preparedness & Operations",
       "standards": 4,
-      "changes": 1,
+      "changes": 2,
       "high": 0
     },
     {
@@ -622,14 +585,14 @@
       "code": "PRC",
       "name": "Protection & Control",
       "standards": 18,
-      "changes": 1,
+      "changes": 0,
       "high": 0
     },
     {
       "code": "TOP",
       "name": "Transmission Operations",
       "standards": 2,
-      "changes": 1,
+      "changes": 0,
       "high": 0
     },
     {
@@ -656,6 +619,13 @@
     }
   ],
   "history": [
+    {
+      "date": "Oct 15, 2026 09:07 AM CT",
+      "tracked_changes": 2,
+      "other_changes": 0,
+      "high": 0,
+      "status_text": "Tracked changes detected"
+    },
     {
       "date": "Oct 14, 2026 09:28 AM CT",
       "tracked_changes": 3,
@@ -959,13 +929,6 @@
     },
     {
       "date": "Sep 01, 2026 09:43 AM CT",
-      "tracked_changes": 0,
-      "other_changes": 0,
-      "high": 0,
-      "status_text": "No tracked changes"
-    },
-    {
-      "date": "Aug 31, 2026 12:31 PM CT",
       "tracked_changes": 0,
       "other_changes": 0,
       "high": 0,

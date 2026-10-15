@@ -5707,11 +5707,12 @@
       "family": "EOP",
       "tracked": true,
       "fields": {
-        "Status": "Pending Regulatory Filing",
+        "Status": "Filed and Pending Regulatory Approval",
         "Standard Number": "EOP-012-4",
         "Standard Title": "Extreme Cold Weather Preparedness and Operations",
         "Purpose": "To address the effects of operating in extreme cold weather by ensuring each Generator Owner has developed and implemented plan(s) to mitigate the reliability impacts of extreme cold weather on its applicable generating units.",
         "Board Adopted Date": "2026-10-08T00:00:00",
+        "Filing Date of Standard": "2026-10-14T00:00:00",
         "Implementation Plan": "Implementation Plan",
         "Project Page": "2025-01",
         "Technical Rationale": "Technical Rationale"
