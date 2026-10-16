@@ -1,33 +1,93 @@
 {
   "status": "ok",
-  "checked_at": "2026-10-15T14:07:54.459185+00:00",
-  "checked_at_display": "Oct 15, 2026 09:07 AM",
+  "checked_at": "2026-10-16T13:54:57.824791+00:00",
+  "checked_at_display": "Oct 16, 2026 08:54 AM",
   "message": "Official FERC sources checked successfully.",
   "summary": {
     "items_checked": 12,
-    "new_items": 0,
-    "priority_items": 1,
+    "new_items": 6,
+    "priority_items": 0,
     "sources_checked": 2
   },
   "source_urls": [
     "https://www.ferc.gov/news-events/news/news-releases-headlines",
     "https://www.ferc.gov/electric-reliability"
   ],
-  "new_items": [],
-  "items": [
+  "new_items": [
     {
-      "id": "https://www.ferc.gov/news-events/news/ferc-nerc-review-shows-bulk-power-system-improvements-preparation-and-coordination",
-      "title": "FERC, NERC Review Shows Bulk-Power System Improvements in Preparation and Coordination During Winter 2026 Arctic Cold Period",
-      "url": "https://www.ferc.gov/news-events/news/ferc-nerc-review-shows-bulk-power-system-improvements-preparation-and-coordination",
-      "date": "September 10, 2026",
-      "type": "News Releases",
+      "id": "https://www.ferc.gov/news-events/news/ferc-and-nrc-hold-joint-meeting-docket-no-ad06-6-000",
+      "title": "FERC and NRC to Hold Joint Meeting | Docket No. AD06-6-000",
+      "url": "https://www.ferc.gov/news-events/news/ferc-and-nrc-hold-joint-meeting-docket-no-ad06-6-000",
+      "date": "October 15, 2026",
+      "type": "Headlines",
       "categories": [
-        "NERC / Reliability Standards",
-        "Extreme Weather"
+        "Other FERC Activity"
       ],
-      "score": 9,
+      "score": 1,
       "source": "FERC News Releases & Headlines"
     },
+    {
+      "id": "https://www.ferc.gov/news-events/news/ferc-issues-final-notice-agenda-annual-commissioner-led-reliability-technical",
+      "title": "FERC Issues Final Notice & Agenda for the Annual Commissioner-led Reliability Technical Conference",
+      "url": "https://www.ferc.gov/news-events/news/ferc-issues-final-notice-agenda-annual-commissioner-led-reliability-technical",
+      "date": "October 15, 2026",
+      "type": "Headlines",
+      "categories": [
+        "Other FERC Activity"
+      ],
+      "score": 1,
+      "source": "FERC News Releases & Headlines"
+    },
+    {
+      "id": "https://www.ferc.gov/news-events/news/summaries-october-2026-commission-meeting",
+      "title": "Summaries | October 2026 Commission Meeting",
+      "url": "https://www.ferc.gov/news-events/news/summaries-october-2026-commission-meeting",
+      "date": "October 15, 2026",
+      "type": "Headlines",
+      "categories": [
+        "Other FERC Activity"
+      ],
+      "score": 1,
+      "source": "FERC News Releases & Headlines"
+    },
+    {
+      "id": "https://www.ferc.gov/news-events/news/presentation-authorizations-certain-activities-liquefied-natural-gas-plants",
+      "title": "Presentation | Authorizations for Certain Activities at Liquefied Natural Gas Plants",
+      "url": "https://www.ferc.gov/news-events/news/presentation-authorizations-certain-activities-liquefied-natural-gas-plants",
+      "date": "October 15, 2026",
+      "type": "Headlines",
+      "categories": [
+        "Other FERC Activity"
+      ],
+      "score": 1,
+      "source": "FERC News Releases & Headlines"
+    },
+    {
+      "id": "https://www.ferc.gov/news-events/news/ferc-takes-historic-action-launching-first-lng-authorization-program",
+      "title": "FERC Takes Historic Action Launching First LNG Authorization Program",
+      "url": "https://www.ferc.gov/news-events/news/ferc-takes-historic-action-launching-first-lng-authorization-program",
+      "date": "October 15, 2026",
+      "type": "News Releases",
+      "categories": [
+        "Other FERC Activity"
+      ],
+      "score": 1,
+      "source": "FERC News Releases & Headlines"
+    },
+    {
+      "id": "https://www.ferc.gov/news-events/news/ferc-launches-nepa-overhaul-accelerate-natural-gas-projects",
+      "title": "FERC Launches NEPA Overhaul to Accelerate Natural Gas Projects",
+      "url": "https://www.ferc.gov/news-events/news/ferc-launches-nepa-overhaul-accelerate-natural-gas-projects",
+      "date": "October 15, 2026",
+      "type": "News Releases",
+      "categories": [
+        "Other FERC Activity"
+      ],
+      "score": 1,
+      "source": "FERC News Releases & Headlines"
+    }
+  ],
+  "items": [
     {
       "id": "https://www.ferc.gov/news-events/news/decisions-notices?new=",
       "title": "Decisions and Notices",
@@ -77,46 +137,82 @@
       "source": "FERC News Releases & Headlines"
     },
     {
+      "id": "https://www.ferc.gov/news-events/news/ferc-and-nrc-hold-joint-meeting-docket-no-ad06-6-000",
+      "title": "FERC and NRC to Hold Joint Meeting | Docket No. AD06-6-000",
+      "url": "https://www.ferc.gov/news-events/news/ferc-and-nrc-hold-joint-meeting-docket-no-ad06-6-000",
+      "date": "October 15, 2026",
+      "type": "Headlines",
+      "categories": [
+        "Other FERC Activity"
+      ],
+      "score": 1,
+      "source": "FERC News Releases & Headlines"
+    },
+    {
+      "id": "https://www.ferc.gov/news-events/news/ferc-issues-final-notice-agenda-annual-commissioner-led-reliability-technical",
+      "title": "FERC Issues Final Notice & Agenda for the Annual Commissioner-led Reliability Technical Conference",
+      "url": "https://www.ferc.gov/news-events/news/ferc-issues-final-notice-agenda-annual-commissioner-led-reliability-technical",
+      "date": "October 15, 2026",
+      "type": "Headlines",
+      "categories": [
+        "Other FERC Activity"
+      ],
+      "score": 1,
+      "source": "FERC News Releases & Headlines"
+    },
+    {
+      "id": "https://www.ferc.gov/news-events/news/summaries-october-2026-commission-meeting",
+      "title": "Summaries | October 2026 Commission Meeting",
+      "url": "https://www.ferc.gov/news-events/news/summaries-october-2026-commission-meeting",
+      "date": "October 15, 2026",
+      "type": "Headlines",
+      "categories": [
+        "Other FERC Activity"
+      ],
+      "score": 1,
+      "source": "FERC News Releases & Headlines"
+    },
+    {
+      "id": "https://www.ferc.gov/news-events/news/presentation-authorizations-certain-activities-liquefied-natural-gas-plants",
+      "title": "Presentation | Authorizations for Certain Activities at Liquefied Natural Gas Plants",
+      "url": "https://www.ferc.gov/news-events/news/presentation-authorizations-certain-activities-liquefied-natural-gas-plants",
+      "date": "October 15, 2026",
+      "type": "Headlines",
+      "categories": [
+        "Other FERC Activity"
+      ],
+      "score": 1,
+      "source": "FERC News Releases & Headlines"
+    },
+    {
+      "id": "https://www.ferc.gov/news-events/news/ferc-takes-historic-action-launching-first-lng-authorization-program",
+      "title": "FERC Takes Historic Action Launching First LNG Authorization Program",
+      "url": "https://www.ferc.gov/news-events/news/ferc-takes-historic-action-launching-first-lng-authorization-program",
+      "date": "October 15, 2026",
+      "type": "News Releases",
+      "categories": [
+        "Other FERC Activity"
+      ],
+      "score": 1,
+      "source": "FERC News Releases & Headlines"
+    },
+    {
+      "id": "https://www.ferc.gov/news-events/news/ferc-launches-nepa-overhaul-accelerate-natural-gas-projects",
+      "title": "FERC Launches NEPA Overhaul to Accelerate Natural Gas Projects",
+      "url": "https://www.ferc.gov/news-events/news/ferc-launches-nepa-overhaul-accelerate-natural-gas-projects",
+      "date": "October 15, 2026",
+      "type": "News Releases",
+      "categories": [
+        "Other FERC Activity"
+      ],
+      "score": 1,
+      "source": "FERC News Releases & Headlines"
+    },
+    {
       "id": "https://www.ferc.gov/news-events/news/sunshine-notice-october-2026-commission-meeting",
       "title": "Sunshine Notice | October 2026 Commission Meeting",
       "url": "https://www.ferc.gov/news-events/news/sunshine-notice-october-2026-commission-meeting",
       "date": "October 8, 2026",
-      "type": "Headlines",
-      "categories": [
-        "Other FERC Activity"
-      ],
-      "score": 1,
-      "source": "FERC News Releases & Headlines"
-    },
-    {
-      "id": "https://www.ferc.gov/news-events/news/summaries-september-2026-commission-meeting",
-      "title": "Summaries | September 2026 Commission Meeting",
-      "url": "https://www.ferc.gov/news-events/news/summaries-september-2026-commission-meeting",
-      "date": "September 10, 2026",
-      "type": "Headlines",
-      "categories": [
-        "Other FERC Activity"
-      ],
-      "score": 1,
-      "source": "FERC News Releases & Headlines"
-    },
-    {
-      "id": "https://www.ferc.gov/news-events/news/september-2026-highlights-ferc-insight",
-      "title": "September 2026 Highlights | FERC insight",
-      "url": "https://www.ferc.gov/news-events/news/september-2026-highlights-ferc-insight",
-      "date": "September 15, 2026",
-      "type": "Headlines",
-      "categories": [
-        "Other FERC Activity"
-      ],
-      "score": 1,
-      "source": "FERC News Releases & Headlines"
-    },
-    {
-      "id": "https://www.ferc.gov/news-events/news/ferc-staff-issues-draft-environmental-impact-statement-corpus-christi-liquefaction",
-      "title": "FERC Staff Issues the Draft Environmental Impact Statement for the Corpus Christi Liquefaction Stage 4 and the CCPL Expansion Projects (Docket Nos. CP26-82-000, CP26-87-000, CP18-513)",
-      "url": "https://www.ferc.gov/news-events/news/ferc-staff-issues-draft-environmental-impact-statement-corpus-christi-liquefaction",
-      "date": "September 18, 2026",
       "type": "Headlines",
       "categories": [
         "Other FERC Activity"
@@ -135,33 +231,15 @@
       ],
       "score": 1,
       "source": "FERC News Releases & Headlines"
-    },
-    {
-      "id": "https://www.ferc.gov/news-events/news/ferc-staff-issues-final-supplemental-environmental-impact-statement-seis",
-      "title": "FERC Staff Issues Final Supplemental Environmental Impact Statement (SEIS) that Supplements the Final Environmental Impact Statement (EIS) for the Idaho Power Company’s Hells Canyon Hydroelectric Project (P-1971-079)",
-      "url": "https://www.ferc.gov/news-events/news/ferc-staff-issues-final-supplemental-environmental-impact-statement-seis",
-      "date": "September 4, 2026",
-      "type": "Headlines",
-      "categories": [
-        "Other FERC Activity"
-      ],
-      "score": 1,
-      "source": "FERC News Releases & Headlines"
-    },
-    {
-      "id": "https://www.ferc.gov/news-events/news/ferc-issues-notice-agenda-annual-commissioner-led-reliability-technical-conference",
-      "title": "FERC Issues Notice & Agenda for the Annual Commissioner-led Reliability Technical Conference",
-      "url": "https://www.ferc.gov/news-events/news/ferc-issues-notice-agenda-annual-commissioner-led-reliability-technical-conference",
-      "date": "September 9, 2026",
-      "type": "Headlines",
-      "categories": [
-        "Other FERC Activity"
-      ],
-      "score": 1,
-      "source": "FERC News Releases & Headlines"
     }
   ],
   "history": [
+    {
+      "date": "Oct 16, 2026 08:54 AM CT",
+      "new_items": 6,
+      "items_checked": 12,
+      "status_text": "6 new relevant items"
+    },
     {
       "date": "Oct 15, 2026 09:07 AM CT",
       "new_items": 0,
@@ -335,12 +413,6 @@
       "new_items": 0,
       "items_checked": 12,
       "status_text": "0 new relevant items"
-    },
-    {
-      "date": "Sep 16, 2026 09:47 AM CT",
-      "new_items": 1,
-      "items_checked": 12,
-      "status_text": "1 new relevant item"
     }
   ],
   "topics": [
