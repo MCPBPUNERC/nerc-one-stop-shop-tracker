@@ -1,11 +1,11 @@
 {
   "status": "ok",
-  "checked_at": "2026-10-17T12:54:50.726057+00:00",
-  "checked_at_display": "Oct 17, 2026 07:54 AM",
+  "checked_at": "2026-10-18T13:11:41.653344+00:00",
+  "checked_at_display": "Oct 18, 2026 08:11 AM",
   "message": "Official FERC sources checked successfully.",
   "summary": {
     "items_checked": 12,
-    "new_items": 1,
+    "new_items": 0,
     "priority_items": 1,
     "sources_checked": 2
   },
@@ -13,21 +13,7 @@
     "https://www.ferc.gov/news-events/news/news-releases-headlines",
     "https://www.ferc.gov/electric-reliability"
   ],
-  "new_items": [
-    {
-      "id": "https://www.ferc.gov/news-events/news/ferc-and-nrc-commissioners-discuss-grid-reliability-nuclear-power-and",
-      "title": "FERC and NRC Commissioners to Discuss Grid Reliability, Nuclear Power, and Cybersecurity at Joint Meeting",
-      "url": "https://www.ferc.gov/news-events/news/ferc-and-nrc-commissioners-discuss-grid-reliability-nuclear-power-and",
-      "date": "October 15, 2026",
-      "type": "News Releases",
-      "categories": [
-        "CIP / Cybersecurity",
-        "Generation / Transmission"
-      ],
-      "score": 5,
-      "source": "FERC News Releases & Headlines"
-    }
-  ],
+  "new_items": [],
   "items": [
     {
       "id": "https://www.ferc.gov/news-events/news/ferc-and-nrc-commissioners-discuss-grid-reliability-nuclear-power-and",
@@ -176,6 +162,12 @@
     }
   ],
   "history": [
+    {
+      "date": "Oct 18, 2026 08:11 AM CT",
+      "new_items": 0,
+      "items_checked": 12,
+      "status_text": "0 new relevant items"
+    },
     {
       "date": "Oct 17, 2026 07:54 AM CT",
       "new_items": 1,
@@ -346,12 +338,6 @@
     },
     {
       "date": "Sep 19, 2026 08:51 AM CT",
-      "new_items": 0,
-      "items_checked": 12,
-      "status_text": "0 new relevant items"
-    },
-    {
-      "date": "Sep 18, 2026 09:20 AM CT",
       "new_items": 0,
       "items_checked": 12,
       "status_text": "0 new relevant items"
