@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "status": "ok",
-  "message": "No tracked changes",
-  "checked_at": "2026-10-26T16:04:31.418190+00:00",
-  "checked_at_display": "Oct 26, 2026 11:04 AM",
+  "message": "Tracked changes detected",
+  "checked_at": "2026-10-27T15:17:59.668614+00:00",
+  "checked_at_display": "Oct 27, 2026 10:17 AM",
   "source_url": "https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx",
   "baseline": false,
   "summary": {
@@ -17,14 +17,39 @@
     "sheets_checked": 1,
     "records_reviewed": 662,
     "cells_reviewed": 7400,
-    "tracked_changes": 0,
+    "tracked_changes": 2,
     "other_changes": 0,
-    "high": 0,
+    "high": 1,
     "moderate": 0,
-    "informational": 0
+    "informational": 1
   },
-  "brief": "No semantic record changes were detected in the NERC workbook.",
-  "changes": [],
+  "brief": "2 changes affect BPU-tracked standards (1 high priority, 0 moderate). 0 additional changes were outside the tracked-standard list.",
+  "changes": [
+    {
+      "standard": "FAC-002",
+      "family": "FAC",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RM06-22-014",
+      "new": "Filing/Order Docket No. RM06-22-014 R2 and associated elements approved by NERC Board of Trustees for retirement as part of the Paragraph 81 project (Project 2013-02) pending applicable regulatory approval R2 and associated elements approved by FERC for retirement as part of the Paragraph 81 project (Project 2013-02)",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 230,
+      "severity": "high"
+    },
+    {
+      "standard": "FAC-001",
+      "family": "FAC",
+      "sheet": "One Stop Shop",
+      "field": "Public Notes",
+      "old": "Filing/Order Docket No. RM12-16-000",
+      "new": "Filing/Order Docket No. RM12-16-000 This standard became enforceable on November 25, 2013, for Transmission Owners. For Generator Owners, the standard becomes enforceable on January 1, 2015.",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 225,
+      "severity": "informational"
+    }
+  ],
   "other_changes": [],
   "changes_truncated": false,
   "standards": [
@@ -142,21 +167,21 @@
       "standard": "FAC-001",
       "family": "FAC",
       "record_count": 5,
-      "changes": 0,
+      "changes": 1,
       "high": 0,
       "moderate": 0,
-      "informational": 0,
-      "status": "normal"
+      "informational": 1,
+      "status": "changed"
     },
     {
       "standard": "FAC-002",
       "family": "FAC",
       "record_count": 5,
-      "changes": 0,
-      "high": 0,
+      "changes": 1,
+      "high": 1,
       "moderate": 0,
       "informational": 0,
-      "status": "normal"
+      "status": "attention"
     },
     {
       "standard": "FAC-003",
@@ -525,8 +550,8 @@
       "code": "FAC",
       "name": "Facilities",
       "standards": 4,
-      "changes": 0,
-      "high": 0
+      "changes": 2,
+      "high": 1
     },
     {
       "code": "IRO",
@@ -594,6 +619,13 @@
     }
   ],
   "history": [
+    {
+      "date": "Oct 27, 2026 10:17 AM CT",
+      "tracked_changes": 2,
+      "other_changes": 0,
+      "high": 1,
+      "status_text": "Tracked changes detected"
+    },
     {
       "date": "Oct 26, 2026 11:04 AM CT",
       "tracked_changes": 0,
@@ -901,13 +933,6 @@
       "other_changes": 0,
       "high": 0,
       "status_text": "No tracked changes"
-    },
-    {
-      "date": "Sep 12, 2026 08:31 AM CT",
-      "tracked_changes": 29,
-      "other_changes": 4,
-      "high": 10,
-      "status_text": "Tracked changes detected"
     }
   ],
   "health": {
