@@ -2,8 +2,8 @@
   "schema_version": 2,
   "status": "ok",
   "message": "Tracked changes detected",
-  "checked_at": "2026-10-27T15:17:59.668614+00:00",
-  "checked_at_display": "Oct 27, 2026 10:17 AM",
+  "checked_at": "2026-10-28T15:56:27.581518+00:00",
+  "checked_at_display": "Oct 28, 2026 10:56 AM",
   "source_url": "https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx",
   "baseline": false,
   "summary": {
@@ -15,42 +15,67 @@
       "DP"
     ],
     "sheets_checked": 1,
-    "records_reviewed": 662,
-    "cells_reviewed": 7400,
+    "records_reviewed": 666,
+    "cells_reviewed": 7430,
     "tracked_changes": 2,
-    "other_changes": 0,
-    "high": 1,
+    "other_changes": 2,
+    "high": 0,
     "moderate": 0,
-    "informational": 1
+    "informational": 2
   },
-  "brief": "2 changes affect BPU-tracked standards (1 high priority, 0 moderate). 0 additional changes were outside the tracked-standard list.",
+  "brief": "2 changes affect BPU-tracked standards (0 high priority, 0 moderate). 2 additional changes were outside the tracked-standard list.",
   "changes": [
-    {
-      "standard": "FAC-002",
-      "family": "FAC",
-      "sheet": "One Stop Shop",
-      "field": "Public Notes",
-      "old": "Filing/Order Docket No. RM06-22-014",
-      "new": "Filing/Order Docket No. RM06-22-014 R2 and associated elements approved by NERC Board of Trustees for retirement as part of the Paragraph 81 project (Project 2013-02) pending applicable regulatory approval R2 and associated elements approved by FERC for retirement as part of the Paragraph 81 project (Project 2013-02)",
-      "type": "modified",
-      "tracked": true,
-      "source_row": 230,
-      "severity": "high"
-    },
     {
       "standard": "FAC-001",
       "family": "FAC",
       "sheet": "One Stop Shop",
-      "field": "Public Notes",
-      "old": "Filing/Order Docket No. RM12-16-000",
-      "new": "Filing/Order Docket No. RM12-16-000 This standard became enforceable on November 25, 2013, for Transmission Owners. For Generator Owners, the standard becomes enforceable on January 1, 2015.",
-      "type": "modified",
+      "field": "Record",
+      "old": "Record absent",
+      "new": "Record added",
+      "type": "record_added",
       "tracked": true,
-      "source_row": 225,
+      "source_row": 231,
+      "severity": "informational"
+    },
+    {
+      "standard": "FAC-002",
+      "family": "FAC",
+      "sheet": "One Stop Shop",
+      "field": "Record",
+      "old": "Record absent",
+      "new": "Record added",
+      "type": "record_added",
+      "tracked": true,
+      "source_row": 237,
       "severity": "informational"
     }
   ],
-  "other_changes": [],
+  "other_changes": [
+    {
+      "standard": "CLO-001",
+      "family": "CLO",
+      "sheet": "One Stop Shop",
+      "field": "Record",
+      "old": "Record absent",
+      "new": "Record added",
+      "type": "record_added",
+      "tracked": false,
+      "source_row": 169,
+      "severity": "info"
+    },
+    {
+      "standard": "CLO-002",
+      "family": "CLO",
+      "sheet": "One Stop Shop",
+      "field": "Record",
+      "old": "Record absent",
+      "new": "Record added",
+      "type": "record_added",
+      "tracked": false,
+      "source_row": 170,
+      "severity": "info"
+    }
+  ],
   "changes_truncated": false,
   "standards": [
     {
@@ -166,7 +191,7 @@
     {
       "standard": "FAC-001",
       "family": "FAC",
-      "record_count": 5,
+      "record_count": 6,
       "changes": 1,
       "high": 0,
       "moderate": 0,
@@ -176,12 +201,12 @@
     {
       "standard": "FAC-002",
       "family": "FAC",
-      "record_count": 5,
+      "record_count": 6,
       "changes": 1,
-      "high": 1,
+      "high": 0,
       "moderate": 0,
-      "informational": 0,
-      "status": "attention"
+      "informational": 1,
+      "status": "changed"
     },
     {
       "standard": "FAC-003",
@@ -551,7 +576,7 @@
       "name": "Facilities",
       "standards": 4,
       "changes": 2,
-      "high": 1
+      "high": 0
     },
     {
       "code": "IRO",
@@ -613,12 +638,19 @@
   "sheets": [
     {
       "name": "One Stop Shop",
-      "rows": 663,
+      "rows": 667,
       "columns": 17,
-      "records": 662
+      "records": 666
     }
   ],
   "history": [
+    {
+      "date": "Oct 28, 2026 10:56 AM CT",
+      "tracked_changes": 2,
+      "other_changes": 2,
+      "high": 0,
+      "status_text": "Tracked changes detected"
+    },
     {
       "date": "Oct 27, 2026 10:17 AM CT",
       "tracked_changes": 2,
@@ -922,13 +954,6 @@
     },
     {
       "date": "Sep 14, 2026 11:17 AM CT",
-      "tracked_changes": 0,
-      "other_changes": 0,
-      "high": 0,
-      "status_text": "No tracked changes"
-    },
-    {
-      "date": "Sep 13, 2026 09:14 AM CT",
       "tracked_changes": 0,
       "other_changes": 0,
       "high": 0,
