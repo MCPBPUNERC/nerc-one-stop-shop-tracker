@@ -2,16 +2,11 @@ name: Regulatory Tracking Station
 
 on:
   schedule:
-    - cron: "7 4 * * *"
-      timezone: "America/Chicago"
-    - cron: "37 4 * * *"
-      timezone: "America/Chicago"
-    - cron: "7 5 * * *"
-      timezone: "America/Chicago"
-    - cron: "37 5 * * *"
-      timezone: "America/Chicago"
-    - cron: "7 6 * * *"
-      timezone: "America/Chicago"
+    - cron: "7 9 * * *"
+    - cron: "37 9 * * *"
+    - cron: "7 10 * * *"
+    - cron: "37 10 * * *"
+    - cron: "7 11 * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -74,7 +69,7 @@ jobs:
 
       - name: Set up Python
         if: steps.freshness.outputs.should_run == 'true'
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 
