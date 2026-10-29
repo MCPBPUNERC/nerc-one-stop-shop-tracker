@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "status": "ok",
-  "message": "Tracked changes detected",
-  "checked_at": "2026-10-28T15:56:27.581518+00:00",
-  "checked_at_display": "Oct 28, 2026 10:56 AM",
+  "message": "No tracked changes",
+  "checked_at": "2026-10-29T16:01:40.098744+00:00",
+  "checked_at_display": "Oct 29, 2026 11:01 AM",
   "source_url": "https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx",
   "baseline": false,
   "summary": {
@@ -15,44 +15,19 @@
       "DP"
     ],
     "sheets_checked": 1,
-    "records_reviewed": 666,
-    "cells_reviewed": 7430,
-    "tracked_changes": 2,
-    "other_changes": 2,
+    "records_reviewed": 667,
+    "cells_reviewed": 7438,
+    "tracked_changes": 0,
+    "other_changes": 1,
     "high": 0,
     "moderate": 0,
-    "informational": 2
+    "informational": 0
   },
-  "brief": "2 changes affect BPU-tracked standards (0 high priority, 0 moderate). 2 additional changes were outside the tracked-standard list.",
-  "changes": [
-    {
-      "standard": "FAC-001",
-      "family": "FAC",
-      "sheet": "One Stop Shop",
-      "field": "Record",
-      "old": "Record absent",
-      "new": "Record added",
-      "type": "record_added",
-      "tracked": true,
-      "source_row": 231,
-      "severity": "informational"
-    },
-    {
-      "standard": "FAC-002",
-      "family": "FAC",
-      "sheet": "One Stop Shop",
-      "field": "Record",
-      "old": "Record absent",
-      "new": "Record added",
-      "type": "record_added",
-      "tracked": true,
-      "source_row": 237,
-      "severity": "informational"
-    }
-  ],
+  "brief": "No changes were detected in BPU's tracked standards. 1 changes were detected elsewhere in the NERC workbook.",
+  "changes": [],
   "other_changes": [
     {
-      "standard": "CLO-001",
+      "standard": "CLO-003",
       "family": "CLO",
       "sheet": "One Stop Shop",
       "field": "Record",
@@ -60,19 +35,7 @@
       "new": "Record added",
       "type": "record_added",
       "tracked": false,
-      "source_row": 169,
-      "severity": "info"
-    },
-    {
-      "standard": "CLO-002",
-      "family": "CLO",
-      "sheet": "One Stop Shop",
-      "field": "Record",
-      "old": "Record absent",
-      "new": "Record added",
-      "type": "record_added",
-      "tracked": false,
-      "source_row": 170,
+      "source_row": 171,
       "severity": "info"
     }
   ],
@@ -192,21 +155,21 @@
       "standard": "FAC-001",
       "family": "FAC",
       "record_count": 6,
-      "changes": 1,
+      "changes": 0,
       "high": 0,
       "moderate": 0,
-      "informational": 1,
-      "status": "changed"
+      "informational": 0,
+      "status": "normal"
     },
     {
       "standard": "FAC-002",
       "family": "FAC",
       "record_count": 6,
-      "changes": 1,
+      "changes": 0,
       "high": 0,
       "moderate": 0,
-      "informational": 1,
-      "status": "changed"
+      "informational": 0,
+      "status": "normal"
     },
     {
       "standard": "FAC-003",
@@ -575,7 +538,7 @@
       "code": "FAC",
       "name": "Facilities",
       "standards": 4,
-      "changes": 2,
+      "changes": 0,
       "high": 0
     },
     {
@@ -638,12 +601,19 @@
   "sheets": [
     {
       "name": "One Stop Shop",
-      "rows": 667,
+      "rows": 668,
       "columns": 17,
-      "records": 666
+      "records": 667
     }
   ],
   "history": [
+    {
+      "date": "Oct 29, 2026 11:01 AM CT",
+      "tracked_changes": 0,
+      "other_changes": 1,
+      "high": 0,
+      "status_text": "No tracked changes"
+    },
     {
       "date": "Oct 28, 2026 10:56 AM CT",
       "tracked_changes": 2,
@@ -947,13 +917,6 @@
     },
     {
       "date": "Sep 15, 2026 09:50 AM CT",
-      "tracked_changes": 0,
-      "other_changes": 0,
-      "high": 0,
-      "status_text": "No tracked changes"
-    },
-    {
-      "date": "Sep 14, 2026 11:17 AM CT",
       "tracked_changes": 0,
       "other_changes": 0,
       "high": 0,
