@@ -2,8 +2,7 @@ name: NERC Morning Brief
 
 on:
   schedule:
-    - cron: "0 8 * * *"
-      timezone: "America/Chicago"
+    - cron: "0 13 * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -23,7 +22,7 @@ jobs:
           ref: main
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 
