@@ -12,7 +12,7 @@ MAX_EMAIL_CHANGES = 25
 def send_email(subject, body):
     user = os.environ.get("GMAIL_USER")
     password = os.environ.get("GMAIL_PASS")
-    recipients = [x.strip() for x in os.environ.get("RECIPIENTS", "").split(",") if x.strip()]
+    recipients = ["mikep@mcphersonpower.com", "tommys@mcphersonpower.com"]
     if not user or not password or not recipients:
         raise RuntimeError("Gmail credentials or recipients are not configured.")
     message = EmailMessage()
@@ -23,7 +23,10 @@ def send_email(subject, body):
     with smtplib.SMTP("smtp.gmail.com", 587, timeout=60) as server:
         server.starttls()
         server.login(user, password)
-        server.send_message(message)
+        refused = server.send_message(message)
+        if refused:
+            raise RuntimeError(f"SMTP refused recipients: {list(refused)}")
+    print("SMTP accepted message for: " + ", ".join(recipients) + " (inbox delivery not guaranteed)")
 
 def main():
     data = json.loads(DATA_PATH.read_text(encoding="utf-8"))
