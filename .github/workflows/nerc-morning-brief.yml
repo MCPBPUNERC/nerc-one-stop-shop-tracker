@@ -4,10 +4,6 @@ on:
   schedule:
     - cron: "0 8 * * *"
       timezone: "America/Chicago"
-    - cron: "10 8 * * *"
-      timezone: "America/Chicago"
-    - cron: "20 8 * * *"
-      timezone: "America/Chicago"
   workflow_dispatch: {}
 
 permissions:
@@ -31,7 +27,8 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Send 8 AM NERC Morning Brief\n        env:
+      - name: Send 8 AM NERC Morning Brief
+        env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
           RECIPIENTS: ${{ secrets.RECIPIENTS }}
