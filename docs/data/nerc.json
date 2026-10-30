@@ -2,8 +2,8 @@
   "schema_version": 2,
   "status": "ok",
   "message": "No tracked changes",
-  "checked_at": "2026-10-29T16:01:40.098744+00:00",
-  "checked_at_display": "Oct 29, 2026 11:01 AM",
+  "checked_at": "2026-10-30T15:50:06.469448+00:00",
+  "checked_at_display": "Oct 30, 2026 10:50 AM",
   "source_url": "https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx",
   "baseline": false,
   "summary": {
@@ -18,27 +18,14 @@
     "records_reviewed": 667,
     "cells_reviewed": 7438,
     "tracked_changes": 0,
-    "other_changes": 1,
+    "other_changes": 0,
     "high": 0,
     "moderate": 0,
     "informational": 0
   },
-  "brief": "No changes were detected in BPU's tracked standards. 1 changes were detected elsewhere in the NERC workbook.",
+  "brief": "No semantic record changes were detected in the NERC workbook.",
   "changes": [],
-  "other_changes": [
-    {
-      "standard": "CLO-003",
-      "family": "CLO",
-      "sheet": "One Stop Shop",
-      "field": "Record",
-      "old": "Record absent",
-      "new": "Record added",
-      "type": "record_added",
-      "tracked": false,
-      "source_row": 171,
-      "severity": "info"
-    }
-  ],
+  "other_changes": [],
   "changes_truncated": false,
   "standards": [
     {
@@ -608,6 +595,13 @@
   ],
   "history": [
     {
+      "date": "Oct 30, 2026 10:50 AM CT",
+      "tracked_changes": 0,
+      "other_changes": 0,
+      "high": 0,
+      "status_text": "No tracked changes"
+    },
+    {
       "date": "Oct 29, 2026 11:01 AM CT",
       "tracked_changes": 0,
       "other_changes": 1,
@@ -910,13 +904,6 @@
     },
     {
       "date": "Sep 16, 2026 09:47 AM CT",
-      "tracked_changes": 0,
-      "other_changes": 0,
-      "high": 0,
-      "status_text": "No tracked changes"
-    },
-    {
-      "date": "Sep 15, 2026 09:50 AM CT",
       "tracked_changes": 0,
       "other_changes": 0,
       "high": 0,
