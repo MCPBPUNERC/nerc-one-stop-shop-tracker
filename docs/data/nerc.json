@@ -2,8 +2,8 @@
   "schema_version": 2,
   "status": "ok",
   "message": "No tracked changes",
-  "checked_at": "2026-11-01T15:56:46.015889+00:00",
-  "checked_at_display": "Nov 01, 2026 09:56 AM",
+  "checked_at": "2026-11-02T19:25:16.646758+00:00",
+  "checked_at_display": "Nov 02, 2026 01:25 PM",
   "source_url": "https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx",
   "baseline": false,
   "summary": {
@@ -595,6 +595,13 @@
   ],
   "history": [
     {
+      "date": "Nov 02, 2026 01:25 PM CT",
+      "tracked_changes": 0,
+      "other_changes": 0,
+      "high": 0,
+      "status_text": "No tracked changes"
+    },
+    {
       "date": "Nov 01, 2026 09:56 AM CT",
       "tracked_changes": 0,
       "other_changes": 0,
@@ -897,13 +904,6 @@
     },
     {
       "date": "Sep 19, 2026 08:51 AM CT",
-      "tracked_changes": 0,
-      "other_changes": 0,
-      "high": 0,
-      "status_text": "No tracked changes"
-    },
-    {
-      "date": "Sep 18, 2026 09:20 AM CT",
       "tracked_changes": 0,
       "other_changes": 0,
       "high": 0,
