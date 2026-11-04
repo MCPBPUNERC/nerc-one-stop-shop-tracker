@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "status": "ok",
-  "message": "No tracked changes",
-  "checked_at": "2026-11-03T16:58:16.365802+00:00",
-  "checked_at_display": "Nov 03, 2026 10:58 AM",
+  "message": "Tracked changes detected",
+  "checked_at": "2026-11-04T17:04:35.840463+00:00",
+  "checked_at_display": "Nov 04, 2026 11:04 AM",
   "source_url": "https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx",
   "baseline": false,
   "summary": {
@@ -16,16 +16,90 @@
     ],
     "sheets_checked": 1,
     "records_reviewed": 667,
-    "cells_reviewed": 7438,
-    "tracked_changes": 0,
-    "other_changes": 0,
+    "cells_reviewed": 7441,
+    "tracked_changes": 2,
+    "other_changes": 4,
     "high": 0,
-    "moderate": 0,
-    "informational": 0
+    "moderate": 1,
+    "informational": 1
   },
-  "brief": "No semantic record changes were detected in the NERC workbook.",
-  "changes": [],
-  "other_changes": [],
+  "brief": "2 changes affect BPU-tracked standards (0 high priority, 1 moderate). 4 additional changes were outside the tracked-standard list.",
+  "changes": [
+    {
+      "standard": "TOP-003",
+      "family": "TOP",
+      "sheet": "One Stop Shop",
+      "field": "Filing Date of Standard",
+      "old": "",
+      "new": "2026-11-02T00:00:00",
+      "type": "added",
+      "tracked": true,
+      "source_row": 582,
+      "severity": "informational"
+    },
+    {
+      "standard": "TOP-003",
+      "family": "TOP",
+      "sheet": "One Stop Shop",
+      "field": "Status",
+      "old": "Pending Regulatory Filing",
+      "new": "Filed and Pending Regulatory Approval",
+      "type": "modified",
+      "tracked": true,
+      "source_row": 582,
+      "severity": "moderate"
+    }
+  ],
+  "other_changes": [
+    {
+      "standard": "FAC-011",
+      "family": "FAC",
+      "sheet": "One Stop Shop",
+      "field": "Filing Date of Standard",
+      "old": "",
+      "new": "2026-11-02T00:00:00",
+      "type": "added",
+      "tracked": false,
+      "source_row": 261,
+      "severity": "info"
+    },
+    {
+      "standard": "FAC-011",
+      "family": "FAC",
+      "sheet": "One Stop Shop",
+      "field": "Status",
+      "old": "Pending Regulatory Filing",
+      "new": "Filed and Pending Regulatory Approval",
+      "type": "modified",
+      "tracked": false,
+      "source_row": 261,
+      "severity": "info"
+    },
+    {
+      "standard": "TPL-001",
+      "family": "TPL",
+      "sheet": "One Stop Shop",
+      "field": "Filing Date of Standard",
+      "old": "",
+      "new": "2026-11-02T00:00:00",
+      "type": "added",
+      "tracked": false,
+      "source_row": 614,
+      "severity": "info"
+    },
+    {
+      "standard": "TPL-001",
+      "family": "TPL",
+      "sheet": "One Stop Shop",
+      "field": "Status",
+      "old": "Pending Regulatory Filing",
+      "new": "Filed and Pending Regulatory Approval",
+      "type": "modified",
+      "tracked": false,
+      "source_row": 614,
+      "severity": "info"
+    }
+  ],
   "changes_truncated": false,
   "standards": [
     {
@@ -472,11 +546,11 @@
       "standard": "TOP-003",
       "family": "TOP",
       "record_count": 10,
-      "changes": 0,
+      "changes": 2,
       "high": 0,
-      "moderate": 0,
-      "informational": 0,
-      "status": "normal"
+      "moderate": 1,
+      "informational": 1,
+      "status": "changed"
     },
     {
       "standard": "TPL-007",
@@ -567,7 +641,7 @@
       "code": "TOP",
       "name": "Transmission Operations",
       "standards": 2,
-      "changes": 0,
+      "changes": 2,
       "high": 0
     },
     {
@@ -594,6 +668,13 @@
     }
   ],
   "history": [
+    {
+      "date": "Nov 04, 2026 11:04 AM CT",
+      "tracked_changes": 2,
+      "other_changes": 4,
+      "high": 0,
+      "status_text": "Tracked changes detected"
+    },
     {
       "date": "Nov 03, 2026 10:58 AM CT",
       "tracked_changes": 0,
@@ -897,13 +978,6 @@
     },
     {
       "date": "Sep 21, 2026 11:23 AM CT",
-      "tracked_changes": 0,
-      "other_changes": 0,
-      "high": 0,
-      "status_text": "No tracked changes"
-    },
-    {
-      "date": "Sep 20, 2026 09:05 AM CT",
       "tracked_changes": 0,
       "other_changes": 0,
       "high": 0,

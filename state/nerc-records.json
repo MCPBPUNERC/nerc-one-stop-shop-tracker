@@ -6656,11 +6656,12 @@
       "family": "FAC",
       "tracked": false,
       "fields": {
-        "Status": "Pending Regulatory Filing",
+        "Status": "Filed and Pending Regulatory Approval",
         "Standard Number": "FAC-011-5",
         "Standard Title": "System Operating Limits Methodology for the Operations Horizon",
         "Purpose": "To ensure that System Operating Limits (SOLs) used in the reliable operation of the Bulk Electric System (BES) are determined based on an established methodology or methodologies.",
         "Board Adopted Date": "2026-10-08T00:00:00",
+        "Filing Date of Standard": "2026-11-02T00:00:00",
         "Implementation Plan": "Implementation Plan",
         "Project Page": "2025-03",
         "Technical Rationale": "Technical Rationale"
@@ -14724,11 +14725,12 @@
       "family": "TOP",
       "tracked": true,
       "fields": {
-        "Status": "Pending Regulatory Filing",
+        "Status": "Filed and Pending Regulatory Approval",
         "Standard Number": "TOP-003-9",
         "Standard Title": "Transmission Operator and Balancing Authority Data and Information Specification and Collection",
         "Purpose": "To ensure that each Transmission Operator and Balancing Authority has the data and information it needs to plan, monitor, and assess the operation of its Transmission Operator Area or Balancing Authority Area.",
         "Board Adopted Date": "2026-10-08T00:00:00",
+        "Filing Date of Standard": "2026-11-02T00:00:00",
         "Implementation Plan": "Implementation Plan",
         "Project Page": "2025-03",
         "Technical Rationale": "Technical Rationale"
@@ -15511,11 +15513,12 @@
       "family": "TPL",
       "tracked": false,
       "fields": {
-        "Status": "Pending Regulatory Filing",
+        "Status": "Filed and Pending Regulatory Approval",
         "Standard Number": "TPL-001-6",
         "Standard Title": "Transmission System Planning Performance Requirements",
         "Purpose": "Establish Transmission system planning performance requirements within the planning horizon to develop a Bulk Electric System (BES) that will operate reliably over a broad spectrum of System conditions and following a wide range of probable Contingencies.",
         "Board Adopted Date": "2026-10-08T00:00:00",
+        "Filing Date of Standard": "2026-11-02T00:00:00",
         "Implementation Plan": "Implementation Plan",
         "Project Page": "2025-04",
         "Technical Rationale": "Technical Rationale"
