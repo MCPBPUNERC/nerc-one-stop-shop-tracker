@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "status": "ok",
-  "message": "Tracked changes detected",
-  "checked_at": "2026-11-05T17:19:00.687891+00:00",
-  "checked_at_display": "Nov 05, 2026 11:19 AM",
+  "message": "No tracked changes",
+  "checked_at": "2026-11-06T16:41:55.717436+00:00",
+  "checked_at_display": "Nov 06, 2026 10:41 AM",
   "source_url": "https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx",
   "baseline": false,
   "summary": {
@@ -17,77 +17,15 @@
     "sheets_checked": 1,
     "records_reviewed": 667,
     "cells_reviewed": 7446,
-    "tracked_changes": 2,
-    "other_changes": 3,
+    "tracked_changes": 0,
+    "other_changes": 0,
     "high": 0,
     "moderate": 0,
-    "informational": 2
+    "informational": 0
   },
-  "brief": "2 changes affect BPU-tracked standards (0 high priority, 0 moderate). 3 additional changes were outside the tracked-standard list.",
-  "changes": [
-    {
-      "standard": "FAC-002",
-      "family": "FAC",
-      "sheet": "One Stop Shop",
-      "field": "Technical Rationale",
-      "old": "",
-      "new": "Technical Rationale",
-      "type": "added",
-      "tracked": true,
-      "source_row": 238,
-      "severity": "informational"
-    },
-    {
-      "standard": "FAC-001",
-      "family": "FAC",
-      "sheet": "One Stop Shop",
-      "field": "Technical Rationale",
-      "old": "",
-      "new": "Technical Rationale",
-      "type": "added",
-      "tracked": true,
-      "source_row": 232,
-      "severity": "informational"
-    }
-  ],
-  "other_changes": [
-    {
-      "standard": "CLO-002",
-      "family": "CLO",
-      "sheet": "One Stop Shop",
-      "field": "Technical Rationale",
-      "old": "",
-      "new": "Technical Rationale",
-      "type": "added",
-      "tracked": false,
-      "source_row": 170,
-      "severity": "info"
-    },
-    {
-      "standard": "CLO-001",
-      "family": "CLO",
-      "sheet": "One Stop Shop",
-      "field": "Technical Rationale",
-      "old": "",
-      "new": "Technical Rationale",
-      "type": "added",
-      "tracked": false,
-      "source_row": 169,
-      "severity": "info"
-    },
-    {
-      "standard": "CLO-003",
-      "family": "CLO",
-      "sheet": "One Stop Shop",
-      "field": "Technical Rationale",
-      "old": "",
-      "new": "Technical Rationale",
-      "type": "added",
-      "tracked": false,
-      "source_row": 171,
-      "severity": "info"
-    }
-  ],
+  "brief": "No semantic record changes were detected in the NERC workbook.",
+  "changes": [],
+  "other_changes": [],
   "changes_truncated": false,
   "standards": [
     {
@@ -204,21 +142,21 @@
       "standard": "FAC-001",
       "family": "FAC",
       "record_count": 6,
-      "changes": 1,
+      "changes": 0,
       "high": 0,
       "moderate": 0,
-      "informational": 1,
-      "status": "changed"
+      "informational": 0,
+      "status": "normal"
     },
     {
       "standard": "FAC-002",
       "family": "FAC",
       "record_count": 6,
-      "changes": 1,
+      "changes": 0,
       "high": 0,
       "moderate": 0,
-      "informational": 1,
-      "status": "changed"
+      "informational": 0,
+      "status": "normal"
     },
     {
       "standard": "FAC-003",
@@ -587,7 +525,7 @@
       "code": "FAC",
       "name": "Facilities",
       "standards": 4,
-      "changes": 2,
+      "changes": 0,
       "high": 0
     },
     {
@@ -656,6 +594,13 @@
     }
   ],
   "history": [
+    {
+      "date": "Nov 06, 2026 10:41 AM CT",
+      "tracked_changes": 0,
+      "other_changes": 0,
+      "high": 0,
+      "status_text": "No tracked changes"
+    },
     {
       "date": "Nov 05, 2026 11:19 AM CT",
       "tracked_changes": 2,
@@ -959,13 +904,6 @@
     },
     {
       "date": "Sep 23, 2026 09:52 AM CT",
-      "tracked_changes": 0,
-      "other_changes": 0,
-      "high": 0,
-      "status_text": "No tracked changes"
-    },
-    {
-      "date": "Sep 22, 2026 09:39 AM CT",
       "tracked_changes": 0,
       "other_changes": 0,
       "high": 0,
