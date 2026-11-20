@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "status": "ok",
-  "message": "Tracked changes detected",
-  "checked_at": "2026-11-19T18:10:21.487393+00:00",
-  "checked_at_display": "Nov 19, 2026 12:10 PM",
+  "message": "No tracked changes",
+  "checked_at": "2026-11-20T17:43:28.071529+00:00",
+  "checked_at_display": "Nov 20, 2026 11:43 AM",
   "source_url": "https://www.nerc.com/globalassets/align-reports/one-stop-shop.xlsx",
   "baseline": false,
   "summary": {
@@ -17,137 +17,15 @@
     "sheets_checked": 1,
     "records_reviewed": 667,
     "cells_reviewed": 7451,
-    "tracked_changes": 4,
-    "other_changes": 6,
+    "tracked_changes": 0,
+    "other_changes": 0,
     "high": 0,
-    "moderate": 2,
-    "informational": 2
+    "moderate": 0,
+    "informational": 0
   },
-  "brief": "4 changes affect BPU-tracked standards (0 high priority, 2 moderate). 6 additional changes were outside the tracked-standard list.",
-  "changes": [
-    {
-      "standard": "FAC-002",
-      "family": "FAC",
-      "sheet": "One Stop Shop",
-      "field": "Filing Date of Standard",
-      "old": "",
-      "new": "2026-11-16T00:00:00",
-      "type": "added",
-      "tracked": true,
-      "source_row": 238,
-      "severity": "informational"
-    },
-    {
-      "standard": "FAC-002",
-      "family": "FAC",
-      "sheet": "One Stop Shop",
-      "field": "Status",
-      "old": "Pending Regulatory Filing",
-      "new": "Filed and Pending Regulatory Approval",
-      "type": "modified",
-      "tracked": true,
-      "source_row": 238,
-      "severity": "moderate"
-    },
-    {
-      "standard": "FAC-001",
-      "family": "FAC",
-      "sheet": "One Stop Shop",
-      "field": "Filing Date of Standard",
-      "old": "",
-      "new": "2026-11-16T00:00:00",
-      "type": "added",
-      "tracked": true,
-      "source_row": 232,
-      "severity": "informational"
-    },
-    {
-      "standard": "FAC-001",
-      "family": "FAC",
-      "sheet": "One Stop Shop",
-      "field": "Status",
-      "old": "Pending Regulatory Filing",
-      "new": "Filed and Pending Regulatory Approval",
-      "type": "modified",
-      "tracked": true,
-      "source_row": 232,
-      "severity": "moderate"
-    }
-  ],
-  "other_changes": [
-    {
-      "standard": "CLO-002",
-      "family": "CLO",
-      "sheet": "One Stop Shop",
-      "field": "Filing Date of Standard",
-      "old": "",
-      "new": "2026-11-16T00:00:00",
-      "type": "added",
-      "tracked": false,
-      "source_row": 170,
-      "severity": "info"
-    },
-    {
-      "standard": "CLO-002",
-      "family": "CLO",
-      "sheet": "One Stop Shop",
-      "field": "Status",
-      "old": "Pending Regulatory Filing",
-      "new": "Filed and Pending Regulatory Approval",
-      "type": "modified",
-      "tracked": false,
-      "source_row": 170,
-      "severity": "info"
-    },
-    {
-      "standard": "CLO-001",
-      "family": "CLO",
-      "sheet": "One Stop Shop",
-      "field": "Filing Date of Standard",
-      "old": "",
-      "new": "2026-11-16T00:00:00",
-      "type": "added",
-      "tracked": false,
-      "source_row": 169,
-      "severity": "info"
-    },
-    {
-      "standard": "CLO-001",
-      "family": "CLO",
-      "sheet": "One Stop Shop",
-      "field": "Status",
-      "old": "Pending Regulatory Filing",
-      "new": "Filed and Pending Regulatory Approval",
-      "type": "modified",
-      "tracked": false,
-      "source_row": 169,
-      "severity": "info"
-    },
-    {
-      "standard": "CLO-003",
-      "family": "CLO",
-      "sheet": "One Stop Shop",
-      "field": "Filing Date of Standard",
-      "old": "",
-      "new": "2026-11-16T00:00:00",
-      "type": "added",
-      "tracked": false,
-      "source_row": 171,
-      "severity": "info"
-    },
-    {
-      "standard": "CLO-003",
-      "family": "CLO",
-      "sheet": "One Stop Shop",
-      "field": "Status",
-      "old": "Pending Regulatory Filing",
-      "new": "Filed and Pending Regulatory Approval",
-      "type": "modified",
-      "tracked": false,
-      "source_row": 171,
-      "severity": "info"
-    }
-  ],
+  "brief": "No semantic record changes were detected in the NERC workbook.",
+  "changes": [],
+  "other_changes": [],
   "changes_truncated": false,
   "standards": [
     {
@@ -264,21 +142,21 @@
       "standard": "FAC-001",
       "family": "FAC",
       "record_count": 6,
-      "changes": 2,
+      "changes": 0,
       "high": 0,
-      "moderate": 1,
-      "informational": 1,
-      "status": "changed"
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
     },
     {
       "standard": "FAC-002",
       "family": "FAC",
       "record_count": 6,
-      "changes": 2,
+      "changes": 0,
       "high": 0,
-      "moderate": 1,
-      "informational": 1,
-      "status": "changed"
+      "moderate": 0,
+      "informational": 0,
+      "status": "normal"
     },
     {
       "standard": "FAC-003",
@@ -647,7 +525,7 @@
       "code": "FAC",
       "name": "Facilities",
       "standards": 4,
-      "changes": 4,
+      "changes": 0,
       "high": 0
     },
     {
@@ -716,6 +594,13 @@
     }
   ],
   "history": [
+    {
+      "date": "Nov 20, 2026 11:43 AM CT",
+      "tracked_changes": 0,
+      "other_changes": 0,
+      "high": 0,
+      "status_text": "No tracked changes"
+    },
     {
       "date": "Nov 19, 2026 12:10 PM CT",
       "tracked_changes": 4,
@@ -1019,13 +904,6 @@
     },
     {
       "date": "Oct 07, 2026 11:22 AM CT",
-      "tracked_changes": 0,
-      "other_changes": 0,
-      "high": 0,
-      "status_text": "No tracked changes"
-    },
-    {
-      "date": "Oct 06, 2026 10:52 AM CT",
       "tracked_changes": 0,
       "other_changes": 0,
       "high": 0,
